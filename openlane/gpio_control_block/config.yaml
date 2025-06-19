@@ -1,0 +1,61 @@
+DESIGN_NAME: gpio_control_block
+VERILOG_FILES: dir::/../../verilog/rtl/gpio_control_block.v
+FP_SIZING: absolute
+DIE_AREA: [0, 0, 50, 74]
+CORE_AREA: [3, 3, 47, 71]
+FP_PIN_ORDER_CFG: dir::pin_order.cfg
+FALLBACK_SDC_FILE: dir::signoff.sdc
+RSZ_DONT_TOUCH_RX: BUF
+
+PL_TARGET_DENSITY_PCT: 60
+GRT_ADJUSTMENT: 0.1
+RT_MAX_LAYER: met3
+VDD_NETS:
+  - vccd
+  - vccd1
+GND_NETS:
+  - vssd
+  - vssd1
+
+FP_MACRO_HORIZONTAL_HALO: 3
+FP_MACRO_VERTICAL_HALO: 3
+FP_IO_HLENGTH: 2
+FP_IO_VLENGTH: 2
+FP_IO_VEXTEND: 1
+FP_IO_HEXTEND: 1
+FP_PDN_MULTILAYER: true
+FP_PDN_VERTICAL_LAYER: met2
+FP_PDN_HORIZONTAL_LAYER: met3
+FP_PDN_VWIDTH: 1
+FP_PDN_HWIDTH: 1
+FP_PDN_VSPACING: 1
+FP_PDN_HSPACING: 1
+FP_PDN_VPITCH: 20
+FP_PDN_HPITCH: 20
+FP_PDN_VOFFSET: 10
+FP_PDN_HOFFSET: 0
+FP_PDN_SKIPTRIM: true
+
+MACROS:
+    gpio_logic_high: 
+        gds: dir::../../gds/gpio_logic_high.gds.gz
+        lef: dir::../../lef/gpio_logic_high.lef
+        instances:
+            gpio_logic_high: 
+                location: [3, 6.26]
+                orientation: N
+        nl: dir::../../verilog/gl/gpio_logic_high.v
+        spef:
+            min_*: dir::../../spef/multicorner/gpio_logic_high.min.spef
+            nom_*: dir::../../spef/multicorner/gpio_logic_high.nom.spef
+            max_*: dir::../../spef/multicorner/gpio_logic_high.max.spef
+        lib:
+            "*": dir::../../lib/gpio_logic_high.lib
+PDN_MACRO_CONNECTIONS: 
+    - gpio_logic_high vccd1 vssd1 vccd1 vssd1
+
+SYNTH_EXTRA_MAPPING_FILE: dir::yosys_mapping.v
+
+MAGIC_EXT_USE_GDS: true
+LVS_INCLUDE_MARCO_NETLISTS: true
+MAGIC_NO_EXT_UNIQUE: true

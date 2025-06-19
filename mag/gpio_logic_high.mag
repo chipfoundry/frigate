@@ -1,0 +1,139 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1750116680
+<< viali >>
+rect 673 765 707 799
+<< metal1 >>
+rect 0 1114 1196 1136
+rect 0 1062 310 1114
+rect 362 1062 374 1114
+rect 426 1062 438 1114
+rect 490 1062 1196 1114
+rect 0 1040 1196 1062
+rect 658 756 664 808
+rect 716 756 722 808
+rect 0 570 1196 592
+rect 0 518 910 570
+rect 962 518 974 570
+rect 1026 518 1038 570
+rect 1090 518 1196 570
+rect 0 496 1196 518
+rect 658 280 664 332
+rect 716 320 722 332
+rect 800 320 1200 334
+rect 716 292 1200 320
+rect 716 280 722 292
+rect 800 278 1200 292
+rect 0 26 1196 48
+rect 0 -26 310 26
+rect 362 -26 374 26
+rect 426 -26 438 26
+rect 490 -26 1196 26
+rect 0 -48 1196 -26
+<< via1 >>
+rect 310 1062 362 1114
+rect 374 1062 426 1114
+rect 438 1062 490 1114
+rect 664 799 716 808
+rect 664 765 673 799
+rect 673 765 707 799
+rect 707 765 716 799
+rect 664 756 716 765
+rect 910 518 962 570
+rect 974 518 1026 570
+rect 1038 518 1090 570
+rect 664 280 716 332
+rect 310 -26 362 26
+rect 374 -26 426 26
+rect 438 -26 490 26
+<< metal2 >>
+rect 300 1114 500 1136
+rect 300 1062 310 1114
+rect 362 1062 374 1114
+rect 426 1062 438 1114
+rect 490 1062 500 1114
+rect 300 26 500 1062
+rect 664 808 716 814
+rect 664 750 716 756
+rect 676 338 704 750
+rect 900 570 1100 1136
+rect 900 518 910 570
+rect 962 518 974 570
+rect 1026 518 1038 570
+rect 1090 518 1100 570
+rect 664 332 716 338
+rect 664 274 716 280
+rect 300 -26 310 26
+rect 362 -26 374 26
+rect 426 -26 438 26
+rect 490 -26 500 26
+rect 300 -48 500 -26
+rect 900 -48 1100 518
+use sky130_fd_sc_hd__decap_3  FILLER_0_3
+timestamp 21601
+transform 1 0 276 0 1 0
+box -38 -48 314 592
+use sky130_fd_sc_hd__fill_2  FILLER_0_6
+timestamp 21601
+transform 1 0 552 0 1 0
+box -38 -48 222 592
+use sky130_fd_sc_hd__fill_1  FILLER_0_9
+timestamp 21601
+transform 1 0 828 0 1 0
+box -38 -48 130 592
+use sky130_fd_sc_hd__fill_2  FILLER_1_3
+timestamp 21601
+transform 1 0 276 0 -1 1088
+box -38 -48 222 592
+use sky130_fd_sc_hd__fill_1  FILLER_1_9
+timestamp 21601
+transform 1 0 828 0 -1 1088
+box -38 -48 130 592
+use sky130_fd_sc_hd__conb_1  gpio_logic_high_1
+timestamp 1562557784
+transform -1 0 736 0 -1 1088
+box -38 -48 314 592
+use sky130_fd_sc_hd__decap_3  PHY_EDGE_ROW_0_Left_2
+timestamp 21601
+transform 1 0 0 0 1 0
+box -38 -48 314 592
+use sky130_fd_sc_hd__decap_3  PHY_EDGE_ROW_0_Right_0
+timestamp 21601
+transform -1 0 1196 0 1 0
+box -38 -48 314 592
+use sky130_fd_sc_hd__decap_3  PHY_EDGE_ROW_1_Left_3
+timestamp 21601
+transform 1 0 0 0 -1 1088
+box -38 -48 314 592
+use sky130_fd_sc_hd__decap_3  PHY_EDGE_ROW_1_Right_1
+timestamp 21601
+transform -1 0 1196 0 -1 1088
+box -38 -48 314 592
+use sky130_fd_sc_hd__tapvpwrvgnd_1  TAP_TAPCELL_ROW_0_4
+timestamp 21601
+transform 1 0 736 0 1 0
+box -38 -48 130 592
+use sky130_fd_sc_hd__tapvpwrvgnd_1  TAP_TAPCELL_ROW_1_5
+timestamp 21601
+transform 1 0 736 0 -1 1088
+box -38 -48 130 592
+<< labels >>
+flabel metal1 s 800 278 1200 334 0 FreeSans 224 0 0 0 gpio_logic1
+port 0 nsew signal output
+flabel metal2 s 900 -48 1100 1136 0 FreeSans 896 90 0 0 vccd1
+port 1 nsew power bidirectional
+flabel metal1 s 0 496 28 592 0 FreeSans 224 90 0 0 vccd1
+port 1 nsew power bidirectional
+flabel metal2 s 300 -48 500 1136 0 FreeSans 896 90 0 0 vssd1
+port 2 nsew ground bidirectional
+flabel metal1 s 0 -48 28 48 0 FreeSans 224 90 0 0 vssd1
+port 2 nsew ground bidirectional
+flabel metal1 s 0 1040 28 1136 0 FreeSans 224 90 0 0 vssd1
+port 2 nsew ground bidirectional
+rlabel metal1 598 544 598 544 0 vccd1
+rlabel metal1 598 1088 598 1088 0 vssd1
+rlabel metal2 690 544 690 544 0 net1
+<< properties >>
+string FIXED_BBOX 0 0 1200 1200
+<< end >>

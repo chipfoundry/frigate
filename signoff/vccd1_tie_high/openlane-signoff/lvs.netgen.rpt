@@ -1,0 +1,234 @@
+
+Cell sky130_fd_sc_hd__diode_2 (0) disconnected node: DIODE
+Cell sky130_fd_sc_hd__diode_2 (0) disconnected node: VGND
+Cell sky130_fd_sc_hd__diode_2 (0) disconnected node: VNB
+Cell sky130_fd_sc_hd__diode_2 (0) disconnected node: VPB
+Cell sky130_fd_sc_hd__diode_2 (0) disconnected node: VPWR
+Cell sky130_fd_sc_hd__diode_2 (1) disconnected node: VGND
+Cell sky130_fd_sc_hd__diode_2 (1) disconnected node: VPB
+Cell sky130_fd_sc_hd__diode_2 (1) disconnected node: VPWR
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__diode_2        |Circuit 2: sky130_fd_sc_hd__diode_2        
+-------------------------------------------|-------------------------------------------
+DIODE                                      |DIODE                                      
+VGND                                       |VGND                                       
+VNB                                        |VNB                                        
+VPB                                        |VPB                                        
+VPWR                                       |VPWR                                       
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__diode_2 and sky130_fd_sc_hd__diode_2 are equivalent.
+
+Cell sky130_fd_sc_hd__fill_1 (0) disconnected node: VGND
+Cell sky130_fd_sc_hd__fill_1 (0) disconnected node: VNB
+Cell sky130_fd_sc_hd__fill_1 (0) disconnected node: VPB
+Cell sky130_fd_sc_hd__fill_1 (0) disconnected node: VPWR
+Cell sky130_fd_sc_hd__fill_1 (1) disconnected node: VGND
+Cell sky130_fd_sc_hd__fill_1 (1) disconnected node: VNB
+Cell sky130_fd_sc_hd__fill_1 (1) disconnected node: VPB
+Cell sky130_fd_sc_hd__fill_1 (1) disconnected node: VPWR
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__fill_1         |Circuit 2: sky130_fd_sc_hd__fill_1         
+-------------------------------------------|-------------------------------------------
+VGND                                       |VGND                                       
+VNB                                        |VNB                                        
+VPB                                        |VPB                                        
+VPWR                                       |VPWR                                       
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__fill_1 and sky130_fd_sc_hd__fill_1 are equivalent.
+
+Cell sky130_fd_sc_hd__decap_3 (0) disconnected node: VGND
+Cell sky130_fd_sc_hd__decap_3 (0) disconnected node: VNB
+Cell sky130_fd_sc_hd__decap_3 (0) disconnected node: VPB
+Cell sky130_fd_sc_hd__decap_3 (0) disconnected node: VPWR
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__decap_3        |Circuit 2: sky130_fd_sc_hd__decap_3        
+-------------------------------------------|-------------------------------------------
+VGND                                       |VGND                                       
+VNB                                        |VNB                                        
+VPB                                        |VPB                                        
+VPWR                                       |VPWR                                       
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__decap_3 and sky130_fd_sc_hd__decap_3 are equivalent.
+
+Cell sky130_fd_sc_hd__tapvpwrvgnd_1 (0) disconnected node: VGND
+Cell sky130_fd_sc_hd__tapvpwrvgnd_1 (0) disconnected node: VPWR
+Cell sky130_fd_sc_hd__tapvpwrvgnd_1 (1) disconnected node: VGND
+Cell sky130_fd_sc_hd__tapvpwrvgnd_1 (1) disconnected node: VPWR
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__tapvpwrvgnd_1  |Circuit 2: sky130_fd_sc_hd__tapvpwrvgnd_1  
+-------------------------------------------|-------------------------------------------
+VGND                                       |VGND                                       
+VPWR                                       |VPWR                                       
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__tapvpwrvgnd_1 and sky130_fd_sc_hd__tapvpwrvgnd_1 are equivalent.
+
+Cell sky130_fd_sc_hd__fill_2 (0) disconnected node: VGND
+Cell sky130_fd_sc_hd__fill_2 (0) disconnected node: VNB
+Cell sky130_fd_sc_hd__fill_2 (0) disconnected node: VPB
+Cell sky130_fd_sc_hd__fill_2 (0) disconnected node: VPWR
+Cell sky130_fd_sc_hd__fill_2 (1) disconnected node: VGND
+Cell sky130_fd_sc_hd__fill_2 (1) disconnected node: VNB
+Cell sky130_fd_sc_hd__fill_2 (1) disconnected node: VPB
+Cell sky130_fd_sc_hd__fill_2 (1) disconnected node: VPWR
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__fill_2         |Circuit 2: sky130_fd_sc_hd__fill_2         
+-------------------------------------------|-------------------------------------------
+VGND                                       |VGND                                       
+VNB                                        |VNB                                        
+VPB                                        |VPB                                        
+VPWR                                       |VPWR                                       
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__fill_2 and sky130_fd_sc_hd__fill_2 are equivalent.
+
+Cell sky130_fd_sc_hd__conb_1 (0) disconnected node: VGND
+Cell sky130_fd_sc_hd__conb_1 (0) disconnected node: VNB
+Cell sky130_fd_sc_hd__conb_1 (0) disconnected node: VPB
+Cell sky130_fd_sc_hd__conb_1 (0) disconnected node: VPWR
+Cell sky130_fd_sc_hd__conb_1 (0) disconnected node: HI
+Cell sky130_fd_sc_hd__conb_1 (0) disconnected node: LO
+Cell sky130_fd_sc_hd__conb_1 (1) disconnected node: VNB
+Cell sky130_fd_sc_hd__conb_1 (1) disconnected node: VPB
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__conb_1         |Circuit 2: sky130_fd_sc_hd__conb_1         
+-------------------------------------------|-------------------------------------------
+VGND                                       |VGND                                       
+VNB                                        |VNB                                        
+VPB                                        |VPB                                        
+VPWR                                       |VPWR                                       
+HI                                         |HI                                         
+LO                                         |LO                                         
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__conb_1 and sky130_fd_sc_hd__conb_1 are equivalent.
+
+Class vccd1_tie_high (0):  Merged 112 parallel devices.
+Class vccd1_tie_high (1):  Merged 112 parallel devices.
+Subcircuit summary:
+Circuit 1: vccd1_tie_high                  |Circuit 2: vccd1_tie_high                  
+-------------------------------------------|-------------------------------------------
+sky130_fd_sc_hd__diode_2 (91)              |sky130_fd_sc_hd__diode_2 (91)              
+sky130_fd_sc_hd__fill_1 (60->1)            |sky130_fd_sc_hd__fill_1 (60->1)            
+sky130_fd_sc_hd__decap_3 (26->1)           |sky130_fd_sc_hd__decap_3 (26->1)           
+sky130_fd_sc_hd__tapvpwrvgnd_1 (17->1)     |sky130_fd_sc_hd__tapvpwrvgnd_1 (17->1)     
+sky130_fd_sc_hd__fill_2 (13->1)            |sky130_fd_sc_hd__fill_2 (13->1)            
+sky130_fd_sc_hd__conb_1 (91)               |sky130_fd_sc_hd__conb_1 (91)               
+Number of devices: 186                     |Number of devices: 186                     
+Number of nets: 184                        |Number of nets: 184                        
+---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: vccd1_tie_high                  |Circuit 2: vccd1_tie_high                  
+-------------------------------------------|-------------------------------------------
+vssd1                                      |vssd1                                      
+vccd1                                      |vccd1                                      
+HI[35]                                     |HI[35]                                     
+HI[25]                                     |HI[25]                                     
+HI[62]                                     |HI[62]                                     
+HI[32]                                     |HI[32]                                     
+HI[42]                                     |HI[42]                                     
+HI[52]                                     |HI[52]                                     
+HI[22]                                     |HI[22]                                     
+HI[8]                                      |HI[8]                                      
+HI[6]                                      |HI[6]                                      
+HI[3]                                      |HI[3]                                      
+HI[1]                                      |HI[1]                                      
+HI[2]                                      |HI[2]                                      
+HI[4]                                      |HI[4]                                      
+HI[5]                                      |HI[5]                                      
+HI[7]                                      |HI[7]                                      
+HI[89]                                     |HI[89]                                     
+HI[37]                                     |HI[37]                                     
+HI[57]                                     |HI[57]                                     
+HI[87]                                     |HI[87]                                     
+HI[27]                                     |HI[27]                                     
+HI[47]                                     |HI[47]                                     
+HI[67]                                     |HI[67]                                     
+HI[77]                                     |HI[77]                                     
+HI[79]                                     |HI[79]                                     
+HI[71]                                     |HI[71]                                     
+HI[17]                                     |HI[17]                                     
+HI[86]                                     |HI[86]                                     
+HI[76]                                     |HI[76]                                     
+HI[69]                                     |HI[69]                                     
+HI[61]                                     |HI[61]                                     
+HI[66]                                     |HI[66]                                     
+HI[54]                                     |HI[54]                                     
+HI[59]                                     |HI[59]                                     
+HI[64]                                     |HI[64]                                     
+HI[74]                                     |HI[74]                                     
+HI[84]                                     |HI[84]                                     
+HI[51]                                     |HI[51]                                     
+HI[56]                                     |HI[56]                                     
+HI[14]                                     |HI[14]                                     
+HI[44]                                     |HI[44]                                     
+HI[49]                                     |HI[49]                                     
+HI[73]                                     |HI[73]                                     
+HI[63]                                     |HI[63]                                     
+HI[83]                                     |HI[83]                                     
+HI[41]                                     |HI[41]                                     
+HI[46]                                     |HI[46]                                     
+HI[34]                                     |HI[34]                                     
+HI[39]                                     |HI[39]                                     
+HI[31]                                     |HI[31]                                     
+HI[36]                                     |HI[36]                                     
+HI[9]                                      |HI[9]                                      
+HI[81]                                     |HI[81]                                     
+HI[24]                                     |HI[24]                                     
+HI[29]                                     |HI[29]                                     
+HI[16]                                     |HI[16]                                     
+HI[21]                                     |HI[21]                                     
+HI[11]                                     |HI[11]                                     
+HI[90]                                     |HI[90]                                     
+HI[13]                                     |HI[13]                                     
+HI[19]                                     |HI[19]                                     
+HI[10]                                     |HI[10]                                     
+HI[88]                                     |HI[88]                                     
+HI[85]                                     |HI[85]                                     
+HI[80]                                     |HI[80]                                     
+HI[78]                                     |HI[78]                                     
+HI[82]                                     |HI[82]                                     
+HI[70]                                     |HI[70]                                     
+HI[75]                                     |HI[75]                                     
+HI[68]                                     |HI[68]                                     
+HI[72]                                     |HI[72]                                     
+HI[60]                                     |HI[60]                                     
+HI[65]                                     |HI[65]                                     
+HI[53]                                     |HI[53]                                     
+HI[58]                                     |HI[58]                                     
+HI[50]                                     |HI[50]                                     
+HI[55]                                     |HI[55]                                     
+HI[43]                                     |HI[43]                                     
+HI[48]                                     |HI[48]                                     
+HI[40]                                     |HI[40]                                     
+HI[45]                                     |HI[45]                                     
+HI[33]                                     |HI[33]                                     
+HI[38]                                     |HI[38]                                     
+HI[26]                                     |HI[26]                                     
+HI[30]                                     |HI[30]                                     
+HI[23]                                     |HI[23]                                     
+HI[28]                                     |HI[28]                                     
+HI[15]                                     |HI[15]                                     
+HI[20]                                     |HI[20]                                     
+HI[12]                                     |HI[12]                                     
+HI[18]                                     |HI[18]                                     
+HI[0]                                      |HI[0]                                      
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes vccd1_tie_high and vccd1_tie_high are equivalent.
+
+Final result: Circuits match uniquely.
+.

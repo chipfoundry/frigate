@@ -1,0 +1,87 @@
+DESIGN_NAME: clk_rst
+VERILOG_FILES:
+  - dir::/../../verilog/rtl/utils/reset_sync.v
+  - dir::/../../verilog/rtl/ahbl_0/clk_rst/clk_div.v
+  - dir::/../../verilog/rtl/ahbl_0/clk_rst/clkdly.v
+  - dir::/../../verilog/rtl/ahbl_0/clk_rst/clkmux_2x1.v
+  - dir::/../../verilog/rtl/ahbl_0/clk_rst/clkmux_4x1.v
+  - dir::/../../verilog/rtl/ahbl_0/clk_rst/clk_rst.v
+VERILOG_DEFINES: 
+  - PnR
+
+PNR_SDC_FILE: dir::base.sdc
+SIGNOFF_SDC_FILE: dir::signoff.sdc
+CLOCK_PORT: xclk
+MAX_FANOUT_CONSTRAINT: 18
+SYNTH_SIZING: false
+SYNTH_ABC_BUFFERING: false
+
+FP_SIZING: absolute
+DIE_AREA: [0, 0, 120, 75]
+FP_PIN_ORDER_CFG: dir::pin_order.cfg
+TOP_MARGIN_MULT: 2
+BOTTOM_MARGIN_MULT: 2
+
+FP_PDN_MULTILAYER: false
+FP_PDN_SKIPTRIM: true
+FP_PDN_HSPACING: 18.4
+FP_PDN_VSPACING: 18.4
+FP_PDN_VPITCH: 40
+FP_PDN_HPITCH: 40
+FP_PDN_HOFFSET: 16.41
+FP_PDN_VERTICAL_LAYER: met4
+
+DIODE_PADDING: false
+RSZ_DONT_TOUCH_RX: dlygen|dly_clkbuf
+
+PL_TARGET_DENSITY_PCT: 90
+GRT_ADJUSTMENT: 0
+RT_MAX_LAYER: met4
+
+SYNTH_EXCLUDED_CELL_FILE: dir::no_synth.cells
+
+meta:
+  version: 2
+  flow:
+    - Yosys.JsonHeader
+    - Yosys.Synthesis
+    - OpenROAD.CheckSDCFiles
+    - OpenROAD.Floorplan
+    - Odb.SetPowerConnections
+    - Odb.ManualMacroPlacement
+    - OpenROAD.TapEndcapInsertion
+    - OpenROAD.IOPlacement
+    - Odb.CustomIOPlacement
+    - OpenROAD.GeneratePDN
+    - OpenROAD.GlobalPlacement
+    - OpenROAD.ResizerTimingPostCTS
+    - OpenROAD.RepairDesignPostGRT
+    - Odb.DiodesOnPorts
+    - OpenROAD.DetailedPlacement
+    - OpenROAD.ResizerTimingPostCTS
+    - OpenROAD.STAMidPNR
+    - OpenROAD.ResizerTimingPostGRT
+    - OpenROAD.GlobalRouting
+    - OpenROAD.CheckAntennas
+    - OpenROAD.DetailedRouting
+    - Checker.TrDRC
+    - Odb.ReportDisconnectedPins
+    - Odb.ReportWireLength
+    - Checker.WireLength
+    - OpenROAD.CheckAntennas
+    - OpenROAD.FillInsertion
+    - OpenROAD.RCX
+    - OpenROAD.STAPostPNR
+    - OpenROAD.IRDropReport
+    - Magic.StreamOut
+    - KLayout.StreamOut
+    - Magic.WriteLEF
+    - KLayout.XOR
+    - Checker.XOR
+    - Magic.DRC
+    - Checker.MagicDRC
+    - Magic.SpiceExtraction
+    - Checker.IllegalOverlap
+    - Netgen.LVS
+    - Checker.LVS
+    - Misc.ReportManufacturability

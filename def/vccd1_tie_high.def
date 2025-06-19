@@ -1,0 +1,1640 @@
+VERSION 5.8 ;
+DIVIDERCHAR "/" ;
+BUSBITCHARS "[]" ;
+DESIGN vccd1_tie_high ;
+UNITS DISTANCE MICRONS 1000 ;
+DIEAREA ( 0 0 ) ( 100000 17000 ) ;
+ROW ROW_0 unithd 1380 2720 N DO 212 BY 1 STEP 460 0 ;
+ROW ROW_1 unithd 1380 5440 FS DO 212 BY 1 STEP 460 0 ;
+ROW ROW_2 unithd 1380 8160 N DO 212 BY 1 STEP 460 0 ;
+TRACKS X 230 DO 217 STEP 460 LAYER li1 ;
+TRACKS Y 170 DO 50 STEP 340 LAYER li1 ;
+TRACKS X 170 DO 294 STEP 340 LAYER met1 ;
+TRACKS Y 170 DO 50 STEP 340 LAYER met1 ;
+TRACKS X 230 DO 217 STEP 460 LAYER met2 ;
+TRACKS Y 230 DO 37 STEP 460 LAYER met2 ;
+TRACKS X 340 DO 147 STEP 680 LAYER met3 ;
+TRACKS Y 340 DO 25 STEP 680 LAYER met3 ;
+TRACKS X 460 DO 109 STEP 920 LAYER met4 ;
+TRACKS Y 460 DO 18 STEP 920 LAYER met4 ;
+TRACKS X 1700 DO 29 STEP 3400 LAYER met5 ;
+TRACKS Y 1700 DO 5 STEP 3400 LAYER met5 ;
+GCELLGRID X 0 DO 14 STEP 6900 ;
+GCELLGRID Y 0 DO 2 STEP 6900 ;
+VIAS 2 ;
+    - via2_3_1600_480_1_5_320_320 + VIARULE M1M2_PR + CUTSIZE 150 150  + LAYERS met1 via met2  + CUTSPACING 170 170  + ENCLOSURE 85 165 85 85  + ROWCOL 1 5  ;
+    - via3_4_1600_1600_4_4_400_400 + VIARULE M2M3_PR + CUTSIZE 200 200  + LAYERS met2 via2 met3  + CUTSPACING 200 200  + ENCLOSURE 100 85 65 100  + ROWCOL 4 4  ;
+END VIAS
+COMPONENTS 298 ;
+    - ANTENNA_vccd1_tie_high_10_HI sky130_fd_sc_hd__diode_2 + PLACED ( 23460 2720 ) FN ;
+    - ANTENNA_vccd1_tie_high_11_HI sky130_fd_sc_hd__diode_2 + PLACED ( 24380 2720 ) FN ;
+    - ANTENNA_vccd1_tie_high_12_HI sky130_fd_sc_hd__diode_2 + PLACED ( 4600 8160 ) FN ;
+    - ANTENNA_vccd1_tie_high_13_HI sky130_fd_sc_hd__diode_2 + PLACED ( 25760 2720 ) FN ;
+    - ANTENNA_vccd1_tie_high_14_HI sky130_fd_sc_hd__diode_2 + PLACED ( 27600 2720 ) FN ;
+    - ANTENNA_vccd1_tie_high_15_HI sky130_fd_sc_hd__diode_2 + PLACED ( 30360 2720 ) FN ;
+    - ANTENNA_vccd1_tie_high_16_HI sky130_fd_sc_hd__diode_2 + PLACED ( 28980 2720 ) FN ;
+    - ANTENNA_vccd1_tie_high_17_HI sky130_fd_sc_hd__diode_2 + PLACED ( 28060 5440 ) S ;
+    - ANTENNA_vccd1_tie_high_18_HI sky130_fd_sc_hd__diode_2 + PLACED ( 33120 2720 ) FN ;
+    - ANTENNA_vccd1_tie_high_19_HI sky130_fd_sc_hd__diode_2 + PLACED ( 31740 2720 ) FN ;
+    - ANTENNA_vccd1_tie_high_1_HI sky130_fd_sc_hd__diode_2 + PLACED ( 7820 5440 ) S ;
+    - ANTENNA_vccd1_tie_high_20_HI sky130_fd_sc_hd__diode_2 + PLACED ( 30820 5440 ) S ;
+    - ANTENNA_vccd1_tie_high_21_HI sky130_fd_sc_hd__diode_2 + PLACED ( 35880 2720 ) FN ;
+    - ANTENNA_vccd1_tie_high_22_HI sky130_fd_sc_hd__diode_2 + PLACED ( 34500 2720 ) FN ;
+    - ANTENNA_vccd1_tie_high_23_HI sky130_fd_sc_hd__diode_2 + PLACED ( 5520 8160 ) FN ;
+    - ANTENNA_vccd1_tie_high_24_HI sky130_fd_sc_hd__diode_2 + PLACED ( 33580 5440 ) S ;
+    - ANTENNA_vccd1_tie_high_25_HI sky130_fd_sc_hd__diode_2 + PLACED ( 38640 2720 ) FN ;
+    - ANTENNA_vccd1_tie_high_26_HI sky130_fd_sc_hd__diode_2 + PLACED ( 37260 2720 ) FN ;
+    - ANTENNA_vccd1_tie_high_27_HI sky130_fd_sc_hd__diode_2 + PLACED ( 41400 2720 ) FN ;
+    - ANTENNA_vccd1_tie_high_28_HI sky130_fd_sc_hd__diode_2 + PLACED ( 36340 5440 ) S ;
+    - ANTENNA_vccd1_tie_high_29_HI sky130_fd_sc_hd__diode_2 + PLACED ( 45080 2720 ) FN ;
+    - ANTENNA_vccd1_tie_high_2_HI sky130_fd_sc_hd__diode_2 + PLACED ( 17480 2720 ) FN ;
+    - ANTENNA_vccd1_tie_high_30_HI sky130_fd_sc_hd__diode_2 + PLACED ( 40480 2720 ) FN ;
+    - ANTENNA_vccd1_tie_high_31_HI sky130_fd_sc_hd__diode_2 + PLACED ( 44160 2720 ) FN ;
+    - ANTENNA_vccd1_tie_high_32_HI sky130_fd_sc_hd__diode_2 + PLACED ( 42780 2720 ) FN ;
+    - ANTENNA_vccd1_tie_high_33_HI sky130_fd_sc_hd__diode_2 + PLACED ( 40480 8160 ) FN ;
+    - ANTENNA_vccd1_tie_high_34_HI sky130_fd_sc_hd__diode_2 + PLACED ( 12420 2720 ) FN ;
+    - ANTENNA_vccd1_tie_high_35_HI sky130_fd_sc_hd__diode_2 + PLACED ( 46920 2720 ) FN ;
+    - ANTENNA_vccd1_tie_high_36_HI sky130_fd_sc_hd__diode_2 + PLACED ( 44620 5440 ) S ;
+    - ANTENNA_vccd1_tie_high_37_HI sky130_fd_sc_hd__diode_2 + PLACED ( 46920 5440 ) S ;
+    - ANTENNA_vccd1_tie_high_38_HI sky130_fd_sc_hd__diode_2 + PLACED ( 48300 5440 ) S ;
+    - ANTENNA_vccd1_tie_high_39_HI sky130_fd_sc_hd__diode_2 + PLACED ( 49680 5440 ) S ;
+    - ANTENNA_vccd1_tie_high_3_HI sky130_fd_sc_hd__diode_2 + PLACED ( 19780 2720 ) FN ;
+    - ANTENNA_vccd1_tie_high_40_HI sky130_fd_sc_hd__diode_2 + PLACED ( 51060 5440 ) S ;
+    - ANTENNA_vccd1_tie_high_41_HI sky130_fd_sc_hd__diode_2 + PLACED ( 53360 5440 ) S ;
+    - ANTENNA_vccd1_tie_high_42_HI sky130_fd_sc_hd__diode_2 + PLACED ( 54740 5440 ) S ;
+    - ANTENNA_vccd1_tie_high_43_HI sky130_fd_sc_hd__diode_2 + PLACED ( 56120 5440 ) S ;
+    - ANTENNA_vccd1_tie_high_44_HI sky130_fd_sc_hd__diode_2 + PLACED ( 57500 5440 ) S ;
+    - ANTENNA_vccd1_tie_high_45_HI sky130_fd_sc_hd__diode_2 + PLACED ( 6440 8160 ) FN ;
+    - ANTENNA_vccd1_tie_high_46_HI sky130_fd_sc_hd__diode_2 + PLACED ( 59800 5440 ) S ;
+    - ANTENNA_vccd1_tie_high_47_HI sky130_fd_sc_hd__diode_2 + PLACED ( 64400 5440 ) S ;
+    - ANTENNA_vccd1_tie_high_48_HI sky130_fd_sc_hd__diode_2 + PLACED ( 61640 2720 ) FN ;
+    - ANTENNA_vccd1_tie_high_49_HI sky130_fd_sc_hd__diode_2 + PLACED ( 67160 5440 ) S ;
+    - ANTENNA_vccd1_tie_high_4_HI sky130_fd_sc_hd__diode_2 + PLACED ( 18860 2720 ) FN ;
+    - ANTENNA_vccd1_tie_high_50_HI sky130_fd_sc_hd__diode_2 + PLACED ( 59800 2720 ) FN ;
+    - ANTENNA_vccd1_tie_high_51_HI sky130_fd_sc_hd__diode_2 + PLACED ( 64400 2720 ) FN ;
+    - ANTENNA_vccd1_tie_high_52_HI sky130_fd_sc_hd__diode_2 + PLACED ( 69920 5440 ) S ;
+    - ANTENNA_vccd1_tie_high_53_HI sky130_fd_sc_hd__diode_2 + PLACED ( 62560 2720 ) FN ;
+    - ANTENNA_vccd1_tie_high_54_HI sky130_fd_sc_hd__diode_2 + PLACED ( 67620 2720 ) FN ;
+    - ANTENNA_vccd1_tie_high_55_HI sky130_fd_sc_hd__diode_2 + PLACED ( 66240 2720 ) FN ;
+    - ANTENNA_vccd1_tie_high_56_HI sky130_fd_sc_hd__diode_2 + PLACED ( 10580 5440 ) S ;
+    - ANTENNA_vccd1_tie_high_57_HI sky130_fd_sc_hd__diode_2 + PLACED ( 72680 5440 ) S ;
+    - ANTENNA_vccd1_tie_high_58_HI sky130_fd_sc_hd__diode_2 + PLACED ( 70380 2720 ) FN ;
+    - ANTENNA_vccd1_tie_high_59_HI sky130_fd_sc_hd__diode_2 + PLACED ( 68540 2720 ) FN ;
+    - ANTENNA_vccd1_tie_high_5_HI sky130_fd_sc_hd__diode_2 + PLACED ( 17940 5440 ) S ;
+    - ANTENNA_vccd1_tie_high_60_HI sky130_fd_sc_hd__diode_2 + PLACED ( 71760 2720 ) FN ;
+    - ANTENNA_vccd1_tie_high_61_HI sky130_fd_sc_hd__diode_2 + PLACED ( 77280 5440 ) S ;
+    - ANTENNA_vccd1_tie_high_62_HI sky130_fd_sc_hd__diode_2 + PLACED ( 72680 2720 ) FN ;
+    - ANTENNA_vccd1_tie_high_63_HI sky130_fd_sc_hd__diode_2 + PLACED ( 74520 2720 ) FN ;
+    - ANTENNA_vccd1_tie_high_64_HI sky130_fd_sc_hd__diode_2 + PLACED ( 75900 2720 ) FN ;
+    - ANTENNA_vccd1_tie_high_65_HI sky130_fd_sc_hd__diode_2 + PLACED ( 73600 2720 ) FN ;
+    - ANTENNA_vccd1_tie_high_66_HI sky130_fd_sc_hd__diode_2 + PLACED ( 80500 5440 ) S ;
+    - ANTENNA_vccd1_tie_high_67_HI sky130_fd_sc_hd__diode_2 + PLACED ( 13340 2720 ) FN ;
+    - ANTENNA_vccd1_tie_high_68_HI sky130_fd_sc_hd__diode_2 + PLACED ( 82800 5440 ) S ;
+    - ANTENNA_vccd1_tie_high_69_HI sky130_fd_sc_hd__diode_2 + PLACED ( 76820 2720 ) FN ;
+    - ANTENNA_vccd1_tie_high_6_HI sky130_fd_sc_hd__diode_2 + PLACED ( 20700 2720 ) FN ;
+    - ANTENNA_vccd1_tie_high_70_HI sky130_fd_sc_hd__diode_2 + PLACED ( 80500 2720 ) FN ;
+    - ANTENNA_vccd1_tie_high_71_HI sky130_fd_sc_hd__diode_2 + PLACED ( 77740 2720 ) FN ;
+    - ANTENNA_vccd1_tie_high_72_HI sky130_fd_sc_hd__diode_2 + PLACED ( 85560 5440 ) S ;
+    - ANTENNA_vccd1_tie_high_73_HI sky130_fd_sc_hd__diode_2 + PLACED ( 83260 2720 ) FN ;
+    - ANTENNA_vccd1_tie_high_74_HI sky130_fd_sc_hd__diode_2 + PLACED ( 81420 2720 ) FN ;
+    - ANTENNA_vccd1_tie_high_75_HI sky130_fd_sc_hd__diode_2 + PLACED ( 84640 2720 ) FN ;
+    - ANTENNA_vccd1_tie_high_76_HI sky130_fd_sc_hd__diode_2 + PLACED ( 90160 5440 ) S ;
+    - ANTENNA_vccd1_tie_high_77_HI sky130_fd_sc_hd__diode_2 + PLACED ( 85560 2720 ) FN ;
+    - ANTENNA_vccd1_tie_high_78_HI sky130_fd_sc_hd__diode_2 + PLACED ( 14720 2720 ) FN ;
+    - ANTENNA_vccd1_tie_high_79_HI sky130_fd_sc_hd__diode_2 + PLACED ( 96140 8160 ) FN ;
+    - ANTENNA_vccd1_tie_high_7_HI sky130_fd_sc_hd__diode_2 + PLACED ( 21620 2720 ) FN ;
+    - ANTENNA_vccd1_tie_high_80_HI sky130_fd_sc_hd__diode_2 + PLACED ( 92920 5440 ) S ;
+    - ANTENNA_vccd1_tie_high_81_HI sky130_fd_sc_hd__diode_2 + PLACED ( 86480 2720 ) FN ;
+    - ANTENNA_vccd1_tie_high_82_HI sky130_fd_sc_hd__diode_2 + PLACED ( 93840 5440 ) S ;
+    - ANTENNA_vccd1_tie_high_83_HI sky130_fd_sc_hd__diode_2 + PLACED ( 94760 5440 ) S ;
+    - ANTENNA_vccd1_tie_high_84_HI sky130_fd_sc_hd__diode_2 + PLACED ( 88320 2720 ) FN ;
+    - ANTENNA_vccd1_tie_high_85_HI sky130_fd_sc_hd__diode_2 + PLACED ( 95680 5440 ) S ;
+    - ANTENNA_vccd1_tie_high_86_HI sky130_fd_sc_hd__diode_2 + PLACED ( 90160 2720 ) FN ;
+    - ANTENNA_vccd1_tie_high_87_HI sky130_fd_sc_hd__diode_2 + PLACED ( 96600 5440 ) S ;
+    - ANTENNA_vccd1_tie_high_88_HI sky130_fd_sc_hd__diode_2 + PLACED ( 96140 2720 ) FN ;
+    - ANTENNA_vccd1_tie_high_89_HI sky130_fd_sc_hd__diode_2 + PLACED ( 13340 5440 ) S ;
+    - ANTENNA_vccd1_tie_high_8_HI sky130_fd_sc_hd__diode_2 + PLACED ( 22540 2720 ) FN ;
+    - ANTENNA_vccd1_tie_high_90_HI sky130_fd_sc_hd__diode_2 + PLACED ( 92920 2720 ) FN ;
+    - ANTENNA_vccd1_tie_high_91_HI sky130_fd_sc_hd__diode_2 + PLACED ( 16100 2720 ) FN ;
+    - ANTENNA_vccd1_tie_high_9_HI sky130_fd_sc_hd__diode_2 + PLACED ( 20700 5440 ) S ;
+    - FILLER_0_101 sky130_fd_sc_hd__decap_3 + SOURCE DIST + PLACED ( 47840 2720 ) N ;
+    - FILLER_0_104 sky130_fd_sc_hd__decap_3 + SOURCE DIST + PLACED ( 49220 2720 ) N ;
+    - FILLER_0_107 sky130_fd_sc_hd__decap_3 + SOURCE DIST + PLACED ( 50600 2720 ) N ;
+    - FILLER_0_110 sky130_fd_sc_hd__fill_2 + SOURCE DIST + PLACED ( 51980 2720 ) N ;
+    - FILLER_0_113 sky130_fd_sc_hd__decap_3 + SOURCE DIST + PLACED ( 53360 2720 ) N ;
+    - FILLER_0_116 sky130_fd_sc_hd__decap_3 + SOURCE DIST + PLACED ( 54740 2720 ) N ;
+    - FILLER_0_119 sky130_fd_sc_hd__decap_3 + SOURCE DIST + PLACED ( 56120 2720 ) N ;
+    - FILLER_0_12 sky130_fd_sc_hd__decap_3 + SOURCE DIST + PLACED ( 6900 2720 ) N ;
+    - FILLER_0_122 sky130_fd_sc_hd__decap_3 + SOURCE DIST + PLACED ( 57500 2720 ) N ;
+    - FILLER_0_125 sky130_fd_sc_hd__fill_2 + SOURCE DIST + PLACED ( 58880 2720 ) N ;
+    - FILLER_0_129 sky130_fd_sc_hd__fill_2 + SOURCE DIST + PLACED ( 60720 2720 ) N ;
+    - FILLER_0_135 sky130_fd_sc_hd__fill_2 + SOURCE DIST + PLACED ( 63480 2720 ) N ;
+    - FILLER_0_139 sky130_fd_sc_hd__fill_1 + SOURCE DIST + PLACED ( 65320 2720 ) N ;
+    - FILLER_0_143 sky130_fd_sc_hd__fill_1 + SOURCE DIST + PLACED ( 67160 2720 ) N ;
+    - FILLER_0_148 sky130_fd_sc_hd__fill_2 + SOURCE DIST + PLACED ( 69460 2720 ) N ;
+    - FILLER_0_15 sky130_fd_sc_hd__decap_3 + SOURCE DIST + PLACED ( 8280 2720 ) N ;
+    - FILLER_0_152 sky130_fd_sc_hd__fill_1 + SOURCE DIST + PLACED ( 71300 2720 ) N ;
+    - FILLER_0_161 sky130_fd_sc_hd__fill_1 + SOURCE DIST + PLACED ( 75440 2720 ) N ;
+    - FILLER_0_169 sky130_fd_sc_hd__decap_3 + SOURCE DIST + PLACED ( 79120 2720 ) N ;
+    - FILLER_0_176 sky130_fd_sc_hd__fill_2 + SOURCE DIST + PLACED ( 82340 2720 ) N ;
+    - FILLER_0_18 sky130_fd_sc_hd__decap_3 + SOURCE DIST + PLACED ( 9660 2720 ) N ;
+    - FILLER_0_180 sky130_fd_sc_hd__fill_1 + SOURCE DIST + PLACED ( 84180 2720 ) N ;
+    - FILLER_0_187 sky130_fd_sc_hd__fill_2 + SOURCE DIST + PLACED ( 87400 2720 ) N ;
+    - FILLER_0_191 sky130_fd_sc_hd__fill_2 + SOURCE DIST + PLACED ( 89240 2720 ) N ;
+    - FILLER_0_195 sky130_fd_sc_hd__fill_1 + SOURCE DIST + PLACED ( 91080 2720 ) N ;
+    - FILLER_0_197 sky130_fd_sc_hd__fill_2 + SOURCE DIST + PLACED ( 92000 2720 ) N ;
+    - FILLER_0_201 sky130_fd_sc_hd__decap_3 + SOURCE DIST + PLACED ( 93840 2720 ) N ;
+    - FILLER_0_204 sky130_fd_sc_hd__fill_2 + SOURCE DIST + PLACED ( 95220 2720 ) N ;
+    - FILLER_0_208 sky130_fd_sc_hd__fill_1 + SOURCE DIST + PLACED ( 97060 2720 ) N ;
+    - FILLER_0_21 sky130_fd_sc_hd__decap_3 + SOURCE DIST + PLACED ( 11040 2720 ) N ;
+    - FILLER_0_3 sky130_fd_sc_hd__decap_3 + SOURCE DIST + PLACED ( 2760 2720 ) N ;
+    - FILLER_0_31 sky130_fd_sc_hd__fill_1 + SOURCE DIST + PLACED ( 15640 2720 ) N ;
+    - FILLER_0_34 sky130_fd_sc_hd__fill_1 + SOURCE DIST + PLACED ( 17020 2720 ) N ;
+    - FILLER_0_37 sky130_fd_sc_hd__fill_1 + SOURCE DIST + PLACED ( 18400 2720 ) N ;
+    - FILLER_0_52 sky130_fd_sc_hd__fill_1 + SOURCE DIST + PLACED ( 25300 2720 ) N ;
+    - FILLER_0_55 sky130_fd_sc_hd__fill_1 + SOURCE DIST + PLACED ( 26680 2720 ) N ;
+    - FILLER_0_59 sky130_fd_sc_hd__fill_1 + SOURCE DIST + PLACED ( 28520 2720 ) N ;
+    - FILLER_0_6 sky130_fd_sc_hd__decap_3 + SOURCE DIST + PLACED ( 4140 2720 ) N ;
+    - FILLER_0_62 sky130_fd_sc_hd__fill_1 + SOURCE DIST + PLACED ( 29900 2720 ) N ;
+    - FILLER_0_65 sky130_fd_sc_hd__fill_1 + SOURCE DIST + PLACED ( 31280 2720 ) N ;
+    - FILLER_0_68 sky130_fd_sc_hd__fill_1 + SOURCE DIST + PLACED ( 32660 2720 ) N ;
+    - FILLER_0_71 sky130_fd_sc_hd__fill_1 + SOURCE DIST + PLACED ( 34040 2720 ) N ;
+    - FILLER_0_74 sky130_fd_sc_hd__fill_1 + SOURCE DIST + PLACED ( 35420 2720 ) N ;
+    - FILLER_0_77 sky130_fd_sc_hd__fill_1 + SOURCE DIST + PLACED ( 36800 2720 ) N ;
+    - FILLER_0_80 sky130_fd_sc_hd__fill_1 + SOURCE DIST + PLACED ( 38180 2720 ) N ;
+    - FILLER_0_83 sky130_fd_sc_hd__fill_1 + SOURCE DIST + PLACED ( 39560 2720 ) N ;
+    - FILLER_0_89 sky130_fd_sc_hd__fill_1 + SOURCE DIST + PLACED ( 42320 2720 ) N ;
+    - FILLER_0_9 sky130_fd_sc_hd__decap_3 + SOURCE DIST + PLACED ( 5520 2720 ) N ;
+    - FILLER_0_92 sky130_fd_sc_hd__fill_1 + SOURCE DIST + PLACED ( 43700 2720 ) N ;
+    - FILLER_0_97 sky130_fd_sc_hd__fill_2 + SOURCE DIST + PLACED ( 46000 2720 ) N ;
+    - FILLER_1_101 sky130_fd_sc_hd__fill_1 + SOURCE DIST + PLACED ( 47840 5440 ) FS ;
+    - FILLER_1_104 sky130_fd_sc_hd__fill_1 + SOURCE DIST + PLACED ( 49220 5440 ) FS ;
+    - FILLER_1_107 sky130_fd_sc_hd__fill_1 + SOURCE DIST + PLACED ( 50600 5440 ) FS ;
+    - FILLER_1_110 sky130_fd_sc_hd__fill_2 + SOURCE DIST + PLACED ( 51980 5440 ) FS ;
+    - FILLER_1_115 sky130_fd_sc_hd__fill_1 + SOURCE DIST + PLACED ( 54280 5440 ) FS ;
+    - FILLER_1_118 sky130_fd_sc_hd__fill_1 + SOURCE DIST + PLACED ( 55660 5440 ) FS ;
+    - FILLER_1_12 sky130_fd_sc_hd__fill_2 + SOURCE DIST + PLACED ( 6900 5440 ) FS ;
+    - FILLER_1_121 sky130_fd_sc_hd__fill_1 + SOURCE DIST + PLACED ( 57040 5440 ) FS ;
+    - FILLER_1_129 sky130_fd_sc_hd__fill_1 + SOURCE DIST + PLACED ( 60720 5440 ) FS ;
+    - FILLER_1_133 sky130_fd_sc_hd__fill_1 + SOURCE DIST + PLACED ( 62560 5440 ) FS ;
+    - FILLER_1_139 sky130_fd_sc_hd__fill_1 + SOURCE DIST + PLACED ( 65320 5440 ) FS ;
+    - FILLER_1_145 sky130_fd_sc_hd__fill_1 + SOURCE DIST + PLACED ( 68080 5440 ) FS ;
+    - FILLER_1_151 sky130_fd_sc_hd__fill_1 + SOURCE DIST + PLACED ( 70840 5440 ) FS ;
+    - FILLER_1_157 sky130_fd_sc_hd__fill_1 + SOURCE DIST + PLACED ( 73600 5440 ) FS ;
+    - FILLER_1_161 sky130_fd_sc_hd__fill_1 + SOURCE DIST + PLACED ( 75440 5440 ) FS ;
+    - FILLER_1_167 sky130_fd_sc_hd__fill_1 + SOURCE DIST + PLACED ( 78200 5440 ) FS ;
+    - FILLER_1_179 sky130_fd_sc_hd__fill_1 + SOURCE DIST + PLACED ( 83720 5440 ) FS ;
+    - FILLER_1_185 sky130_fd_sc_hd__fill_1 + SOURCE DIST + PLACED ( 86480 5440 ) FS ;
+    - FILLER_1_189 sky130_fd_sc_hd__fill_1 + SOURCE DIST + PLACED ( 88320 5440 ) FS ;
+    - FILLER_1_19 sky130_fd_sc_hd__fill_1 + SOURCE DIST + PLACED ( 10120 5440 ) FS ;
+    - FILLER_1_195 sky130_fd_sc_hd__fill_1 + SOURCE DIST + PLACED ( 91080 5440 ) FS ;
+    - FILLER_1_25 sky130_fd_sc_hd__fill_1 + SOURCE DIST + PLACED ( 12880 5440 ) FS ;
+    - FILLER_1_3 sky130_fd_sc_hd__decap_3 + SOURCE DIST + PLACED ( 2760 5440 ) FS ;
+    - FILLER_1_31 sky130_fd_sc_hd__fill_1 + SOURCE DIST + PLACED ( 15640 5440 ) FS ;
+    - FILLER_1_35 sky130_fd_sc_hd__fill_1 + SOURCE DIST + PLACED ( 17480 5440 ) FS ;
+    - FILLER_1_41 sky130_fd_sc_hd__fill_1 + SOURCE DIST + PLACED ( 20240 5440 ) FS ;
+    - FILLER_1_47 sky130_fd_sc_hd__fill_1 + SOURCE DIST + PLACED ( 23000 5440 ) FS ;
+    - FILLER_1_51 sky130_fd_sc_hd__fill_1 + SOURCE DIST + PLACED ( 24840 5440 ) FS ;
+    - FILLER_1_55 sky130_fd_sc_hd__fill_1 + SOURCE DIST + PLACED ( 26680 5440 ) FS ;
+    - FILLER_1_57 sky130_fd_sc_hd__fill_1 + SOURCE DIST + PLACED ( 27600 5440 ) FS ;
+    - FILLER_1_6 sky130_fd_sc_hd__decap_3 + SOURCE DIST + PLACED ( 4140 5440 ) FS ;
+    - FILLER_1_63 sky130_fd_sc_hd__fill_1 + SOURCE DIST + PLACED ( 30360 5440 ) FS ;
+    - FILLER_1_69 sky130_fd_sc_hd__fill_1 + SOURCE DIST + PLACED ( 33120 5440 ) FS ;
+    - FILLER_1_75 sky130_fd_sc_hd__fill_1 + SOURCE DIST + PLACED ( 35880 5440 ) FS ;
+    - FILLER_1_81 sky130_fd_sc_hd__fill_1 + SOURCE DIST + PLACED ( 38640 5440 ) FS ;
+    - FILLER_1_85 sky130_fd_sc_hd__fill_1 + SOURCE DIST + PLACED ( 40480 5440 ) FS ;
+    - FILLER_1_89 sky130_fd_sc_hd__fill_1 + SOURCE DIST + PLACED ( 42320 5440 ) FS ;
+    - FILLER_1_9 sky130_fd_sc_hd__decap_3 + SOURCE DIST + PLACED ( 5520 5440 ) FS ;
+    - FILLER_1_93 sky130_fd_sc_hd__fill_1 + SOURCE DIST + PLACED ( 44160 5440 ) FS ;
+    - FILLER_2_111 sky130_fd_sc_hd__fill_1 + SOURCE DIST + PLACED ( 52440 8160 ) N ;
+    - FILLER_2_208 sky130_fd_sc_hd__fill_1 + SOURCE DIST + PLACED ( 97060 8160 ) N ;
+    - FILLER_2_3 sky130_fd_sc_hd__decap_3 + SOURCE DIST + PLACED ( 2760 8160 ) N ;
+    - FILLER_2_6 sky130_fd_sc_hd__fill_1 + SOURCE DIST + PLACED ( 4140 8160 ) N ;
+    - PHY_EDGE_ROW_0_Left_3 sky130_fd_sc_hd__decap_3 + SOURCE DIST + FIXED ( 1380 2720 ) N ;
+    - PHY_EDGE_ROW_0_Right_0 sky130_fd_sc_hd__decap_3 + SOURCE DIST + FIXED ( 97520 2720 ) FN ;
+    - PHY_EDGE_ROW_1_Left_4 sky130_fd_sc_hd__decap_3 + SOURCE DIST + FIXED ( 1380 5440 ) FS ;
+    - PHY_EDGE_ROW_1_Right_1 sky130_fd_sc_hd__decap_3 + SOURCE DIST + FIXED ( 97520 5440 ) S ;
+    - PHY_EDGE_ROW_2_Left_5 sky130_fd_sc_hd__decap_3 + SOURCE DIST + FIXED ( 1380 8160 ) N ;
+    - PHY_EDGE_ROW_2_Right_2 sky130_fd_sc_hd__decap_3 + SOURCE DIST + FIXED ( 97520 8160 ) FN ;
+    - TAP_TAPCELL_ROW_0_10 sky130_fd_sc_hd__tapvpwrvgnd_1 + SOURCE DIST + FIXED ( 65780 2720 ) N ;
+    - TAP_TAPCELL_ROW_0_11 sky130_fd_sc_hd__tapvpwrvgnd_1 + SOURCE DIST + FIXED ( 78660 2720 ) N ;
+    - TAP_TAPCELL_ROW_0_12 sky130_fd_sc_hd__tapvpwrvgnd_1 + SOURCE DIST + FIXED ( 91540 2720 ) N ;
+    - TAP_TAPCELL_ROW_0_6 sky130_fd_sc_hd__tapvpwrvgnd_1 + SOURCE DIST + FIXED ( 14260 2720 ) N ;
+    - TAP_TAPCELL_ROW_0_7 sky130_fd_sc_hd__tapvpwrvgnd_1 + SOURCE DIST + FIXED ( 27140 2720 ) N ;
+    - TAP_TAPCELL_ROW_0_8 sky130_fd_sc_hd__tapvpwrvgnd_1 + SOURCE DIST + FIXED ( 40020 2720 ) N ;
+    - TAP_TAPCELL_ROW_0_9 sky130_fd_sc_hd__tapvpwrvgnd_1 + SOURCE DIST + FIXED ( 52900 2720 ) N ;
+    - TAP_TAPCELL_ROW_1_13 sky130_fd_sc_hd__tapvpwrvgnd_1 + SOURCE DIST + FIXED ( 27140 5440 ) FS ;
+    - TAP_TAPCELL_ROW_1_14 sky130_fd_sc_hd__tapvpwrvgnd_1 + SOURCE DIST + FIXED ( 52900 5440 ) FS ;
+    - TAP_TAPCELL_ROW_1_15 sky130_fd_sc_hd__tapvpwrvgnd_1 + SOURCE DIST + FIXED ( 78660 5440 ) FS ;
+    - TAP_TAPCELL_ROW_2_16 sky130_fd_sc_hd__tapvpwrvgnd_1 + SOURCE DIST + FIXED ( 14260 8160 ) N ;
+    - TAP_TAPCELL_ROW_2_17 sky130_fd_sc_hd__tapvpwrvgnd_1 + SOURCE DIST + FIXED ( 27140 8160 ) N ;
+    - TAP_TAPCELL_ROW_2_18 sky130_fd_sc_hd__tapvpwrvgnd_1 + SOURCE DIST + FIXED ( 40020 8160 ) N ;
+    - TAP_TAPCELL_ROW_2_19 sky130_fd_sc_hd__tapvpwrvgnd_1 + SOURCE DIST + FIXED ( 52900 8160 ) N ;
+    - TAP_TAPCELL_ROW_2_20 sky130_fd_sc_hd__tapvpwrvgnd_1 + SOURCE DIST + FIXED ( 65780 8160 ) N ;
+    - TAP_TAPCELL_ROW_2_21 sky130_fd_sc_hd__tapvpwrvgnd_1 + SOURCE DIST + FIXED ( 78660 8160 ) N ;
+    - TAP_TAPCELL_ROW_2_22 sky130_fd_sc_hd__tapvpwrvgnd_1 + SOURCE DIST + FIXED ( 91540 8160 ) N ;
+    - vccd1_tie_high_1 sky130_fd_sc_hd__conb_1 + SOURCE TIMING + PLACED ( 8740 5440 ) FS ;
+    - vccd1_tie_high_10 sky130_fd_sc_hd__conb_1 + SOURCE TIMING + PLACED ( 25300 5440 ) FS ;
+    - vccd1_tie_high_11 sky130_fd_sc_hd__conb_1 + SOURCE TIMING + PLACED ( 23000 8160 ) FN ;
+    - vccd1_tie_high_12 sky130_fd_sc_hd__conb_1 + SOURCE TIMING + PLACED ( 7360 8160 ) FN ;
+    - vccd1_tie_high_13 sky130_fd_sc_hd__conb_1 + SOURCE TIMING + PLACED ( 24380 8160 ) FN ;
+    - vccd1_tie_high_14 sky130_fd_sc_hd__conb_1 + SOURCE TIMING + PLACED ( 25760 8160 ) FN ;
+    - vccd1_tie_high_15 sky130_fd_sc_hd__conb_1 + SOURCE TIMING + PLACED ( 28980 5440 ) FS ;
+    - vccd1_tie_high_16 sky130_fd_sc_hd__conb_1 + SOURCE TIMING + PLACED ( 27600 8160 ) FN ;
+    - vccd1_tie_high_17 sky130_fd_sc_hd__conb_1 + SOURCE TIMING + PLACED ( 28980 8160 ) N ;
+    - vccd1_tie_high_18 sky130_fd_sc_hd__conb_1 + SOURCE TIMING + PLACED ( 31740 5440 ) FS ;
+    - vccd1_tie_high_19 sky130_fd_sc_hd__conb_1 + SOURCE TIMING + PLACED ( 30360 8160 ) FN ;
+    - vccd1_tie_high_2 sky130_fd_sc_hd__conb_1 + SOURCE TIMING + PLACED ( 16100 8160 ) FN ;
+    - vccd1_tie_high_20 sky130_fd_sc_hd__conb_1 + SOURCE TIMING + PLACED ( 31740 8160 ) N ;
+    - vccd1_tie_high_21 sky130_fd_sc_hd__conb_1 + SOURCE TIMING + PLACED ( 34500 5440 ) FS ;
+    - vccd1_tie_high_22 sky130_fd_sc_hd__conb_1 + SOURCE TIMING + PLACED ( 33120 8160 ) FN ;
+    - vccd1_tie_high_23 sky130_fd_sc_hd__conb_1 + SOURCE TIMING + PLACED ( 8740 8160 ) FN ;
+    - vccd1_tie_high_24 sky130_fd_sc_hd__conb_1 + SOURCE TIMING + PLACED ( 34500 8160 ) N ;
+    - vccd1_tie_high_25 sky130_fd_sc_hd__conb_1 + SOURCE TIMING + PLACED ( 37260 5440 ) FS ;
+    - vccd1_tie_high_26 sky130_fd_sc_hd__conb_1 + SOURCE TIMING + PLACED ( 35880 8160 ) FN ;
+    - vccd1_tie_high_27 sky130_fd_sc_hd__conb_1 + SOURCE TIMING + PLACED ( 39100 5440 ) FS ;
+    - vccd1_tie_high_28 sky130_fd_sc_hd__conb_1 + SOURCE TIMING + PLACED ( 37260 8160 ) N ;
+    - vccd1_tie_high_29 sky130_fd_sc_hd__conb_1 + SOURCE TIMING + PLACED ( 40940 5440 ) FS ;
+    - vccd1_tie_high_3 sky130_fd_sc_hd__conb_1 + SOURCE TIMING + PLACED ( 18860 5440 ) FS ;
+    - vccd1_tie_high_30 sky130_fd_sc_hd__conb_1 + SOURCE TIMING + PLACED ( 38640 8160 ) FN ;
+    - vccd1_tie_high_31 sky130_fd_sc_hd__conb_1 + SOURCE TIMING + PLACED ( 42780 5440 ) FS ;
+    - vccd1_tie_high_32 sky130_fd_sc_hd__conb_1 + SOURCE TIMING + PLACED ( 41400 8160 ) FN ;
+    - vccd1_tie_high_33 sky130_fd_sc_hd__conb_1 + SOURCE TIMING + PLACED ( 42780 8160 ) FN ;
+    - vccd1_tie_high_34 sky130_fd_sc_hd__conb_1 + SOURCE TIMING + PLACED ( 11500 5440 ) FS ;
+    - vccd1_tie_high_35 sky130_fd_sc_hd__conb_1 + SOURCE TIMING + PLACED ( 45540 5440 ) FS ;
+    - vccd1_tie_high_36 sky130_fd_sc_hd__conb_1 + SOURCE TIMING + PLACED ( 44160 8160 ) FN ;
+    - vccd1_tie_high_37 sky130_fd_sc_hd__conb_1 + SOURCE TIMING + PLACED ( 45540 8160 ) FN ;
+    - vccd1_tie_high_38 sky130_fd_sc_hd__conb_1 + SOURCE TIMING + PLACED ( 46920 8160 ) FN ;
+    - vccd1_tie_high_39 sky130_fd_sc_hd__conb_1 + SOURCE TIMING + PLACED ( 48300 8160 ) FN ;
+    - vccd1_tie_high_4 sky130_fd_sc_hd__conb_1 + SOURCE TIMING + PLACED ( 17480 8160 ) FN ;
+    - vccd1_tie_high_40 sky130_fd_sc_hd__conb_1 + SOURCE TIMING + PLACED ( 49680 8160 ) N ;
+    - vccd1_tie_high_41 sky130_fd_sc_hd__conb_1 + SOURCE TIMING + PLACED ( 51060 8160 ) N ;
+    - vccd1_tie_high_42 sky130_fd_sc_hd__conb_1 + SOURCE TIMING + PLACED ( 53360 8160 ) N ;
+    - vccd1_tie_high_43 sky130_fd_sc_hd__conb_1 + SOURCE TIMING + PLACED ( 54740 8160 ) N ;
+    - vccd1_tie_high_44 sky130_fd_sc_hd__conb_1 + SOURCE TIMING + PLACED ( 56120 8160 ) N ;
+    - vccd1_tie_high_45 sky130_fd_sc_hd__conb_1 + SOURCE TIMING + PLACED ( 10120 8160 ) FN ;
+    - vccd1_tie_high_46 sky130_fd_sc_hd__conb_1 + SOURCE TIMING + PLACED ( 57500 8160 ) N ;
+    - vccd1_tie_high_47 sky130_fd_sc_hd__conb_1 + SOURCE TIMING + PLACED ( 58880 8160 ) N ;
+    - vccd1_tie_high_48 sky130_fd_sc_hd__conb_1 + SOURCE TIMING + PLACED ( 60260 8160 ) N ;
+    - vccd1_tie_high_49 sky130_fd_sc_hd__conb_1 + SOURCE TIMING + PLACED ( 61640 8160 ) N ;
+    - vccd1_tie_high_5 sky130_fd_sc_hd__conb_1 + SOURCE TIMING + PLACED ( 18860 8160 ) N ;
+    - vccd1_tie_high_50 sky130_fd_sc_hd__conb_1 + SOURCE TIMING + PLACED ( 58420 5440 ) FS ;
+    - vccd1_tie_high_51 sky130_fd_sc_hd__conb_1 + SOURCE TIMING + PLACED ( 63020 8160 ) N ;
+    - vccd1_tie_high_52 sky130_fd_sc_hd__conb_1 + SOURCE TIMING + PLACED ( 64400 8160 ) N ;
+    - vccd1_tie_high_53 sky130_fd_sc_hd__conb_1 + SOURCE TIMING + PLACED ( 61180 5440 ) FS ;
+    - vccd1_tie_high_54 sky130_fd_sc_hd__conb_1 + SOURCE TIMING + PLACED ( 66240 8160 ) N ;
+    - vccd1_tie_high_55 sky130_fd_sc_hd__conb_1 + SOURCE TIMING + PLACED ( 63020 5440 ) FS ;
+    - vccd1_tie_high_56 sky130_fd_sc_hd__conb_1 + SOURCE TIMING + PLACED ( 11500 8160 ) N ;
+    - vccd1_tie_high_57 sky130_fd_sc_hd__conb_1 + SOURCE TIMING + PLACED ( 67620 8160 ) N ;
+    - vccd1_tie_high_58 sky130_fd_sc_hd__conb_1 + SOURCE TIMING + PLACED ( 69000 8160 ) N ;
+    - vccd1_tie_high_59 sky130_fd_sc_hd__conb_1 + SOURCE TIMING + PLACED ( 65780 5440 ) FS ;
+    - vccd1_tie_high_6 sky130_fd_sc_hd__conb_1 + SOURCE TIMING + PLACED ( 21620 5440 ) FS ;
+    - vccd1_tie_high_60 sky130_fd_sc_hd__conb_1 + SOURCE TIMING + PLACED ( 70380 8160 ) N ;
+    - vccd1_tie_high_61 sky130_fd_sc_hd__conb_1 + SOURCE TIMING + PLACED ( 71760 8160 ) N ;
+    - vccd1_tie_high_62 sky130_fd_sc_hd__conb_1 + SOURCE TIMING + PLACED ( 68540 5440 ) FS ;
+    - vccd1_tie_high_63 sky130_fd_sc_hd__conb_1 + SOURCE TIMING + PLACED ( 73140 8160 ) N ;
+    - vccd1_tie_high_64 sky130_fd_sc_hd__conb_1 + SOURCE TIMING + PLACED ( 74520 8160 ) N ;
+    - vccd1_tie_high_65 sky130_fd_sc_hd__conb_1 + SOURCE TIMING + PLACED ( 71300 5440 ) FS ;
+    - vccd1_tie_high_66 sky130_fd_sc_hd__conb_1 + SOURCE TIMING + PLACED ( 75900 8160 ) N ;
+    - vccd1_tie_high_67 sky130_fd_sc_hd__conb_1 + SOURCE TIMING + PLACED ( 14260 5440 ) FS ;
+    - vccd1_tie_high_68 sky130_fd_sc_hd__conb_1 + SOURCE TIMING + PLACED ( 77280 8160 ) N ;
+    - vccd1_tie_high_69 sky130_fd_sc_hd__conb_1 + SOURCE TIMING + PLACED ( 74060 5440 ) FS ;
+    - vccd1_tie_high_7 sky130_fd_sc_hd__conb_1 + SOURCE TIMING + PLACED ( 20240 8160 ) FN ;
+    - vccd1_tie_high_70 sky130_fd_sc_hd__conb_1 + SOURCE TIMING + PLACED ( 79120 8160 ) N ;
+    - vccd1_tie_high_71 sky130_fd_sc_hd__conb_1 + SOURCE TIMING + PLACED ( 75900 5440 ) FS ;
+    - vccd1_tie_high_72 sky130_fd_sc_hd__conb_1 + SOURCE TIMING + PLACED ( 80500 8160 ) N ;
+    - vccd1_tie_high_73 sky130_fd_sc_hd__conb_1 + SOURCE TIMING + PLACED ( 81880 8160 ) N ;
+    - vccd1_tie_high_74 sky130_fd_sc_hd__conb_1 + SOURCE TIMING + PLACED ( 79120 5440 ) FS ;
+    - vccd1_tie_high_75 sky130_fd_sc_hd__conb_1 + SOURCE TIMING + PLACED ( 83260 8160 ) N ;
+    - vccd1_tie_high_76 sky130_fd_sc_hd__conb_1 + SOURCE TIMING + PLACED ( 84640 8160 ) N ;
+    - vccd1_tie_high_77 sky130_fd_sc_hd__conb_1 + SOURCE TIMING + PLACED ( 81420 5440 ) FS ;
+    - vccd1_tie_high_78 sky130_fd_sc_hd__conb_1 + SOURCE TIMING + PLACED ( 12880 8160 ) FN ;
+    - vccd1_tie_high_79 sky130_fd_sc_hd__conb_1 + SOURCE TIMING + PLACED ( 86020 8160 ) FN ;
+    - vccd1_tie_high_8 sky130_fd_sc_hd__conb_1 + SOURCE TIMING + PLACED ( 23460 5440 ) FS ;
+    - vccd1_tie_high_80 sky130_fd_sc_hd__conb_1 + SOURCE TIMING + PLACED ( 87400 8160 ) N ;
+    - vccd1_tie_high_81 sky130_fd_sc_hd__conb_1 + SOURCE TIMING + PLACED ( 84180 5440 ) FS ;
+    - vccd1_tie_high_82 sky130_fd_sc_hd__conb_1 + SOURCE TIMING + PLACED ( 88780 8160 ) N ;
+    - vccd1_tie_high_83 sky130_fd_sc_hd__conb_1 + SOURCE TIMING + PLACED ( 90160 8160 ) N ;
+    - vccd1_tie_high_84 sky130_fd_sc_hd__conb_1 + SOURCE TIMING + PLACED ( 86940 5440 ) FS ;
+    - vccd1_tie_high_85 sky130_fd_sc_hd__conb_1 + SOURCE TIMING + PLACED ( 92000 8160 ) N ;
+    - vccd1_tie_high_86 sky130_fd_sc_hd__conb_1 + SOURCE TIMING + PLACED ( 88780 5440 ) FS ;
+    - vccd1_tie_high_87 sky130_fd_sc_hd__conb_1 + SOURCE TIMING + PLACED ( 93380 8160 ) N ;
+    - vccd1_tie_high_88 sky130_fd_sc_hd__conb_1 + SOURCE TIMING + PLACED ( 94760 8160 ) N ;
+    - vccd1_tie_high_89 sky130_fd_sc_hd__conb_1 + SOURCE TIMING + PLACED ( 16100 5440 ) FS ;
+    - vccd1_tie_high_9 sky130_fd_sc_hd__conb_1 + SOURCE TIMING + PLACED ( 21620 8160 ) N ;
+    - vccd1_tie_high_90 sky130_fd_sc_hd__conb_1 + SOURCE TIMING + PLACED ( 91540 5440 ) FS ;
+    - vccd1_tie_high_91 sky130_fd_sc_hd__conb_1 + SOURCE TIMING + PLACED ( 14720 8160 ) FN ;
+END COMPONENTS
+PINS 93 ;
+    - HI[0] + NET net1 + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -1000 ) ( 140 1000 )
+        + PLACED ( 8510 16000 ) N ;
+    - HI[10] + NET net2 + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -1000 ) ( 140 1000 )
+        + PLACED ( 17710 16000 ) N ;
+    - HI[11] + NET net3 + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -1000 ) ( 140 1000 )
+        + PLACED ( 18630 16000 ) N ;
+    - HI[12] + NET net4 + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -1000 ) ( 140 1000 )
+        + PLACED ( 19550 16000 ) N ;
+    - HI[13] + NET net5 + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -1000 ) ( 140 1000 )
+        + PLACED ( 20470 16000 ) N ;
+    - HI[14] + NET net6 + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -1000 ) ( 140 1000 )
+        + PLACED ( 21390 16000 ) N ;
+    - HI[15] + NET net7 + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -1000 ) ( 140 1000 )
+        + PLACED ( 22310 16000 ) N ;
+    - HI[16] + NET net8 + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -1000 ) ( 140 1000 )
+        + PLACED ( 23230 16000 ) N ;
+    - HI[17] + NET net9 + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -1000 ) ( 140 1000 )
+        + PLACED ( 24150 16000 ) N ;
+    - HI[18] + NET net10 + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -1000 ) ( 140 1000 )
+        + PLACED ( 25070 16000 ) N ;
+    - HI[19] + NET net11 + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -1000 ) ( 140 1000 )
+        + PLACED ( 25990 16000 ) N ;
+    - HI[1] + NET net12 + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -1000 ) ( 140 1000 )
+        + PLACED ( 9430 16000 ) N ;
+    - HI[20] + NET net13 + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -1000 ) ( 140 1000 )
+        + PLACED ( 26910 16000 ) N ;
+    - HI[21] + NET net14 + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -1000 ) ( 140 1000 )
+        + PLACED ( 27830 16000 ) N ;
+    - HI[22] + NET net15 + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -1000 ) ( 140 1000 )
+        + PLACED ( 28750 16000 ) N ;
+    - HI[23] + NET net16 + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -1000 ) ( 140 1000 )
+        + PLACED ( 29670 16000 ) N ;
+    - HI[24] + NET net17 + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -1000 ) ( 140 1000 )
+        + PLACED ( 30590 16000 ) N ;
+    - HI[25] + NET net18 + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -1000 ) ( 140 1000 )
+        + PLACED ( 31510 16000 ) N ;
+    - HI[26] + NET net19 + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -1000 ) ( 140 1000 )
+        + PLACED ( 32430 16000 ) N ;
+    - HI[27] + NET net20 + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -1000 ) ( 140 1000 )
+        + PLACED ( 33350 16000 ) N ;
+    - HI[28] + NET net21 + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -1000 ) ( 140 1000 )
+        + PLACED ( 34270 16000 ) N ;
+    - HI[29] + NET net22 + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -1000 ) ( 140 1000 )
+        + PLACED ( 35190 16000 ) N ;
+    - HI[2] + NET net23 + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -1000 ) ( 140 1000 )
+        + PLACED ( 10350 16000 ) N ;
+    - HI[30] + NET net24 + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -1000 ) ( 140 1000 )
+        + PLACED ( 36110 16000 ) N ;
+    - HI[31] + NET net25 + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -1000 ) ( 140 1000 )
+        + PLACED ( 37030 16000 ) N ;
+    - HI[32] + NET net26 + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -1000 ) ( 140 1000 )
+        + PLACED ( 37950 16000 ) N ;
+    - HI[33] + NET net27 + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -1000 ) ( 140 1000 )
+        + PLACED ( 38870 16000 ) N ;
+    - HI[34] + NET net28 + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -1000 ) ( 140 1000 )
+        + PLACED ( 39790 16000 ) N ;
+    - HI[35] + NET net29 + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -1000 ) ( 140 1000 )
+        + PLACED ( 40710 16000 ) N ;
+    - HI[36] + NET net30 + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -1000 ) ( 140 1000 )
+        + PLACED ( 41630 16000 ) N ;
+    - HI[37] + NET net31 + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -1000 ) ( 140 1000 )
+        + PLACED ( 42550 16000 ) N ;
+    - HI[38] + NET net32 + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -1000 ) ( 140 1000 )
+        + PLACED ( 43470 16000 ) N ;
+    - HI[39] + NET net33 + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -1000 ) ( 140 1000 )
+        + PLACED ( 44390 16000 ) N ;
+    - HI[3] + NET net34 + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -1000 ) ( 140 1000 )
+        + PLACED ( 11270 16000 ) N ;
+    - HI[40] + NET net35 + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -1000 ) ( 140 1000 )
+        + PLACED ( 45310 16000 ) N ;
+    - HI[41] + NET net36 + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -1000 ) ( 140 1000 )
+        + PLACED ( 46230 16000 ) N ;
+    - HI[42] + NET net37 + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -1000 ) ( 140 1000 )
+        + PLACED ( 47150 16000 ) N ;
+    - HI[43] + NET net38 + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -1000 ) ( 140 1000 )
+        + PLACED ( 48070 16000 ) N ;
+    - HI[44] + NET net39 + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -1000 ) ( 140 1000 )
+        + PLACED ( 48990 16000 ) N ;
+    - HI[45] + NET net40 + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -1000 ) ( 140 1000 )
+        + PLACED ( 49910 16000 ) N ;
+    - HI[46] + NET net41 + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -1000 ) ( 140 1000 )
+        + PLACED ( 50830 16000 ) N ;
+    - HI[47] + NET net42 + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -1000 ) ( 140 1000 )
+        + PLACED ( 51750 16000 ) N ;
+    - HI[48] + NET net43 + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -1000 ) ( 140 1000 )
+        + PLACED ( 52670 16000 ) N ;
+    - HI[49] + NET net44 + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -1000 ) ( 140 1000 )
+        + PLACED ( 53590 16000 ) N ;
+    - HI[4] + NET net45 + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -1000 ) ( 140 1000 )
+        + PLACED ( 12190 16000 ) N ;
+    - HI[50] + NET net46 + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -1000 ) ( 140 1000 )
+        + PLACED ( 54510 16000 ) N ;
+    - HI[51] + NET net47 + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -1000 ) ( 140 1000 )
+        + PLACED ( 55430 16000 ) N ;
+    - HI[52] + NET net48 + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -1000 ) ( 140 1000 )
+        + PLACED ( 56350 16000 ) N ;
+    - HI[53] + NET net49 + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -1000 ) ( 140 1000 )
+        + PLACED ( 57270 16000 ) N ;
+    - HI[54] + NET net50 + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -1000 ) ( 140 1000 )
+        + PLACED ( 58190 16000 ) N ;
+    - HI[55] + NET net51 + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -1000 ) ( 140 1000 )
+        + PLACED ( 59110 16000 ) N ;
+    - HI[56] + NET net52 + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -1000 ) ( 140 1000 )
+        + PLACED ( 60030 16000 ) N ;
+    - HI[57] + NET net53 + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -1000 ) ( 140 1000 )
+        + PLACED ( 60950 16000 ) N ;
+    - HI[58] + NET net54 + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -1000 ) ( 140 1000 )
+        + PLACED ( 61870 16000 ) N ;
+    - HI[59] + NET net55 + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -1000 ) ( 140 1000 )
+        + PLACED ( 62790 16000 ) N ;
+    - HI[5] + NET net56 + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -1000 ) ( 140 1000 )
+        + PLACED ( 13110 16000 ) N ;
+    - HI[60] + NET net57 + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -1000 ) ( 140 1000 )
+        + PLACED ( 63710 16000 ) N ;
+    - HI[61] + NET net58 + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -1000 ) ( 140 1000 )
+        + PLACED ( 64630 16000 ) N ;
+    - HI[62] + NET net59 + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -1000 ) ( 140 1000 )
+        + PLACED ( 65550 16000 ) N ;
+    - HI[63] + NET net60 + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -1000 ) ( 140 1000 )
+        + PLACED ( 66470 16000 ) N ;
+    - HI[64] + NET net61 + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -1000 ) ( 140 1000 )
+        + PLACED ( 67390 16000 ) N ;
+    - HI[65] + NET net62 + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -1000 ) ( 140 1000 )
+        + PLACED ( 68310 16000 ) N ;
+    - HI[66] + NET net63 + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -1000 ) ( 140 1000 )
+        + PLACED ( 69230 16000 ) N ;
+    - HI[67] + NET net64 + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -1000 ) ( 140 1000 )
+        + PLACED ( 70150 16000 ) N ;
+    - HI[68] + NET net65 + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -1000 ) ( 140 1000 )
+        + PLACED ( 71070 16000 ) N ;
+    - HI[69] + NET net66 + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -1000 ) ( 140 1000 )
+        + PLACED ( 71990 16000 ) N ;
+    - HI[6] + NET net67 + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -1000 ) ( 140 1000 )
+        + PLACED ( 14030 16000 ) N ;
+    - HI[70] + NET net68 + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -1000 ) ( 140 1000 )
+        + PLACED ( 72910 16000 ) N ;
+    - HI[71] + NET net69 + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -1000 ) ( 140 1000 )
+        + PLACED ( 73830 16000 ) N ;
+    - HI[72] + NET net70 + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -1000 ) ( 140 1000 )
+        + PLACED ( 74750 16000 ) N ;
+    - HI[73] + NET net71 + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -1000 ) ( 140 1000 )
+        + PLACED ( 75670 16000 ) N ;
+    - HI[74] + NET net72 + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -1000 ) ( 140 1000 )
+        + PLACED ( 76590 16000 ) N ;
+    - HI[75] + NET net73 + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -1000 ) ( 140 1000 )
+        + PLACED ( 77510 16000 ) N ;
+    - HI[76] + NET net74 + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -1000 ) ( 140 1000 )
+        + PLACED ( 78430 16000 ) N ;
+    - HI[77] + NET net75 + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -1000 ) ( 140 1000 )
+        + PLACED ( 79350 16000 ) N ;
+    - HI[78] + NET net76 + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -1000 ) ( 140 1000 )
+        + PLACED ( 80270 16000 ) N ;
+    - HI[79] + NET net77 + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -1000 ) ( 140 1000 )
+        + PLACED ( 81190 16000 ) N ;
+    - HI[7] + NET net78 + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -1000 ) ( 140 1000 )
+        + PLACED ( 14950 16000 ) N ;
+    - HI[80] + NET net79 + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -1000 ) ( 140 1000 )
+        + PLACED ( 82110 16000 ) N ;
+    - HI[81] + NET net80 + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -1000 ) ( 140 1000 )
+        + PLACED ( 83030 16000 ) N ;
+    - HI[82] + NET net81 + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -1000 ) ( 140 1000 )
+        + PLACED ( 83950 16000 ) N ;
+    - HI[83] + NET net82 + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -1000 ) ( 140 1000 )
+        + PLACED ( 84870 16000 ) N ;
+    - HI[84] + NET net83 + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -1000 ) ( 140 1000 )
+        + PLACED ( 85790 16000 ) N ;
+    - HI[85] + NET net84 + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -1000 ) ( 140 1000 )
+        + PLACED ( 86710 16000 ) N ;
+    - HI[86] + NET net85 + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -1000 ) ( 140 1000 )
+        + PLACED ( 87630 16000 ) N ;
+    - HI[87] + NET net86 + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -1000 ) ( 140 1000 )
+        + PLACED ( 88550 16000 ) N ;
+    - HI[88] + NET net87 + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -1000 ) ( 140 1000 )
+        + PLACED ( 89470 16000 ) N ;
+    - HI[89] + NET net88 + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -1000 ) ( 140 1000 )
+        + PLACED ( 90390 16000 ) N ;
+    - HI[8] + NET net89 + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -1000 ) ( 140 1000 )
+        + PLACED ( 15870 16000 ) N ;
+    - HI[90] + NET net90 + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -1000 ) ( 140 1000 )
+        + PLACED ( 91310 16000 ) N ;
+    - HI[9] + NET net91 + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -1000 ) ( 140 1000 )
+        + PLACED ( 16790 16000 ) N ;
+    - vccd1 + NET vccd1 + SPECIAL + DIRECTION INOUT + USE POWER
+      + PORT
+        + LAYER met3 ( -49000 -800 ) ( 49000 800 )
+        + LAYER met2 ( 35440 -2720 ) ( 37040 5920 )
+        + LAYER met2 ( -4560 -2720 ) ( -2960 5920 )
+        + LAYER met2 ( -44560 -2720 ) ( -42960 5920 )
+        + FIXED ( 50140 5200 ) N ;
+    - vssd1 + NET vssd1 + SPECIAL + DIRECTION INOUT + USE GROUND
+      + PORT
+        + LAYER met3 ( -49000 -800 ) ( 49000 800 )
+        + LAYER met2 ( 38640 -5920 ) ( 40240 2720 )
+        + LAYER met2 ( -1360 -5920 ) ( 240 2720 )
+        + LAYER met2 ( -41360 -5920 ) ( -39760 2720 )
+        + FIXED ( 50140 8400 ) N ;
+END PINS
+SPECIALNETS 2 ;
+    - vccd1 ( PIN vccd1 ) ( * VPB ) ( * VPWR ) + USE POWER
+      + ROUTED met1 480 + SHAPE FOLLOWPIN ( 1380 10880 ) ( 98900 10880 )
+      NEW met1 480 + SHAPE FOLLOWPIN ( 1380 5440 ) ( 98900 5440 )
+      NEW met3 1600 + SHAPE STRIPE ( 1140 5200 ) ( 99140 5200 )
+      NEW met2 1600 + SHAPE STRIPE ( 86380 2480 ) ( 86380 11120 )
+      NEW met2 1600 + SHAPE STRIPE ( 46380 2480 ) ( 46380 11120 )
+      NEW met2 1600 + SHAPE STRIPE ( 6380 2480 ) ( 6380 11120 )
+      NEW met2 0 + SHAPE STRIPE ( 86380 5200 ) via3_4_1600_1600_4_4_400_400
+      NEW met2 0 + SHAPE STRIPE ( 46380 5200 ) via3_4_1600_1600_4_4_400_400
+      NEW met2 0 + SHAPE STRIPE ( 6380 5200 ) via3_4_1600_1600_4_4_400_400
+      NEW met1 0 + SHAPE STRIPE ( 86380 10880 ) via2_3_1600_480_1_5_320_320
+      NEW met1 0 + SHAPE STRIPE ( 86380 5440 ) via2_3_1600_480_1_5_320_320
+      NEW met1 0 + SHAPE STRIPE ( 46380 10880 ) via2_3_1600_480_1_5_320_320
+      NEW met1 0 + SHAPE STRIPE ( 46380 5440 ) via2_3_1600_480_1_5_320_320
+      NEW met1 0 + SHAPE STRIPE ( 6380 10880 ) via2_3_1600_480_1_5_320_320
+      NEW met1 0 + SHAPE STRIPE ( 6380 5440 ) via2_3_1600_480_1_5_320_320 ;
+    - vssd1 ( PIN vssd1 ) ( * VNB ) ( * VGND ) + USE GROUND
+      + ROUTED met1 480 + SHAPE FOLLOWPIN ( 1380 8160 ) ( 98900 8160 )
+      NEW met1 480 + SHAPE FOLLOWPIN ( 1380 2720 ) ( 98900 2720 )
+      NEW met3 1600 + SHAPE STRIPE ( 1140 8400 ) ( 99140 8400 )
+      NEW met2 1600 + SHAPE STRIPE ( 89580 2480 ) ( 89580 11120 )
+      NEW met2 1600 + SHAPE STRIPE ( 49580 2480 ) ( 49580 11120 )
+      NEW met2 1600 + SHAPE STRIPE ( 9580 2480 ) ( 9580 11120 )
+      NEW met2 0 + SHAPE STRIPE ( 89580 8400 ) via3_4_1600_1600_4_4_400_400
+      NEW met2 0 + SHAPE STRIPE ( 49580 8400 ) via3_4_1600_1600_4_4_400_400
+      NEW met2 0 + SHAPE STRIPE ( 9580 8400 ) via3_4_1600_1600_4_4_400_400
+      NEW met1 0 + SHAPE STRIPE ( 89580 8160 ) via2_3_1600_480_1_5_320_320
+      NEW met1 0 + SHAPE STRIPE ( 89580 2720 ) via2_3_1600_480_1_5_320_320
+      NEW met1 0 + SHAPE STRIPE ( 49580 8160 ) via2_3_1600_480_1_5_320_320
+      NEW met1 0 + SHAPE STRIPE ( 49580 2720 ) via2_3_1600_480_1_5_320_320
+      NEW met1 0 + SHAPE STRIPE ( 9580 8160 ) via2_3_1600_480_1_5_320_320
+      NEW met1 0 + SHAPE STRIPE ( 9580 2720 ) via2_3_1600_480_1_5_320_320 ;
+END SPECIALNETS
+NETS 91 ;
+    - net1 ( PIN HI[0] ) ( ANTENNA_vccd1_tie_high_1_HI DIODE ) ( vccd1_tie_high_1 HI ) + USE SIGNAL
+      + ROUTED met2 ( 8510 7650 ) ( * 15300 0 )
+      NEW met1 ( 8510 7650 ) ( 8970 * )
+      NEW li1 ( 8510 7650 ) L1M1_PR_MR
+      NEW met1 ( 8510 7650 ) M1M2_PR
+      NEW li1 ( 8970 7650 ) L1M1_PR_MR ;
+    - net10 ( PIN HI[18] ) ( ANTENNA_vccd1_tie_high_10_HI DIODE ) ( vccd1_tie_high_10 HI ) + USE SIGNAL
+      + ROUTED met1 ( 25070 7650 ) ( 25530 * )
+      NEW met2 ( 25070 7650 ) ( * 15300 0 )
+      NEW met1 ( 24150 4930 ) ( 25070 * )
+      NEW met2 ( 25070 4930 ) ( * 7650 )
+      NEW li1 ( 25530 7650 ) L1M1_PR_MR
+      NEW met1 ( 25070 7650 ) M1M2_PR
+      NEW li1 ( 24150 4930 ) L1M1_PR_MR
+      NEW met1 ( 25070 4930 ) M1M2_PR ;
+    - net11 ( PIN HI[19] ) ( ANTENNA_vccd1_tie_high_11_HI DIODE ) ( vccd1_tie_high_11 HI ) + USE SIGNAL
+      + ROUTED met1 ( 24150 9690 ) ( 25990 * )
+      NEW met2 ( 25990 9690 ) ( * 15300 0 )
+      NEW met1 ( 25070 4250 ) ( 25990 * )
+      NEW met2 ( 25990 4250 ) ( * 9690 )
+      NEW li1 ( 24150 9690 ) L1M1_PR_MR
+      NEW met1 ( 25990 9690 ) M1M2_PR
+      NEW li1 ( 25070 4250 ) L1M1_PR_MR
+      NEW met1 ( 25990 4250 ) M1M2_PR ;
+    - net12 ( PIN HI[1] ) ( ANTENNA_vccd1_tie_high_12_HI DIODE ) ( vccd1_tie_high_12 HI ) + USE SIGNAL
+      + ROUTED met1 ( 8050 9690 ) ( 8510 * )
+      NEW met2 ( 8050 9690 ) ( * 11730 )
+      NEW met1 ( 8050 11730 ) ( 9430 * )
+      NEW met2 ( 9430 11730 ) ( * 15300 0 )
+      NEW met1 ( 5290 9690 ) ( 8050 * )
+      NEW li1 ( 8510 9690 ) L1M1_PR_MR
+      NEW met1 ( 8050 9690 ) M1M2_PR
+      NEW met1 ( 8050 11730 ) M1M2_PR
+      NEW met1 ( 9430 11730 ) M1M2_PR
+      NEW li1 ( 5290 9690 ) L1M1_PR_MR ;
+    - net13 ( PIN HI[20] ) ( ANTENNA_vccd1_tie_high_13_HI DIODE ) ( vccd1_tie_high_13 HI ) + USE SIGNAL
+      + ROUTED met1 ( 25530 9010 ) ( 26910 * )
+      NEW met2 ( 26910 9010 ) ( * 15300 0 )
+      NEW met1 ( 26450 4930 ) ( 26910 * )
+      NEW met2 ( 26910 4930 ) ( * 9010 )
+      NEW li1 ( 25530 9010 ) L1M1_PR_MR
+      NEW met1 ( 26910 9010 ) M1M2_PR
+      NEW li1 ( 26450 4930 ) L1M1_PR_MR
+      NEW met1 ( 26910 4930 ) M1M2_PR ;
+    - net14 ( PIN HI[21] ) ( ANTENNA_vccd1_tie_high_14_HI DIODE ) ( vccd1_tie_high_14 HI ) + USE SIGNAL
+      + ROUTED met1 ( 26910 9690 ) ( 27830 * )
+      NEW met2 ( 27830 9690 ) ( * 15300 0 )
+      NEW met2 ( 27830 4930 ) ( * 9690 )
+      NEW li1 ( 26910 9690 ) L1M1_PR_MR
+      NEW met1 ( 27830 9690 ) M1M2_PR
+      NEW li1 ( 27830 4930 ) L1M1_PR_MR
+      NEW met1 ( 27830 4930 ) M1M2_PR ;
+    - net15 ( PIN HI[22] ) ( ANTENNA_vccd1_tie_high_15_HI DIODE ) ( vccd1_tie_high_15 HI ) + USE SIGNAL
+      + ROUTED met1 ( 28750 6970 ) ( 29210 * )
+      NEW met2 ( 28750 6970 ) ( * 15300 0 )
+      NEW met1 ( 28750 4590 ) ( 30590 * )
+      NEW met2 ( 28750 4590 ) ( * 6970 )
+      NEW li1 ( 29210 6970 ) L1M1_PR_MR
+      NEW met1 ( 28750 6970 ) M1M2_PR
+      NEW li1 ( 30590 4590 ) L1M1_PR_MR
+      NEW met1 ( 28750 4590 ) M1M2_PR ;
+    - net16 ( PIN HI[23] ) ( ANTENNA_vccd1_tie_high_16_HI DIODE ) ( vccd1_tie_high_16 HI ) + USE SIGNAL
+      + ROUTED met1 ( 28750 9690 ) ( 29670 * )
+      NEW met2 ( 29670 9690 ) ( * 15300 0 )
+      NEW met2 ( 29670 4930 ) ( * 9690 )
+      NEW li1 ( 28750 9690 ) L1M1_PR_MR
+      NEW met1 ( 29670 9690 ) M1M2_PR
+      NEW li1 ( 29670 4930 ) L1M1_PR_MR
+      NEW met1 ( 29670 4930 ) M1M2_PR ;
+    - net17 ( PIN HI[24] ) ( ANTENNA_vccd1_tie_high_17_HI DIODE ) ( vccd1_tie_high_17 HI ) + USE SIGNAL
+      + ROUTED met1 ( 29210 9350 ) ( 30590 * )
+      NEW met2 ( 30590 9350 ) ( * 15300 0 )
+      NEW met1 ( 28750 7650 ) ( 30590 * )
+      NEW met2 ( 30590 7650 ) ( * 9350 )
+      NEW li1 ( 29210 9350 ) L1M1_PR_MR
+      NEW met1 ( 30590 9350 ) M1M2_PR
+      NEW li1 ( 28750 7650 ) L1M1_PR_MR
+      NEW met1 ( 30590 7650 ) M1M2_PR ;
+    - net18 ( PIN HI[25] ) ( ANTENNA_vccd1_tie_high_18_HI DIODE ) ( vccd1_tie_high_18 HI ) + USE SIGNAL
+      + ROUTED met1 ( 31510 6970 ) ( 31970 * )
+      NEW met2 ( 31510 6970 ) ( * 15300 0 )
+      NEW met1 ( 31510 4590 ) ( 33350 * )
+      NEW met2 ( 31510 4590 ) ( * 6970 )
+      NEW li1 ( 31970 6970 ) L1M1_PR_MR
+      NEW met1 ( 31510 6970 ) M1M2_PR
+      NEW li1 ( 33350 4590 ) L1M1_PR_MR
+      NEW met1 ( 31510 4590 ) M1M2_PR ;
+    - net19 ( PIN HI[26] ) ( ANTENNA_vccd1_tie_high_19_HI DIODE ) ( vccd1_tie_high_19 HI ) + USE SIGNAL
+      + ROUTED met1 ( 31510 9690 ) ( 32430 * )
+      NEW met2 ( 32430 9690 ) ( * 15300 0 )
+      NEW met2 ( 32430 4930 ) ( * 9690 )
+      NEW li1 ( 31510 9690 ) L1M1_PR_MR
+      NEW met1 ( 32430 9690 ) M1M2_PR
+      NEW li1 ( 32430 4930 ) L1M1_PR_MR
+      NEW met1 ( 32430 4930 ) M1M2_PR ;
+    - net2 ( PIN HI[10] ) ( ANTENNA_vccd1_tie_high_2_HI DIODE ) ( vccd1_tie_high_2 HI ) + USE SIGNAL
+      + ROUTED met1 ( 17250 9690 ) ( 17710 * )
+      NEW met2 ( 17710 9690 ) ( * 15300 0 )
+      NEW met2 ( 17710 4930 ) ( * 9690 )
+      NEW li1 ( 17250 9690 ) L1M1_PR_MR
+      NEW met1 ( 17710 9690 ) M1M2_PR
+      NEW li1 ( 17710 4930 ) L1M1_PR_MR
+      NEW met1 ( 17710 4930 ) M1M2_PR ;
+    - net20 ( PIN HI[27] ) ( ANTENNA_vccd1_tie_high_20_HI DIODE ) ( vccd1_tie_high_20 HI ) + USE SIGNAL
+      + ROUTED met1 ( 31970 9350 ) ( 33350 * )
+      NEW met2 ( 33350 9350 ) ( * 15300 0 )
+      NEW met1 ( 31510 7650 ) ( 33350 * )
+      NEW met2 ( 33350 7650 ) ( * 9350 )
+      NEW li1 ( 31970 9350 ) L1M1_PR_MR
+      NEW met1 ( 33350 9350 ) M1M2_PR
+      NEW li1 ( 31510 7650 ) L1M1_PR_MR
+      NEW met1 ( 33350 7650 ) M1M2_PR ;
+    - net21 ( PIN HI[28] ) ( ANTENNA_vccd1_tie_high_21_HI DIODE ) ( vccd1_tie_high_21 HI ) + USE SIGNAL
+      + ROUTED met1 ( 34270 7650 ) ( 34730 * )
+      NEW met2 ( 34270 7650 ) ( * 15300 0 )
+      NEW met1 ( 34730 4590 ) ( 36110 * )
+      NEW met2 ( 34730 4590 ) ( * 7140 )
+      NEW met2 ( 34270 7140 ) ( 34730 * )
+      NEW met2 ( 34270 7140 ) ( * 7650 )
+      NEW li1 ( 34730 7650 ) L1M1_PR_MR
+      NEW met1 ( 34270 7650 ) M1M2_PR
+      NEW li1 ( 36110 4590 ) L1M1_PR_MR
+      NEW met1 ( 34730 4590 ) M1M2_PR ;
+    - net22 ( PIN HI[29] ) ( ANTENNA_vccd1_tie_high_22_HI DIODE ) ( vccd1_tie_high_22 HI ) + USE SIGNAL
+      + ROUTED met1 ( 34270 9690 ) ( 35190 * )
+      NEW met2 ( 35190 9690 ) ( * 15300 0 )
+      NEW met2 ( 35190 4930 ) ( * 9690 )
+      NEW li1 ( 34270 9690 ) L1M1_PR_MR
+      NEW met1 ( 35190 9690 ) M1M2_PR
+      NEW li1 ( 35190 4930 ) L1M1_PR_MR
+      NEW met1 ( 35190 4930 ) M1M2_PR ;
+    - net23 ( PIN HI[2] ) ( ANTENNA_vccd1_tie_high_23_HI DIODE ) ( vccd1_tie_high_23 HI ) + USE SIGNAL
+      + ROUTED met1 ( 9890 9690 ) ( 10810 * )
+      NEW met2 ( 10810 9690 ) ( * 11900 )
+      NEW met2 ( 10350 11900 ) ( 10810 * )
+      NEW met2 ( 10350 11900 ) ( * 15300 0 )
+      NEW met1 ( 6210 10030 ) ( 9890 * )
+      NEW met1 ( 9890 9690 ) ( * 10030 )
+      NEW li1 ( 9890 9690 ) L1M1_PR_MR
+      NEW met1 ( 10810 9690 ) M1M2_PR
+      NEW li1 ( 6210 10030 ) L1M1_PR_MR ;
+    - net24 ( PIN HI[30] ) ( ANTENNA_vccd1_tie_high_24_HI DIODE ) ( vccd1_tie_high_24 HI ) + USE SIGNAL
+      + ROUTED met1 ( 34730 9350 ) ( 36110 * )
+      NEW met2 ( 36110 9350 ) ( * 15300 0 )
+      NEW met1 ( 34270 6290 ) ( 36110 * )
+      NEW met2 ( 36110 6290 ) ( * 9350 )
+      NEW li1 ( 34730 9350 ) L1M1_PR_MR
+      NEW met1 ( 36110 9350 ) M1M2_PR
+      NEW li1 ( 34270 6290 ) L1M1_PR_MR
+      NEW met1 ( 36110 6290 ) M1M2_PR ;
+    - net25 ( PIN HI[31] ) ( ANTENNA_vccd1_tie_high_25_HI DIODE ) ( vccd1_tie_high_25 HI ) + USE SIGNAL
+      + ROUTED met1 ( 37030 7650 ) ( 37490 * )
+      NEW met2 ( 37030 7650 ) ( * 15300 0 )
+      NEW met1 ( 37030 4590 ) ( 38870 * )
+      NEW met2 ( 37030 4590 ) ( * 7650 )
+      NEW li1 ( 37490 7650 ) L1M1_PR_MR
+      NEW met1 ( 37030 7650 ) M1M2_PR
+      NEW li1 ( 38870 4590 ) L1M1_PR_MR
+      NEW met1 ( 37030 4590 ) M1M2_PR ;
+    - net26 ( PIN HI[32] ) ( ANTENNA_vccd1_tie_high_26_HI DIODE ) ( vccd1_tie_high_26 HI ) + USE SIGNAL
+      + ROUTED met1 ( 37030 9690 ) ( 37950 * )
+      NEW met2 ( 37950 9690 ) ( * 15300 0 )
+      NEW met2 ( 37950 4930 ) ( * 9690 )
+      NEW li1 ( 37030 9690 ) L1M1_PR_MR
+      NEW met1 ( 37950 9690 ) M1M2_PR
+      NEW li1 ( 37950 4930 ) L1M1_PR_MR
+      NEW met1 ( 37950 4930 ) M1M2_PR ;
+    - net27 ( PIN HI[33] ) ( ANTENNA_vccd1_tie_high_27_HI DIODE ) ( vccd1_tie_high_27 HI ) + USE SIGNAL
+      + ROUTED met1 ( 38870 7650 ) ( 39330 * )
+      NEW met2 ( 38870 7650 ) ( * 15300 0 )
+      NEW met1 ( 38870 3910 ) ( 41630 * )
+      NEW met2 ( 38870 3910 ) ( * 7650 )
+      NEW li1 ( 39330 7650 ) L1M1_PR_MR
+      NEW met1 ( 38870 7650 ) M1M2_PR
+      NEW li1 ( 41630 3910 ) L1M1_PR_MR
+      NEW met1 ( 38870 3910 ) M1M2_PR ;
+    - net28 ( PIN HI[34] ) ( ANTENNA_vccd1_tie_high_28_HI DIODE ) ( vccd1_tie_high_28 HI ) + USE SIGNAL
+      + ROUTED met1 ( 37490 9010 ) ( 39790 * )
+      NEW met2 ( 39790 9010 ) ( * 15300 0 )
+      NEW met2 ( 36570 7650 ) ( * 9010 )
+      NEW met1 ( 36570 9010 ) ( 37490 * )
+      NEW li1 ( 37490 9010 ) L1M1_PR_MR
+      NEW met1 ( 39790 9010 ) M1M2_PR
+      NEW li1 ( 36570 7650 ) L1M1_PR_MR
+      NEW met1 ( 36570 7650 ) M1M2_PR
+      NEW met1 ( 36570 9010 ) M1M2_PR ;
+    - net29 ( PIN HI[35] ) ( ANTENNA_vccd1_tie_high_29_HI DIODE ) ( vccd1_tie_high_29 HI ) + USE SIGNAL
+      + ROUTED met1 ( 40710 7650 ) ( 41170 * )
+      NEW met2 ( 40710 7650 ) ( * 15300 0 )
+      NEW met1 ( 40710 4250 ) ( 45310 * )
+      NEW met2 ( 40710 4250 ) ( * 7650 )
+      NEW li1 ( 41170 7650 ) L1M1_PR_MR
+      NEW met1 ( 40710 7650 ) M1M2_PR
+      NEW li1 ( 45310 4250 ) L1M1_PR_MR
+      NEW met1 ( 40710 4250 ) M1M2_PR ;
+    - net3 ( PIN HI[11] ) ( ANTENNA_vccd1_tie_high_3_HI DIODE ) ( vccd1_tie_high_3 HI ) + USE SIGNAL
+      + ROUTED met1 ( 18630 7650 ) ( 19090 * )
+      NEW met2 ( 18630 7650 ) ( * 15300 0 )
+      NEW met1 ( 18630 4590 ) ( 20010 * )
+      NEW met2 ( 18630 4590 ) ( * 7650 )
+      NEW li1 ( 19090 7650 ) L1M1_PR_MR
+      NEW met1 ( 18630 7650 ) M1M2_PR
+      NEW li1 ( 20010 4590 ) L1M1_PR_MR
+      NEW met1 ( 18630 4590 ) M1M2_PR ;
+    - net30 ( PIN HI[36] ) ( ANTENNA_vccd1_tie_high_30_HI DIODE ) ( vccd1_tie_high_30 HI ) + USE SIGNAL
+      + ROUTED met1 ( 39790 9690 ) ( 41630 * )
+      NEW met2 ( 41630 9690 ) ( * 15300 0 )
+      NEW met2 ( 41170 4930 ) ( * 9180 )
+      NEW met2 ( 41170 9180 ) ( 41630 * )
+      NEW met2 ( 41630 9180 ) ( * 9690 )
+      NEW li1 ( 39790 9690 ) L1M1_PR_MR
+      NEW met1 ( 41630 9690 ) M1M2_PR
+      NEW li1 ( 41170 4930 ) L1M1_PR_MR
+      NEW met1 ( 41170 4930 ) M1M2_PR ;
+    - net31 ( PIN HI[37] ) ( ANTENNA_vccd1_tie_high_31_HI DIODE ) ( vccd1_tie_high_31 HI ) + USE SIGNAL
+      + ROUTED met1 ( 42550 7650 ) ( 43010 * )
+      NEW met2 ( 42550 7650 ) ( * 15300 0 )
+      NEW met1 ( 42550 4590 ) ( 44390 * )
+      NEW met2 ( 42550 4590 ) ( * 7650 )
+      NEW li1 ( 43010 7650 ) L1M1_PR_MR
+      NEW met1 ( 42550 7650 ) M1M2_PR
+      NEW li1 ( 44390 4590 ) L1M1_PR_MR
+      NEW met1 ( 42550 4590 ) M1M2_PR ;
+    - net32 ( PIN HI[38] ) ( ANTENNA_vccd1_tie_high_32_HI DIODE ) ( vccd1_tie_high_32 HI ) + USE SIGNAL
+      + ROUTED met1 ( 42550 9690 ) ( 43470 * )
+      NEW met2 ( 43470 9690 ) ( * 15300 0 )
+      NEW met2 ( 43470 4930 ) ( * 9690 )
+      NEW li1 ( 42550 9690 ) L1M1_PR_MR
+      NEW met1 ( 43470 9690 ) M1M2_PR
+      NEW li1 ( 43470 4930 ) L1M1_PR_MR
+      NEW met1 ( 43470 4930 ) M1M2_PR ;
+    - net33 ( PIN HI[39] ) ( ANTENNA_vccd1_tie_high_33_HI DIODE ) ( vccd1_tie_high_33 HI ) + USE SIGNAL
+      + ROUTED met1 ( 43930 9690 ) ( 44390 * )
+      NEW met2 ( 44390 9690 ) ( * 15300 0 )
+      NEW met1 ( 41170 10030 ) ( 43930 * )
+      NEW met1 ( 43930 9690 ) ( * 10030 )
+      NEW li1 ( 43930 9690 ) L1M1_PR_MR
+      NEW met1 ( 44390 9690 ) M1M2_PR
+      NEW li1 ( 41170 10030 ) L1M1_PR_MR ;
+    - net34 ( PIN HI[3] ) ( ANTENNA_vccd1_tie_high_34_HI DIODE ) ( vccd1_tie_high_34 HI ) + USE SIGNAL
+      + ROUTED met1 ( 11270 7650 ) ( 11730 * )
+      NEW met2 ( 11270 7650 ) ( * 15300 0 )
+      NEW met1 ( 11270 4930 ) ( 12650 * )
+      NEW met2 ( 11270 4930 ) ( * 7650 )
+      NEW li1 ( 11730 7650 ) L1M1_PR_MR
+      NEW met1 ( 11270 7650 ) M1M2_PR
+      NEW li1 ( 12650 4930 ) L1M1_PR_MR
+      NEW met1 ( 11270 4930 ) M1M2_PR ;
+    - net35 ( PIN HI[40] ) ( ANTENNA_vccd1_tie_high_35_HI DIODE ) ( vccd1_tie_high_35 HI ) + USE SIGNAL
+      + ROUTED met1 ( 44850 7310 ) ( 45770 * )
+      NEW met2 ( 44850 7310 ) ( * 12580 )
+      NEW met2 ( 44850 12580 ) ( 45310 * )
+      NEW met2 ( 45310 12580 ) ( * 15300 0 )
+      NEW met1 ( 44850 4930 ) ( 47150 * )
+      NEW met2 ( 44850 4930 ) ( * 7310 )
+      NEW li1 ( 45770 7310 ) L1M1_PR_MR
+      NEW met1 ( 44850 7310 ) M1M2_PR
+      NEW li1 ( 47150 4930 ) L1M1_PR_MR
+      NEW met1 ( 44850 4930 ) M1M2_PR ;
+    - net36 ( PIN HI[41] ) ( ANTENNA_vccd1_tie_high_36_HI DIODE ) ( vccd1_tie_high_36 HI ) + USE SIGNAL
+      + ROUTED met2 ( 45310 9690 ) ( * 11900 )
+      NEW met2 ( 45310 11900 ) ( 46230 * )
+      NEW met2 ( 46230 11900 ) ( * 15300 0 )
+      NEW met2 ( 45310 7650 ) ( * 9690 )
+      NEW li1 ( 45310 9690 ) L1M1_PR_MR
+      NEW met1 ( 45310 9690 ) M1M2_PR
+      NEW li1 ( 45310 7650 ) L1M1_PR_MR
+      NEW met1 ( 45310 7650 ) M1M2_PR ;
+    - net37 ( PIN HI[42] ) ( ANTENNA_vccd1_tie_high_37_HI DIODE ) ( vccd1_tie_high_37 HI ) + USE SIGNAL
+      + ROUTED met1 ( 46690 9690 ) ( 47610 * )
+      NEW met2 ( 47610 9690 ) ( * 11900 )
+      NEW met2 ( 47150 11900 ) ( 47610 * )
+      NEW met2 ( 47150 11900 ) ( * 15300 0 )
+      NEW met2 ( 47610 7650 ) ( * 9690 )
+      NEW li1 ( 46690 9690 ) L1M1_PR_MR
+      NEW met1 ( 47610 9690 ) M1M2_PR
+      NEW li1 ( 47610 7650 ) L1M1_PR_MR
+      NEW met1 ( 47610 7650 ) M1M2_PR ;
+    - net38 ( PIN HI[43] ) ( ANTENNA_vccd1_tie_high_38_HI DIODE ) ( vccd1_tie_high_38 HI ) + USE SIGNAL
+      + ROUTED met2 ( 48070 9690 ) ( * 15300 0 )
+      NEW met2 ( 48070 5950 ) ( * 9690 )
+      NEW met1 ( 48070 5950 ) ( 48530 * )
+      NEW li1 ( 48070 9690 ) L1M1_PR_MR
+      NEW met1 ( 48070 9690 ) M1M2_PR
+      NEW met1 ( 48070 5950 ) M1M2_PR
+      NEW li1 ( 48530 5950 ) L1M1_PR_MR
+      NEW met1 ( 48070 5950 ) RECT ( -365 -70 0 70 )  ;
+    - net39 ( PIN HI[44] ) ( ANTENNA_vccd1_tie_high_39_HI DIODE ) ( vccd1_tie_high_39 HI ) + USE SIGNAL
+      + ROUTED met1 ( 49450 9690 ) ( 50830 * )
+      NEW met2 ( 50830 9690 ) ( * 11900 )
+      NEW met2 ( 48990 11900 ) ( 50830 * )
+      NEW met2 ( 48990 11900 ) ( * 15300 0 )
+      NEW met1 ( 50370 7650 ) ( 50830 * )
+      NEW met2 ( 50830 7650 ) ( * 9690 )
+      NEW li1 ( 49450 9690 ) L1M1_PR_MR
+      NEW met1 ( 50830 9690 ) M1M2_PR
+      NEW li1 ( 50370 7650 ) L1M1_PR_MR
+      NEW met1 ( 50830 7650 ) M1M2_PR ;
+    - net4 ( PIN HI[12] ) ( ANTENNA_vccd1_tie_high_4_HI DIODE ) ( vccd1_tie_high_4 HI ) + USE SIGNAL
+      + ROUTED met1 ( 18630 9690 ) ( 19550 * )
+      NEW met2 ( 19550 9690 ) ( * 15300 0 )
+      NEW met2 ( 19550 4930 ) ( * 9690 )
+      NEW li1 ( 18630 9690 ) L1M1_PR_MR
+      NEW met1 ( 19550 9690 ) M1M2_PR
+      NEW li1 ( 19550 4930 ) L1M1_PR_MR
+      NEW met1 ( 19550 4930 ) M1M2_PR ;
+    - net40 ( PIN HI[45] ) ( ANTENNA_vccd1_tie_high_40_HI DIODE ) ( vccd1_tie_high_40 HI ) + USE SIGNAL
+      + ROUTED met1 ( 49910 9350 ) ( 51290 * )
+      NEW met2 ( 51290 9350 ) ( * 12580 )
+      NEW met2 ( 49910 12580 ) ( 51290 * )
+      NEW met2 ( 49910 12580 ) ( * 15300 0 )
+      NEW met2 ( 51290 7650 ) ( * 9350 )
+      NEW li1 ( 49910 9350 ) L1M1_PR_MR
+      NEW met1 ( 51290 9350 ) M1M2_PR
+      NEW li1 ( 51290 7650 ) L1M1_PR_MR
+      NEW met1 ( 51290 7650 ) M1M2_PR ;
+    - net41 ( PIN HI[46] ) ( ANTENNA_vccd1_tie_high_41_HI DIODE ) ( vccd1_tie_high_41 HI ) + USE SIGNAL
+      + ROUTED met1 ( 51290 8670 ) ( 51750 * )
+      NEW met2 ( 51750 8670 ) ( * 13260 )
+      NEW met2 ( 50830 13260 ) ( 51750 * )
+      NEW met2 ( 50830 13260 ) ( * 15300 0 )
+      NEW met1 ( 51750 7650 ) ( 53590 * )
+      NEW met2 ( 51750 7650 ) ( * 8670 )
+      NEW li1 ( 51290 8670 ) L1M1_PR_MR
+      NEW met1 ( 51750 8670 ) M1M2_PR
+      NEW li1 ( 53590 7650 ) L1M1_PR_MR
+      NEW met1 ( 51750 7650 ) M1M2_PR ;
+    - net42 ( PIN HI[47] ) ( ANTENNA_vccd1_tie_high_42_HI DIODE ) ( vccd1_tie_high_42 HI ) + USE SIGNAL
+      + ROUTED met1 ( 52210 9690 ) ( 53590 * )
+      NEW met2 ( 52210 9690 ) ( * 13940 )
+      NEW met2 ( 51750 13940 ) ( 52210 * )
+      NEW met2 ( 51750 13940 ) ( * 15300 0 )
+      NEW met1 ( 52210 7310 ) ( 54970 * )
+      NEW met2 ( 52210 7310 ) ( * 9690 )
+      NEW li1 ( 53590 9690 ) L1M1_PR_MR
+      NEW met1 ( 52210 9690 ) M1M2_PR
+      NEW li1 ( 54970 7310 ) L1M1_PR_MR
+      NEW met1 ( 52210 7310 ) M1M2_PR ;
+    - net43 ( PIN HI[48] ) ( ANTENNA_vccd1_tie_high_43_HI DIODE ) ( vccd1_tie_high_43 HI ) + USE SIGNAL
+      + ROUTED met1 ( 52670 9350 ) ( 54970 * )
+      NEW met2 ( 52670 9350 ) ( * 15300 0 )
+      NEW met1 ( 54970 6630 ) ( 56350 * )
+      NEW met2 ( 54970 6630 ) ( * 9350 )
+      NEW li1 ( 54970 9350 ) L1M1_PR_MR
+      NEW met1 ( 52670 9350 ) M1M2_PR
+      NEW li1 ( 56350 6630 ) L1M1_PR_MR
+      NEW met1 ( 54970 6630 ) M1M2_PR
+      NEW met1 ( 54970 9350 ) M1M2_PR ;
+    - net44 ( PIN HI[49] ) ( ANTENNA_vccd1_tie_high_44_HI DIODE ) ( vccd1_tie_high_44 HI ) + USE SIGNAL
+      + ROUTED met1 ( 53590 9010 ) ( 56350 * )
+      NEW met2 ( 53590 9010 ) ( * 15300 0 )
+      NEW met1 ( 56350 7650 ) ( 57730 * )
+      NEW met2 ( 56350 7650 ) ( * 9010 )
+      NEW li1 ( 56350 9010 ) L1M1_PR_MR
+      NEW met1 ( 53590 9010 ) M1M2_PR
+      NEW li1 ( 57730 7650 ) L1M1_PR_MR
+      NEW met1 ( 56350 7650 ) M1M2_PR
+      NEW met1 ( 56350 9010 ) M1M2_PR ;
+    - net45 ( PIN HI[4] ) ( ANTENNA_vccd1_tie_high_45_HI DIODE ) ( vccd1_tie_high_45 HI ) + USE SIGNAL
+      + ROUTED met1 ( 11270 9350 ) ( 12190 * )
+      NEW met2 ( 12190 9350 ) ( * 15300 0 )
+      NEW met1 ( 7130 9350 ) ( 11270 * )
+      NEW li1 ( 11270 9350 ) L1M1_PR_MR
+      NEW met1 ( 12190 9350 ) M1M2_PR
+      NEW li1 ( 7130 9350 ) L1M1_PR_MR ;
+    - net46 ( PIN HI[50] ) ( ANTENNA_vccd1_tie_high_46_HI DIODE ) ( vccd1_tie_high_46 HI ) + USE SIGNAL
+      + ROUTED met1 ( 54510 9690 ) ( 57730 * )
+      NEW met2 ( 54510 9690 ) ( * 15300 0 )
+      NEW met2 ( 60030 7650 ) ( * 9690 )
+      NEW met1 ( 57730 9690 ) ( 60030 * )
+      NEW li1 ( 57730 9690 ) L1M1_PR_MR
+      NEW met1 ( 54510 9690 ) M1M2_PR
+      NEW li1 ( 60030 7650 ) L1M1_PR_MR
+      NEW met1 ( 60030 7650 ) M1M2_PR
+      NEW met1 ( 60030 9690 ) M1M2_PR ;
+    - net47 ( PIN HI[51] ) ( ANTENNA_vccd1_tie_high_47_HI DIODE ) ( vccd1_tie_high_47 HI ) + USE SIGNAL
+      + ROUTED met1 ( 55430 8670 ) ( 59110 * )
+      NEW met2 ( 55430 8670 ) ( * 15300 0 )
+      NEW met1 ( 59110 6630 ) ( 64630 * )
+      NEW met2 ( 59110 6630 ) ( * 8670 )
+      NEW li1 ( 59110 8670 ) L1M1_PR_MR
+      NEW met1 ( 55430 8670 ) M1M2_PR
+      NEW li1 ( 64630 6630 ) L1M1_PR_MR
+      NEW met1 ( 59110 6630 ) M1M2_PR
+      NEW met1 ( 59110 8670 ) M1M2_PR ;
+    - net48 ( PIN HI[52] ) ( ANTENNA_vccd1_tie_high_48_HI DIODE ) ( vccd1_tie_high_48 HI ) + USE SIGNAL
+      + ROUTED met1 ( 60490 9690 ) ( * 10030 )
+      NEW met1 ( 56350 10030 ) ( 60490 * )
+      NEW met2 ( 56350 10030 ) ( * 15300 0 )
+      NEW met1 ( 60490 4590 ) ( 62330 * )
+      NEW met2 ( 60490 4590 ) ( * 9690 )
+      NEW li1 ( 60490 9690 ) L1M1_PR_MR
+      NEW met1 ( 56350 10030 ) M1M2_PR
+      NEW li1 ( 62330 4590 ) L1M1_PR_MR
+      NEW met1 ( 60490 4590 ) M1M2_PR
+      NEW met1 ( 60490 9690 ) M1M2_PR ;
+    - net49 ( PIN HI[53] ) ( ANTENNA_vccd1_tie_high_49_HI DIODE ) ( vccd1_tie_high_49 HI ) + USE SIGNAL
+      + ROUTED met1 ( 57270 9010 ) ( 61870 * )
+      NEW met2 ( 57270 9010 ) ( * 15300 0 )
+      NEW met1 ( 61410 6290 ) ( 67390 * )
+      NEW met2 ( 61410 6290 ) ( * 9010 )
+      NEW li1 ( 61870 9010 ) L1M1_PR_MR
+      NEW met1 ( 57270 9010 ) M1M2_PR
+      NEW li1 ( 67390 6290 ) L1M1_PR_MR
+      NEW met1 ( 61410 6290 ) M1M2_PR
+      NEW met1 ( 61410 9010 ) M1M2_PR ;
+    - net5 ( PIN HI[13] ) ( ANTENNA_vccd1_tie_high_5_HI DIODE ) ( vccd1_tie_high_5 HI ) + USE SIGNAL
+      + ROUTED met1 ( 19090 9350 ) ( 20470 * )
+      NEW met2 ( 20470 9350 ) ( * 15300 0 )
+      NEW met1 ( 18630 6970 ) ( 20470 * )
+      NEW met2 ( 20470 6970 ) ( * 9350 )
+      NEW li1 ( 19090 9350 ) L1M1_PR_MR
+      NEW met1 ( 20470 9350 ) M1M2_PR
+      NEW li1 ( 18630 6970 ) L1M1_PR_MR
+      NEW met1 ( 20470 6970 ) M1M2_PR ;
+    - net50 ( PIN HI[54] ) ( ANTENNA_vccd1_tie_high_50_HI DIODE ) ( vccd1_tie_high_50 HI ) + USE SIGNAL
+      + ROUTED met1 ( 58190 7650 ) ( 58650 * )
+      NEW met2 ( 58190 7650 ) ( * 15300 0 )
+      NEW met1 ( 58190 4930 ) ( 60030 * )
+      NEW met2 ( 58190 4930 ) ( * 7650 )
+      NEW li1 ( 58650 7650 ) L1M1_PR_MR
+      NEW met1 ( 58190 7650 ) M1M2_PR
+      NEW li1 ( 60030 4930 ) L1M1_PR_MR
+      NEW met1 ( 58190 4930 ) M1M2_PR ;
+    - net51 ( PIN HI[55] ) ( ANTENNA_vccd1_tie_high_51_HI DIODE ) ( vccd1_tie_high_51 HI ) + USE SIGNAL
+      + ROUTED met1 ( 59110 9350 ) ( 63250 * )
+      NEW met2 ( 59110 9350 ) ( * 15300 0 )
+      NEW met2 ( 64630 4930 ) ( * 9350 )
+      NEW met1 ( 63250 9350 ) ( 64630 * )
+      NEW li1 ( 63250 9350 ) L1M1_PR_MR
+      NEW met1 ( 59110 9350 ) M1M2_PR
+      NEW li1 ( 64630 4930 ) L1M1_PR_MR
+      NEW met1 ( 64630 4930 ) M1M2_PR
+      NEW met1 ( 64630 9350 ) M1M2_PR ;
+    - net52 ( PIN HI[56] ) ( ANTENNA_vccd1_tie_high_52_HI DIODE ) ( vccd1_tie_high_52 HI ) + USE SIGNAL
+      + ROUTED met1 ( 59570 8670 ) ( 64630 * )
+      NEW met2 ( 59570 8670 ) ( * 10540 )
+      NEW met2 ( 59570 10540 ) ( 60030 * )
+      NEW met2 ( 60030 10540 ) ( * 15300 0 )
+      NEW met1 ( 66930 7310 ) ( 70150 * )
+      NEW met2 ( 66930 7310 ) ( * 8670 )
+      NEW met1 ( 64630 8670 ) ( 66930 * )
+      NEW li1 ( 64630 8670 ) L1M1_PR_MR
+      NEW met1 ( 59570 8670 ) M1M2_PR
+      NEW li1 ( 70150 7310 ) L1M1_PR_MR
+      NEW met1 ( 66930 7310 ) M1M2_PR
+      NEW met1 ( 66930 8670 ) M1M2_PR ;
+    - net53 ( PIN HI[57] ) ( ANTENNA_vccd1_tie_high_53_HI DIODE ) ( vccd1_tie_high_53 HI ) + USE SIGNAL
+      + ROUTED met1 ( 60950 7650 ) ( 61410 * )
+      NEW met2 ( 60950 7650 ) ( * 15300 0 )
+      NEW met1 ( 60950 4930 ) ( 62790 * )
+      NEW met2 ( 60950 4930 ) ( * 7650 )
+      NEW li1 ( 61410 7650 ) L1M1_PR_MR
+      NEW met1 ( 60950 7650 ) M1M2_PR
+      NEW li1 ( 62790 4930 ) L1M1_PR_MR
+      NEW met1 ( 60950 4930 ) M1M2_PR ;
+    - net54 ( PIN HI[58] ) ( ANTENNA_vccd1_tie_high_54_HI DIODE ) ( vccd1_tie_high_54 HI ) + USE SIGNAL
+      + ROUTED met1 ( 62330 9010 ) ( 66470 * )
+      NEW met2 ( 62330 9010 ) ( * 9180 )
+      NEW met2 ( 61870 9180 ) ( 62330 * )
+      NEW met2 ( 61870 9180 ) ( * 15300 0 )
+      NEW met1 ( 67390 4590 ) ( 67850 * )
+      NEW met2 ( 67390 4590 ) ( * 9010 )
+      NEW met1 ( 66470 9010 ) ( 67390 * )
+      NEW li1 ( 66470 9010 ) L1M1_PR_MR
+      NEW met1 ( 62330 9010 ) M1M2_PR
+      NEW li1 ( 67850 4590 ) L1M1_PR_MR
+      NEW met1 ( 67390 4590 ) M1M2_PR
+      NEW met1 ( 67390 9010 ) M1M2_PR ;
+    - net55 ( PIN HI[59] ) ( ANTENNA_vccd1_tie_high_55_HI DIODE ) ( vccd1_tie_high_55 HI ) + USE SIGNAL
+      + ROUTED met1 ( 62790 7650 ) ( 63250 * )
+      NEW met2 ( 62790 7650 ) ( * 15300 0 )
+      NEW met1 ( 62790 4250 ) ( 66470 * )
+      NEW met2 ( 62790 4250 ) ( * 7650 )
+      NEW li1 ( 63250 7650 ) L1M1_PR_MR
+      NEW met1 ( 62790 7650 ) M1M2_PR
+      NEW li1 ( 66470 4250 ) L1M1_PR_MR
+      NEW met1 ( 62790 4250 ) M1M2_PR ;
+    - net56 ( PIN HI[5] ) ( ANTENNA_vccd1_tie_high_56_HI DIODE ) ( vccd1_tie_high_56 HI ) + USE SIGNAL
+      + ROUTED met1 ( 11730 9690 ) ( 13110 * )
+      NEW met2 ( 13110 9690 ) ( * 15300 0 )
+      NEW met1 ( 11270 6970 ) ( 13110 * )
+      NEW met2 ( 13110 6970 ) ( * 9690 )
+      NEW li1 ( 11730 9690 ) L1M1_PR_MR
+      NEW met1 ( 13110 9690 ) M1M2_PR
+      NEW li1 ( 11270 6970 ) L1M1_PR_MR
+      NEW met1 ( 13110 6970 ) M1M2_PR ;
+    - net57 ( PIN HI[60] ) ( ANTENNA_vccd1_tie_high_57_HI DIODE ) ( vccd1_tie_high_57 HI ) + USE SIGNAL
+      + ROUTED met2 ( 67850 9010 ) ( * 10030 )
+      NEW met1 ( 63710 10030 ) ( 67850 * )
+      NEW met2 ( 63710 10030 ) ( * 15300 0 )
+      NEW met1 ( 67850 6630 ) ( 72910 * )
+      NEW met2 ( 67850 6630 ) ( * 9010 )
+      NEW li1 ( 67850 9010 ) L1M1_PR_MR
+      NEW met1 ( 67850 9010 ) M1M2_PR
+      NEW met1 ( 67850 10030 ) M1M2_PR
+      NEW met1 ( 63710 10030 ) M1M2_PR
+      NEW li1 ( 72910 6630 ) L1M1_PR_MR
+      NEW met1 ( 67850 6630 ) M1M2_PR ;
+    - net58 ( PIN HI[61] ) ( ANTENNA_vccd1_tie_high_58_HI DIODE ) ( vccd1_tie_high_58 HI ) + USE SIGNAL
+      + ROUTED met1 ( 68310 8670 ) ( 69230 * )
+      NEW met1 ( 68310 8670 ) ( * 9350 )
+      NEW met1 ( 65090 9350 ) ( 68310 * )
+      NEW met2 ( 65090 9350 ) ( * 9860 )
+      NEW met2 ( 64630 9860 ) ( 65090 * )
+      NEW met2 ( 64630 9860 ) ( * 15300 0 )
+      NEW met2 ( 70610 4930 ) ( * 8670 )
+      NEW met1 ( 69230 8670 ) ( 70610 * )
+      NEW li1 ( 69230 8670 ) L1M1_PR_MR
+      NEW met1 ( 65090 9350 ) M1M2_PR
+      NEW li1 ( 70610 4930 ) L1M1_PR_MR
+      NEW met1 ( 70610 4930 ) M1M2_PR
+      NEW met1 ( 70610 8670 ) M1M2_PR ;
+    - net59 ( PIN HI[62] ) ( ANTENNA_vccd1_tie_high_59_HI DIODE ) ( vccd1_tie_high_59 HI ) + USE SIGNAL
+      + ROUTED met1 ( 65550 7650 ) ( 66010 * )
+      NEW met2 ( 65550 7650 ) ( * 15300 0 )
+      NEW met1 ( 65550 4930 ) ( 69230 * )
+      NEW met2 ( 65550 4930 ) ( * 7650 )
+      NEW li1 ( 66010 7650 ) L1M1_PR_MR
+      NEW met1 ( 65550 7650 ) M1M2_PR
+      NEW li1 ( 69230 4930 ) L1M1_PR_MR
+      NEW met1 ( 65550 4930 ) M1M2_PR ;
+    - net6 ( PIN HI[14] ) ( ANTENNA_vccd1_tie_high_6_HI DIODE ) ( vccd1_tie_high_6 HI ) + USE SIGNAL
+      + ROUTED met1 ( 21390 7650 ) ( 21850 * )
+      NEW met2 ( 21390 7650 ) ( * 15300 0 )
+      NEW met2 ( 21390 4930 ) ( * 7650 )
+      NEW li1 ( 21850 7650 ) L1M1_PR_MR
+      NEW met1 ( 21390 7650 ) M1M2_PR
+      NEW li1 ( 21390 4930 ) L1M1_PR_MR
+      NEW met1 ( 21390 4930 ) M1M2_PR ;
+    - net60 ( PIN HI[63] ) ( ANTENNA_vccd1_tie_high_60_HI DIODE ) ( vccd1_tie_high_60 HI ) + USE SIGNAL
+      + ROUTED met1 ( 66470 9690 ) ( 70610 * )
+      NEW met2 ( 66470 9690 ) ( * 15300 0 )
+      NEW met2 ( 71990 4250 ) ( * 9690 )
+      NEW met1 ( 70610 9690 ) ( 71990 * )
+      NEW li1 ( 70610 9690 ) L1M1_PR_MR
+      NEW met1 ( 66470 9690 ) M1M2_PR
+      NEW li1 ( 71990 4250 ) L1M1_PR_MR
+      NEW met1 ( 71990 4250 ) M1M2_PR
+      NEW met1 ( 71990 9690 ) M1M2_PR ;
+    - net61 ( PIN HI[64] ) ( ANTENNA_vccd1_tie_high_61_HI DIODE ) ( vccd1_tie_high_61 HI ) + USE SIGNAL
+      + ROUTED met1 ( 71530 8670 ) ( 71990 * )
+      NEW met2 ( 71530 8670 ) ( * 10370 )
+      NEW met1 ( 67390 10370 ) ( 71530 * )
+      NEW met2 ( 67390 10370 ) ( * 15300 0 )
+      NEW met1 ( 77510 6630 ) ( * 6970 )
+      NEW met1 ( 71530 6970 ) ( 77510 * )
+      NEW met2 ( 71530 6970 ) ( * 8670 )
+      NEW li1 ( 71990 8670 ) L1M1_PR_MR
+      NEW met1 ( 71530 8670 ) M1M2_PR
+      NEW met1 ( 71530 10370 ) M1M2_PR
+      NEW met1 ( 67390 10370 ) M1M2_PR
+      NEW li1 ( 77510 6630 ) L1M1_PR_MR
+      NEW met1 ( 71530 6970 ) M1M2_PR ;
+    - net62 ( PIN HI[65] ) ( ANTENNA_vccd1_tie_high_62_HI DIODE ) ( vccd1_tie_high_62 HI ) + USE SIGNAL
+      + ROUTED met1 ( 68310 7650 ) ( 68770 * )
+      NEW met2 ( 68310 7650 ) ( * 15300 0 )
+      NEW met1 ( 68310 4590 ) ( 72910 * )
+      NEW met2 ( 68310 4590 ) ( * 7650 )
+      NEW li1 ( 68770 7650 ) L1M1_PR_MR
+      NEW met1 ( 68310 7650 ) M1M2_PR
+      NEW li1 ( 72910 4590 ) L1M1_PR_MR
+      NEW met1 ( 68310 4590 ) M1M2_PR ;
+    - net63 ( PIN HI[66] ) ( ANTENNA_vccd1_tie_high_63_HI DIODE ) ( vccd1_tie_high_63 HI ) + USE SIGNAL
+      + ROUTED met1 ( 69230 9350 ) ( 73370 * )
+      NEW met2 ( 69230 9350 ) ( * 15300 0 )
+      NEW met2 ( 74750 4930 ) ( * 9350 )
+      NEW met1 ( 73370 9350 ) ( 74750 * )
+      NEW li1 ( 73370 9350 ) L1M1_PR_MR
+      NEW met1 ( 69230 9350 ) M1M2_PR
+      NEW li1 ( 74750 4930 ) L1M1_PR_MR
+      NEW met1 ( 74750 4930 ) M1M2_PR
+      NEW met1 ( 74750 9350 ) M1M2_PR ;
+    - net64 ( PIN HI[67] ) ( ANTENNA_vccd1_tie_high_64_HI DIODE ) ( vccd1_tie_high_64 HI ) + USE SIGNAL
+      + ROUTED met1 ( 74750 8670 ) ( * 9010 )
+      NEW met1 ( 70150 9010 ) ( 74750 * )
+      NEW met2 ( 70150 9010 ) ( * 15300 0 )
+      NEW met1 ( 74290 4590 ) ( 76590 * )
+      NEW met2 ( 74290 4590 ) ( * 9010 )
+      NEW li1 ( 74750 8670 ) L1M1_PR_MR
+      NEW met1 ( 70150 9010 ) M1M2_PR
+      NEW li1 ( 76590 4590 ) L1M1_PR_MR
+      NEW met1 ( 74290 4590 ) M1M2_PR
+      NEW met1 ( 74290 9010 ) M1M2_PR ;
+    - net65 ( PIN HI[68] ) ( ANTENNA_vccd1_tie_high_65_HI DIODE ) ( vccd1_tie_high_65 HI ) + USE SIGNAL
+      + ROUTED met1 ( 71070 7650 ) ( 71530 * )
+      NEW met2 ( 71070 7650 ) ( * 15300 0 )
+      NEW met1 ( 71070 4930 ) ( 73830 * )
+      NEW met2 ( 71070 4930 ) ( * 7650 )
+      NEW li1 ( 71530 7650 ) L1M1_PR_MR
+      NEW met1 ( 71070 7650 ) M1M2_PR
+      NEW li1 ( 73830 4930 ) L1M1_PR_MR
+      NEW met1 ( 71070 4930 ) M1M2_PR ;
+    - net66 ( PIN HI[69] ) ( ANTENNA_vccd1_tie_high_66_HI DIODE ) ( vccd1_tie_high_66 HI ) + USE SIGNAL
+      + ROUTED met1 ( 72450 9690 ) ( 76130 * )
+      NEW met2 ( 72450 9690 ) ( * 10540 )
+      NEW met2 ( 71990 10540 ) ( 72450 * )
+      NEW met2 ( 71990 10540 ) ( * 15300 0 )
+      NEW met1 ( 78890 7310 ) ( 80730 * )
+      NEW met2 ( 78890 7310 ) ( * 9690 )
+      NEW met1 ( 76130 9690 ) ( 78890 * )
+      NEW li1 ( 76130 9690 ) L1M1_PR_MR
+      NEW met1 ( 72450 9690 ) M1M2_PR
+      NEW li1 ( 80730 7310 ) L1M1_PR_MR
+      NEW met1 ( 78890 7310 ) M1M2_PR
+      NEW met1 ( 78890 9690 ) M1M2_PR ;
+    - net67 ( PIN HI[6] ) ( ANTENNA_vccd1_tie_high_67_HI DIODE ) ( vccd1_tie_high_67 HI ) + USE SIGNAL
+      + ROUTED met1 ( 14030 7650 ) ( 14490 * )
+      NEW met2 ( 14030 7650 ) ( * 15300 0 )
+      NEW met2 ( 14030 4930 ) ( * 7650 )
+      NEW li1 ( 14490 7650 ) L1M1_PR_MR
+      NEW met1 ( 14030 7650 ) M1M2_PR
+      NEW li1 ( 14030 4930 ) L1M1_PR_MR
+      NEW met1 ( 14030 4930 ) M1M2_PR ;
+    - net68 ( PIN HI[70] ) ( ANTENNA_vccd1_tie_high_68_HI DIODE ) ( vccd1_tie_high_68 HI ) + USE SIGNAL
+      + ROUTED met1 ( 76130 8670 ) ( 77510 * )
+      NEW met2 ( 76130 8670 ) ( * 10370 )
+      NEW met1 ( 72910 10370 ) ( 76130 * )
+      NEW met2 ( 72910 10370 ) ( * 15300 0 )
+      NEW met1 ( 76590 6290 ) ( 83030 * )
+      NEW met2 ( 76590 6290 ) ( * 8500 )
+      NEW met2 ( 76130 8500 ) ( 76590 * )
+      NEW met2 ( 76130 8500 ) ( * 8670 )
+      NEW li1 ( 77510 8670 ) L1M1_PR_MR
+      NEW met1 ( 76130 8670 ) M1M2_PR
+      NEW met1 ( 76130 10370 ) M1M2_PR
+      NEW met1 ( 72910 10370 ) M1M2_PR
+      NEW li1 ( 83030 6290 ) L1M1_PR_MR
+      NEW met1 ( 76590 6290 ) M1M2_PR ;
+    - net69 ( PIN HI[71] ) ( ANTENNA_vccd1_tie_high_69_HI DIODE ) ( vccd1_tie_high_69 HI ) + USE SIGNAL
+      + ROUTED met1 ( 73830 7650 ) ( 74290 * )
+      NEW met2 ( 73830 7650 ) ( * 15300 0 )
+      NEW met1 ( 73830 4250 ) ( 77050 * )
+      NEW met2 ( 73830 4250 ) ( * 7650 )
+      NEW li1 ( 74290 7650 ) L1M1_PR_MR
+      NEW met1 ( 73830 7650 ) M1M2_PR
+      NEW li1 ( 77050 4250 ) L1M1_PR_MR
+      NEW met1 ( 73830 4250 ) M1M2_PR ;
+    - net7 ( PIN HI[15] ) ( ANTENNA_vccd1_tie_high_7_HI DIODE ) ( vccd1_tie_high_7 HI ) + USE SIGNAL
+      + ROUTED met1 ( 21390 9690 ) ( 22310 * )
+      NEW met2 ( 22310 9690 ) ( * 15300 0 )
+      NEW met2 ( 22310 4930 ) ( * 9690 )
+      NEW li1 ( 21390 9690 ) L1M1_PR_MR
+      NEW met1 ( 22310 9690 ) M1M2_PR
+      NEW li1 ( 22310 4930 ) L1M1_PR_MR
+      NEW met1 ( 22310 4930 ) M1M2_PR ;
+    - net70 ( PIN HI[72] ) ( ANTENNA_vccd1_tie_high_70_HI DIODE ) ( vccd1_tie_high_70 HI ) + USE SIGNAL
+      + ROUTED met1 ( 75210 9010 ) ( 79350 * )
+      NEW met2 ( 75210 9010 ) ( * 9860 )
+      NEW met2 ( 74750 9860 ) ( 75210 * )
+      NEW met2 ( 74750 9860 ) ( * 15300 0 )
+      NEW met1 ( 79350 4590 ) ( 80730 * )
+      NEW met2 ( 79350 4590 ) ( * 9010 )
+      NEW li1 ( 79350 9010 ) L1M1_PR_MR
+      NEW met1 ( 75210 9010 ) M1M2_PR
+      NEW li1 ( 80730 4590 ) L1M1_PR_MR
+      NEW met1 ( 79350 4590 ) M1M2_PR
+      NEW met1 ( 79350 9010 ) M1M2_PR ;
+    - net71 ( PIN HI[73] ) ( ANTENNA_vccd1_tie_high_71_HI DIODE ) ( vccd1_tie_high_71 HI ) + USE SIGNAL
+      + ROUTED met1 ( 75670 7650 ) ( 76130 * )
+      NEW met2 ( 75670 7650 ) ( * 15300 0 )
+      NEW met1 ( 76130 4930 ) ( 77970 * )
+      NEW met2 ( 76130 4930 ) ( * 7650 )
+      NEW met2 ( 75670 7650 ) ( 76130 * )
+      NEW li1 ( 76130 7650 ) L1M1_PR_MR
+      NEW met1 ( 75670 7650 ) M1M2_PR
+      NEW li1 ( 77970 4930 ) L1M1_PR_MR
+      NEW met1 ( 76130 4930 ) M1M2_PR ;
+    - net72 ( PIN HI[74] ) ( ANTENNA_vccd1_tie_high_72_HI DIODE ) ( vccd1_tie_high_72 HI ) + USE SIGNAL
+      + ROUTED met1 ( 77970 8670 ) ( 80730 * )
+      NEW met2 ( 77970 8500 ) ( * 8670 )
+      NEW met2 ( 77050 8500 ) ( 77970 * )
+      NEW met2 ( 77050 8500 ) ( * 9180 )
+      NEW met2 ( 76590 9180 ) ( 77050 * )
+      NEW met2 ( 76590 9180 ) ( * 15300 0 )
+      NEW met1 ( 80730 6630 ) ( 85790 * )
+      NEW met2 ( 80730 6630 ) ( * 8670 )
+      NEW li1 ( 80730 8670 ) L1M1_PR_MR
+      NEW met1 ( 77970 8670 ) M1M2_PR
+      NEW li1 ( 85790 6630 ) L1M1_PR_MR
+      NEW met1 ( 80730 6630 ) M1M2_PR
+      NEW met1 ( 80730 8670 ) M1M2_PR ;
+    - net73 ( PIN HI[75] ) ( ANTENNA_vccd1_tie_high_73_HI DIODE ) ( vccd1_tie_high_73 HI ) + USE SIGNAL
+      + ROUTED met1 ( 77510 9350 ) ( 82110 * )
+      NEW met2 ( 77510 9350 ) ( * 15300 0 )
+      NEW met1 ( 82110 4930 ) ( 83490 * )
+      NEW met2 ( 82110 4930 ) ( * 9350 )
+      NEW li1 ( 82110 9350 ) L1M1_PR_MR
+      NEW met1 ( 77510 9350 ) M1M2_PR
+      NEW li1 ( 83490 4930 ) L1M1_PR_MR
+      NEW met1 ( 82110 4930 ) M1M2_PR
+      NEW met1 ( 82110 9350 ) M1M2_PR ;
+    - net74 ( PIN HI[76] ) ( ANTENNA_vccd1_tie_high_74_HI DIODE ) ( vccd1_tie_high_74 HI ) + USE SIGNAL
+      + ROUTED met1 ( 78430 7650 ) ( 79350 * )
+      NEW met2 ( 78430 7650 ) ( * 15300 0 )
+      NEW met1 ( 78430 4930 ) ( 81650 * )
+      NEW met2 ( 78430 4930 ) ( * 7650 )
+      NEW li1 ( 79350 7650 ) L1M1_PR_MR
+      NEW met1 ( 78430 7650 ) M1M2_PR
+      NEW li1 ( 81650 4930 ) L1M1_PR_MR
+      NEW met1 ( 78430 4930 ) M1M2_PR ;
+    - net75 ( PIN HI[77] ) ( ANTENNA_vccd1_tie_high_75_HI DIODE ) ( vccd1_tie_high_75 HI ) + USE SIGNAL
+      + ROUTED met1 ( 79350 9690 ) ( 83490 * )
+      NEW met2 ( 79350 9690 ) ( * 15300 0 )
+      NEW met2 ( 84870 4250 ) ( * 9690 )
+      NEW met1 ( 83490 9690 ) ( 84870 * )
+      NEW li1 ( 83490 9690 ) L1M1_PR_MR
+      NEW met1 ( 79350 9690 ) M1M2_PR
+      NEW li1 ( 84870 4250 ) L1M1_PR_MR
+      NEW met1 ( 84870 4250 ) M1M2_PR
+      NEW met1 ( 84870 9690 ) M1M2_PR ;
+    - net76 ( PIN HI[78] ) ( ANTENNA_vccd1_tie_high_76_HI DIODE ) ( vccd1_tie_high_76 HI ) + USE SIGNAL
+      + ROUTED met1 ( 82570 8670 ) ( 84870 * )
+      NEW met1 ( 82570 8670 ) ( * 9010 )
+      NEW met1 ( 80270 9010 ) ( 82570 * )
+      NEW met2 ( 80270 9010 ) ( * 15300 0 )
+      NEW met1 ( 84410 6290 ) ( 90390 * )
+      NEW met2 ( 84410 6290 ) ( * 8670 )
+      NEW li1 ( 84870 8670 ) L1M1_PR_MR
+      NEW met1 ( 80270 9010 ) M1M2_PR
+      NEW li1 ( 90390 6290 ) L1M1_PR_MR
+      NEW met1 ( 84410 6290 ) M1M2_PR
+      NEW met1 ( 84410 8670 ) M1M2_PR ;
+    - net77 ( PIN HI[79] ) ( ANTENNA_vccd1_tie_high_77_HI DIODE ) ( vccd1_tie_high_77 HI ) + USE SIGNAL
+      + ROUTED met1 ( 81190 7650 ) ( 81650 * )
+      NEW met2 ( 81190 7650 ) ( * 15300 0 )
+      NEW met1 ( 81190 4590 ) ( 85790 * )
+      NEW met2 ( 81190 4590 ) ( * 7650 )
+      NEW li1 ( 81650 7650 ) L1M1_PR_MR
+      NEW met1 ( 81190 7650 ) M1M2_PR
+      NEW li1 ( 85790 4590 ) L1M1_PR_MR
+      NEW met1 ( 81190 4590 ) M1M2_PR ;
+    - net78 ( PIN HI[7] ) ( ANTENNA_vccd1_tie_high_78_HI DIODE ) ( vccd1_tie_high_78 HI ) + USE SIGNAL
+      + ROUTED met1 ( 14030 9690 ) ( 14950 * )
+      NEW met2 ( 14950 9690 ) ( * 15300 0 )
+      NEW met2 ( 14950 4930 ) ( * 9690 )
+      NEW li1 ( 14030 9690 ) L1M1_PR_MR
+      NEW met1 ( 14950 9690 ) M1M2_PR
+      NEW li1 ( 14950 4930 ) L1M1_PR_MR
+      NEW met1 ( 14950 4930 ) M1M2_PR ;
+    - net79 ( PIN HI[80] ) ( ANTENNA_vccd1_tie_high_79_HI DIODE ) ( vccd1_tie_high_79 HI ) + USE SIGNAL
+      + ROUTED met1 ( 87170 9690 ) ( * 10030 )
+      NEW met1 ( 82110 10030 ) ( 87170 * )
+      NEW met2 ( 82110 10030 ) ( * 15300 0 )
+      NEW met1 ( 88550 8670 ) ( 96370 * )
+      NEW met1 ( 88550 8670 ) ( * 9010 )
+      NEW met1 ( 87170 9010 ) ( 88550 * )
+      NEW met1 ( 87170 9010 ) ( * 9690 )
+      NEW li1 ( 87170 9690 ) L1M1_PR_MR
+      NEW met1 ( 82110 10030 ) M1M2_PR
+      NEW li1 ( 96370 8670 ) L1M1_PR_MR ;
+    - net8 ( PIN HI[16] ) ( ANTENNA_vccd1_tie_high_8_HI DIODE ) ( vccd1_tie_high_8 HI ) + USE SIGNAL
+      + ROUTED met1 ( 23230 7650 ) ( 23690 * )
+      NEW met2 ( 23230 7650 ) ( * 15300 0 )
+      NEW met2 ( 23230 4930 ) ( * 7650 )
+      NEW li1 ( 23690 7650 ) L1M1_PR_MR
+      NEW met1 ( 23230 7650 ) M1M2_PR
+      NEW li1 ( 23230 4930 ) L1M1_PR_MR
+      NEW met1 ( 23230 4930 ) M1M2_PR ;
+    - net80 ( PIN HI[81] ) ( ANTENNA_vccd1_tie_high_80_HI DIODE ) ( vccd1_tie_high_80 HI ) + USE SIGNAL
+      + ROUTED met1 ( 86710 8670 ) ( 87630 * )
+      NEW met1 ( 86710 8670 ) ( * 9010 )
+      NEW met1 ( 83030 9010 ) ( 86710 * )
+      NEW met2 ( 83030 9010 ) ( * 15300 0 )
+      NEW met1 ( 83030 7310 ) ( 93150 * )
+      NEW met2 ( 83030 7310 ) ( * 9010 )
+      NEW li1 ( 87630 8670 ) L1M1_PR_MR
+      NEW met1 ( 83030 9010 ) M1M2_PR
+      NEW li1 ( 93150 7310 ) L1M1_PR_MR
+      NEW met1 ( 83030 7310 ) M1M2_PR ;
+    - net81 ( PIN HI[82] ) ( ANTENNA_vccd1_tie_high_81_HI DIODE ) ( vccd1_tie_high_81 HI ) + USE SIGNAL
+      + ROUTED met1 ( 83950 7650 ) ( 84410 * )
+      NEW met2 ( 83950 7650 ) ( * 15300 0 )
+      NEW met1 ( 83950 4930 ) ( 86710 * )
+      NEW met2 ( 83950 4930 ) ( * 7650 )
+      NEW li1 ( 84410 7650 ) L1M1_PR_MR
+      NEW met1 ( 83950 7650 ) M1M2_PR
+      NEW li1 ( 86710 4930 ) L1M1_PR_MR
+      NEW met1 ( 83950 4930 ) M1M2_PR ;
+    - net82 ( PIN HI[83] ) ( ANTENNA_vccd1_tie_high_82_HI DIODE ) ( vccd1_tie_high_82 HI ) + USE SIGNAL
+      + ROUTED met1 ( 89010 9690 ) ( * 10370 )
+      NEW met1 ( 84870 10370 ) ( 89010 * )
+      NEW met2 ( 84870 10370 ) ( * 15300 0 )
+      NEW met2 ( 94070 6630 ) ( * 10030 )
+      NEW met1 ( 89010 10030 ) ( 94070 * )
+      NEW li1 ( 89010 9690 ) L1M1_PR_MR
+      NEW met1 ( 84870 10370 ) M1M2_PR
+      NEW li1 ( 94070 6630 ) L1M1_PR_MR
+      NEW met1 ( 94070 6630 ) M1M2_PR
+      NEW met1 ( 94070 10030 ) M1M2_PR ;
+    - net83 ( PIN HI[84] ) ( ANTENNA_vccd1_tie_high_83_HI DIODE ) ( vccd1_tie_high_83 HI ) + USE SIGNAL
+      + ROUTED met1 ( 90390 9010 ) ( 91770 * )
+      NEW met2 ( 91770 9010 ) ( * 11730 )
+      NEW met1 ( 85790 11730 ) ( 91770 * )
+      NEW met2 ( 85790 11730 ) ( * 15300 0 )
+      NEW met1 ( 91770 6970 ) ( 94990 * )
+      NEW met2 ( 91770 6970 ) ( * 9010 )
+      NEW li1 ( 90390 9010 ) L1M1_PR_MR
+      NEW met1 ( 91770 9010 ) M1M2_PR
+      NEW met1 ( 91770 11730 ) M1M2_PR
+      NEW met1 ( 85790 11730 ) M1M2_PR
+      NEW li1 ( 94990 6970 ) L1M1_PR_MR
+      NEW met1 ( 91770 6970 ) M1M2_PR ;
+    - net84 ( PIN HI[85] ) ( ANTENNA_vccd1_tie_high_84_HI DIODE ) ( vccd1_tie_high_84 HI ) + USE SIGNAL
+      + ROUTED met1 ( 87170 7650 ) ( 87630 * )
+      NEW met2 ( 87630 7650 ) ( * 11900 )
+      NEW met2 ( 86710 11900 ) ( 87630 * )
+      NEW met2 ( 86710 11900 ) ( * 15300 0 )
+      NEW met1 ( 87630 4930 ) ( 88550 * )
+      NEW met2 ( 87630 4930 ) ( * 7650 )
+      NEW li1 ( 87170 7650 ) L1M1_PR_MR
+      NEW met1 ( 87630 7650 ) M1M2_PR
+      NEW li1 ( 88550 4930 ) L1M1_PR_MR
+      NEW met1 ( 87630 4930 ) M1M2_PR ;
+    - net85 ( PIN HI[86] ) ( ANTENNA_vccd1_tie_high_85_HI DIODE ) ( vccd1_tie_high_85 HI ) + USE SIGNAL
+      + ROUTED met1 ( 88090 9350 ) ( 92230 * )
+      NEW met2 ( 88090 9350 ) ( * 12580 )
+      NEW met2 ( 87630 12580 ) ( 88090 * )
+      NEW met2 ( 87630 12580 ) ( * 15300 0 )
+      NEW met1 ( 92230 7650 ) ( 95910 * )
+      NEW met2 ( 92230 7650 ) ( * 9350 )
+      NEW li1 ( 92230 9350 ) L1M1_PR_MR
+      NEW met1 ( 88090 9350 ) M1M2_PR
+      NEW li1 ( 95910 7650 ) L1M1_PR_MR
+      NEW met1 ( 92230 7650 ) M1M2_PR
+      NEW met1 ( 92230 9350 ) M1M2_PR ;
+    - net86 ( PIN HI[87] ) ( ANTENNA_vccd1_tie_high_86_HI DIODE ) ( vccd1_tie_high_86 HI ) + USE SIGNAL
+      + ROUTED met1 ( 88090 7650 ) ( 89010 * )
+      NEW met2 ( 88090 7650 ) ( 88550 * )
+      NEW met2 ( 88550 7650 ) ( * 15300 0 )
+      NEW met2 ( 90850 4930 ) ( * 7650 )
+      NEW met1 ( 89010 7650 ) ( 90850 * )
+      NEW li1 ( 89010 7650 ) L1M1_PR_MR
+      NEW met1 ( 88090 7650 ) M1M2_PR
+      NEW li1 ( 90850 4930 ) L1M1_PR_MR
+      NEW met1 ( 90850 4930 ) M1M2_PR
+      NEW met1 ( 90850 7650 ) M1M2_PR ;
+    - net87 ( PIN HI[88] ) ( ANTENNA_vccd1_tie_high_87_HI DIODE ) ( vccd1_tie_high_87 HI ) + USE SIGNAL
+      + ROUTED met1 ( 90850 9690 ) ( 93610 * )
+      NEW met2 ( 90850 9690 ) ( * 11900 )
+      NEW met2 ( 89470 11900 ) ( 90850 * )
+      NEW met2 ( 89470 11900 ) ( * 15300 0 )
+      NEW met2 ( 96830 7650 ) ( * 9690 )
+      NEW met1 ( 93610 9690 ) ( 96830 * )
+      NEW li1 ( 93610 9690 ) L1M1_PR_MR
+      NEW met1 ( 90850 9690 ) M1M2_PR
+      NEW li1 ( 96830 7650 ) L1M1_PR_MR
+      NEW met1 ( 96830 7650 ) M1M2_PR
+      NEW met1 ( 96830 9690 ) M1M2_PR ;
+    - net88 ( PIN HI[89] ) ( ANTENNA_vccd1_tie_high_88_HI DIODE ) ( vccd1_tie_high_88 HI ) + USE SIGNAL
+      + ROUTED met2 ( 94990 9350 ) ( * 12410 )
+      NEW met1 ( 90390 12410 ) ( 94990 * )
+      NEW met2 ( 90390 12410 ) ( * 15300 0 )
+      NEW met1 ( 94990 4930 ) ( 96370 * )
+      NEW met2 ( 94990 4930 ) ( * 9350 )
+      NEW li1 ( 94990 9350 ) L1M1_PR_MR
+      NEW met1 ( 94990 9350 ) M1M2_PR
+      NEW met1 ( 94990 12410 ) M1M2_PR
+      NEW met1 ( 90390 12410 ) M1M2_PR
+      NEW li1 ( 96370 4930 ) L1M1_PR_MR
+      NEW met1 ( 94990 4930 ) M1M2_PR ;
+    - net89 ( PIN HI[8] ) ( ANTENNA_vccd1_tie_high_89_HI DIODE ) ( vccd1_tie_high_89 HI ) + USE SIGNAL
+      + ROUTED met1 ( 15870 7650 ) ( 16330 * )
+      NEW met2 ( 15870 7650 ) ( * 15300 0 )
+      NEW met1 ( 14030 6970 ) ( 15870 * )
+      NEW met1 ( 15870 6970 ) ( * 7650 )
+      NEW li1 ( 16330 7650 ) L1M1_PR_MR
+      NEW met1 ( 15870 7650 ) M1M2_PR
+      NEW li1 ( 14030 6970 ) L1M1_PR_MR ;
+    - net9 ( PIN HI[17] ) ( ANTENNA_vccd1_tie_high_9_HI DIODE ) ( vccd1_tie_high_9 HI ) + USE SIGNAL
+      + ROUTED met1 ( 21850 9010 ) ( 24150 * )
+      NEW met2 ( 24150 9010 ) ( * 15300 0 )
+      NEW met2 ( 20930 7650 ) ( * 9010 )
+      NEW met1 ( 20930 9010 ) ( 21850 * )
+      NEW li1 ( 21850 9010 ) L1M1_PR_MR
+      NEW met1 ( 24150 9010 ) M1M2_PR
+      NEW li1 ( 20930 7650 ) L1M1_PR_MR
+      NEW met1 ( 20930 7650 ) M1M2_PR
+      NEW met1 ( 20930 9010 ) M1M2_PR ;
+    - net90 ( PIN HI[90] ) ( ANTENNA_vccd1_tie_high_90_HI DIODE ) ( vccd1_tie_high_90 HI ) + USE SIGNAL
+      + ROUTED met1 ( 91310 7650 ) ( 91770 * )
+      NEW met2 ( 91310 7650 ) ( * 15300 0 )
+      NEW met1 ( 91310 4930 ) ( 93150 * )
+      NEW met2 ( 91310 4930 ) ( * 7650 )
+      NEW li1 ( 91770 7650 ) L1M1_PR_MR
+      NEW met1 ( 91310 7650 ) M1M2_PR
+      NEW li1 ( 93150 4930 ) L1M1_PR_MR
+      NEW met1 ( 91310 4930 ) M1M2_PR ;
+    - net91 ( PIN HI[9] ) ( ANTENNA_vccd1_tie_high_91_HI DIODE ) ( vccd1_tie_high_91 HI ) + USE SIGNAL
+      + ROUTED met1 ( 15870 9690 ) ( 16790 * )
+      NEW met2 ( 16790 9690 ) ( * 15300 0 )
+      NEW met2 ( 16790 4930 ) ( * 9690 )
+      NEW li1 ( 15870 9690 ) L1M1_PR_MR
+      NEW met1 ( 16790 9690 ) M1M2_PR
+      NEW li1 ( 16790 4930 ) L1M1_PR_MR
+      NEW met1 ( 16790 4930 ) M1M2_PR ;
+END NETS
+END DESIGN

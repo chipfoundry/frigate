@@ -1,0 +1,410 @@
+library (vccd1_tie_high) {
+  comment                        : "";
+  delay_model                    : table_lookup;
+  simulation                     : false;
+  capacitive_load_unit (1,pF);
+  leakage_power_unit             : 1pW;
+  current_unit                   : "1A";
+  pulling_resistance_unit        : "1kohm";
+  time_unit                      : "1ns";
+  voltage_unit                   : "1v";
+  library_features(report_delay_calculation);
+
+  input_threshold_pct_rise : 50;
+  input_threshold_pct_fall : 50;
+  output_threshold_pct_rise : 50;
+  output_threshold_pct_fall : 50;
+  slew_lower_threshold_pct_rise : 20;
+  slew_lower_threshold_pct_fall : 20;
+  slew_upper_threshold_pct_rise : 80;
+  slew_upper_threshold_pct_fall : 80;
+  slew_derate_from_library : 1.0;
+
+
+  nom_process                    : 1.0;
+  nom_temperature                : 25.0;
+  nom_voltage                    : 1.80;
+
+  type ("HI") {
+    base_type : array;
+    data_type : bit;
+    bit_width : 91;
+    bit_from : 90;
+    bit_to : 0;
+  }
+
+  cell ("vccd1_tie_high") {
+    area : 666.890 
+    is_macro_cell : true;
+    bus("HI") {
+      bus_type : HI;
+      direction : output;
+      capacitance : 0.0000;
+    pin("HI[90]") {
+      direction : output;
+      capacitance : 0.0029;
+    }
+    pin("HI[89]") {
+      direction : output;
+      capacitance : 0.0029;
+    }
+    pin("HI[88]") {
+      direction : output;
+      capacitance : 0.0031;
+    }
+    pin("HI[87]") {
+      direction : output;
+      capacitance : 0.0035;
+    }
+    pin("HI[86]") {
+      direction : output;
+      capacitance : 0.0037;
+    }
+    pin("HI[85]") {
+      direction : output;
+      capacitance : 0.0028;
+    }
+    pin("HI[84]") {
+      direction : output;
+      capacitance : 0.0039;
+    }
+    pin("HI[83]") {
+      direction : output;
+      capacitance : 0.0039;
+    }
+    pin("HI[82]") {
+      direction : output;
+      capacitance : 0.0031;
+    }
+    pin("HI[81]") {
+      direction : output;
+      capacitance : 0.0047;
+    }
+    pin("HI[80]") {
+      direction : output;
+      capacitance : 0.0045;
+    }
+    pin("HI[79]") {
+      direction : output;
+      capacitance : 0.0032;
+    }
+    pin("HI[78]") {
+      direction : output;
+      capacitance : 0.0042;
+    }
+    pin("HI[77]") {
+      direction : output;
+      capacitance : 0.0035;
+    }
+    pin("HI[76]") {
+      direction : output;
+      capacitance : 0.0032;
+    }
+    pin("HI[75]") {
+      direction : output;
+      capacitance : 0.0036;
+    }
+    pin("HI[74]") {
+      direction : output;
+      capacitance : 0.0039;
+    }
+    pin("HI[73]") {
+      direction : output;
+      capacitance : 0.0029;
+    }
+    pin("HI[72]") {
+      direction : output;
+      capacitance : 0.0036;
+    }
+    pin("HI[71]") {
+      direction : output;
+      capacitance : 0.0030;
+    }
+    pin("HI[70]") {
+      direction : output;
+      capacitance : 0.0043;
+    }
+    pin("HI[69]") {
+      direction : output;
+      capacitance : 0.0036;
+    }
+    pin("HI[68]") {
+      direction : output;
+      capacitance : 0.0031;
+    }
+    pin("HI[67]") {
+      direction : output;
+      capacitance : 0.0040;
+    }
+    pin("HI[66]") {
+      direction : output;
+      capacitance : 0.0037;
+    }
+    pin("HI[65]") {
+      direction : output;
+      capacitance : 0.0033;
+    }
+    pin("HI[64]") {
+      direction : output;
+      capacitance : 0.0041;
+    }
+    pin("HI[63]") {
+      direction : output;
+      capacitance : 0.0035;
+    }
+    pin("HI[62]") {
+      direction : output;
+      capacitance : 0.0031;
+    }
+    pin("HI[61]") {
+      direction : output;
+      capacitance : 0.0035;
+    }
+    pin("HI[60]") {
+      direction : output;
+      capacitance : 0.0036;
+    }
+    pin("HI[59]") {
+      direction : output;
+      capacitance : 0.0028;
+    }
+    pin("HI[58]") {
+      direction : output;
+      capacitance : 0.0037;
+    }
+    pin("HI[57]") {
+      direction : output;
+      capacitance : 0.0030;
+    }
+    pin("HI[56]") {
+      direction : output;
+      capacitance : 0.0043;
+    }
+    pin("HI[55]") {
+      direction : output;
+      capacitance : 0.0034;
+    }
+    pin("HI[54]") {
+      direction : output;
+      capacitance : 0.0026;
+    }
+    pin("HI[53]") {
+      direction : output;
+      capacitance : 0.0041;
+    }
+    pin("HI[52]") {
+      direction : output;
+      capacitance : 0.0036;
+    }
+    pin("HI[51]") {
+      direction : output;
+      capacitance : 0.0037;
+    }
+    pin("HI[50]") {
+      direction : output;
+      capacitance : 0.0030;
+    }
+    pin("HI[49]") {
+      direction : output;
+      capacitance : 0.0027;
+    }
+    pin("HI[48]") {
+      direction : output;
+      capacitance : 0.0028;
+    }
+    pin("HI[47]") {
+      direction : output;
+      capacitance : 0.0029;
+    }
+    pin("HI[46]") {
+      direction : output;
+      capacitance : 0.0028;
+    }
+    pin("HI[45]") {
+      direction : output;
+      capacitance : 0.0026;
+    }
+    pin("HI[44]") {
+      direction : output;
+      capacitance : 0.0026;
+    }
+    pin("HI[43]") {
+      direction : output;
+      capacitance : 0.0023;
+    }
+    pin("HI[42]") {
+      direction : output;
+      capacitance : 0.0022;
+    }
+    pin("HI[41]") {
+      direction : output;
+      capacitance : 0.0022;
+    }
+    pin("HI[40]") {
+      direction : output;
+      capacitance : 0.0030;
+    }
+    pin("HI[39]") {
+      direction : output;
+      capacitance : 0.0023;
+    }
+    pin("HI[38]") {
+      direction : output;
+      capacitance : 0.0024;
+    }
+    pin("HI[37]") {
+      direction : output;
+      capacitance : 0.0027;
+    }
+    pin("HI[36]") {
+      direction : output;
+      capacitance : 0.0027;
+    }
+    pin("HI[35]") {
+      direction : output;
+      capacitance : 0.0032;
+    }
+    pin("HI[34]") {
+      direction : output;
+      capacitance : 0.0024;
+    }
+    pin("HI[33]") {
+      direction : output;
+      capacitance : 0.0028;
+    }
+    pin("HI[32]") {
+      direction : output;
+      capacitance : 0.0024;
+    }
+    pin("HI[31]") {
+      direction : output;
+      capacitance : 0.0027;
+    }
+    pin("HI[30]") {
+      direction : output;
+      capacitance : 0.0026;
+    }
+    pin("HI[29]") {
+      direction : output;
+      capacitance : 0.0025;
+    }
+    pin("HI[28]") {
+      direction : output;
+      capacitance : 0.0027;
+    }
+    pin("HI[27]") {
+      direction : output;
+      capacitance : 0.0024;
+    }
+    pin("HI[26]") {
+      direction : output;
+      capacitance : 0.0024;
+    }
+    pin("HI[25]") {
+      direction : output;
+      capacitance : 0.0026;
+    }
+    pin("HI[24]") {
+      direction : output;
+      capacitance : 0.0024;
+    }
+    pin("HI[23]") {
+      direction : output;
+      capacitance : 0.0024;
+    }
+    pin("HI[22]") {
+      direction : output;
+      capacitance : 0.0026;
+    }
+    pin("HI[21]") {
+      direction : output;
+      capacitance : 0.0024;
+    }
+    pin("HI[20]") {
+      direction : output;
+      capacitance : 0.0025;
+    }
+    pin("HI[19]") {
+      direction : output;
+      capacitance : 0.0027;
+    }
+    pin("HI[18]") {
+      direction : output;
+      capacitance : 0.0025;
+    }
+    pin("HI[17]") {
+      direction : output;
+      capacitance : 0.0024;
+    }
+    pin("HI[16]") {
+      direction : output;
+      capacitance : 0.0023;
+    }
+    pin("HI[15]") {
+      direction : output;
+      capacitance : 0.0024;
+    }
+    pin("HI[14]") {
+      direction : output;
+      capacitance : 0.0024;
+    }
+    pin("HI[13]") {
+      direction : output;
+      capacitance : 0.0025;
+    }
+    pin("HI[12]") {
+      direction : output;
+      capacitance : 0.0024;
+    }
+    pin("HI[11]") {
+      direction : output;
+      capacitance : 0.0026;
+    }
+    pin("HI[10]") {
+      direction : output;
+      capacitance : 0.0023;
+    }
+    pin("HI[9]") {
+      direction : output;
+      capacitance : 0.0024;
+    }
+    pin("HI[8]") {
+      direction : output;
+      capacitance : 0.0023;
+    }
+    pin("HI[7]") {
+      direction : output;
+      capacitance : 0.0023;
+    }
+    pin("HI[6]") {
+      direction : output;
+      capacitance : 0.0023;
+    }
+    pin("HI[5]") {
+      direction : output;
+      capacitance : 0.0024;
+    }
+    pin("HI[4]") {
+      direction : output;
+      capacitance : 0.0025;
+    }
+    pin("HI[3]") {
+      direction : output;
+      capacitance : 0.0026;
+    }
+    pin("HI[2]") {
+      direction : output;
+      capacitance : 0.0027;
+    }
+    pin("HI[1]") {
+      direction : output;
+      capacitance : 0.0025;
+    }
+    pin("HI[0]") {
+      direction : output;
+      capacitance : 0.0021;
+    }
+    }
+  }
+
+}

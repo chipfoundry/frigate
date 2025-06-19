@@ -1,0 +1,90 @@
+VERSION 5.7 ;
+  NOWIREEXTENSIONATPIN ON ;
+  DIVIDERCHAR "/" ;
+  BUSBITCHARS "[]" ;
+MACRO gpio_logic_high
+  CLASS BLOCK ;
+  FOREIGN gpio_logic_high ;
+  ORIGIN 0.000 0.000 ;
+  SIZE 6.000 BY 6.000 ;
+  PIN gpio_logic1
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met1 ;
+        RECT 4.000 1.390 6.000 1.670 ;
+    END
+  END gpio_logic1
+  PIN vccd1
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER met2 ;
+        RECT 4.500 -0.240 5.500 5.680 ;
+    END
+    PORT
+      LAYER met1 ;
+        RECT 0.000 2.480 0.145 2.960 ;
+    END
+  END vccd1
+  PIN vssd1
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER met2 ;
+        RECT 1.500 -0.240 2.500 5.680 ;
+    END
+    PORT
+      LAYER met1 ;
+        RECT 0.000 -0.240 0.145 0.240 ;
+    END
+    PORT
+      LAYER met1 ;
+        RECT 0.000 5.200 0.145 5.680 ;
+    END
+  END vssd1
+  OBS
+      LAYER nwell ;
+        RECT 0.000 4.135 6.000 5.525 ;
+        RECT -0.190 1.305 6.170 4.135 ;
+        RECT 0.000 0.105 6.000 1.305 ;
+        RECT 0.000 0.000 0.145 0.105 ;
+      LAYER pwell ;
+        RECT 0.145 -0.085 0.315 0.105 ;
+      LAYER nwell ;
+        RECT 0.315 0.000 1.525 0.105 ;
+      LAYER pwell ;
+        RECT 1.525 -0.085 1.695 0.105 ;
+      LAYER nwell ;
+        RECT 1.695 0.060 5.665 0.105 ;
+        RECT 1.695 0.000 2.915 0.060 ;
+      LAYER pwell ;
+        RECT 2.915 -0.050 3.075 0.060 ;
+      LAYER nwell ;
+        RECT 3.075 0.055 5.665 0.060 ;
+        RECT 3.075 0.000 4.280 0.055 ;
+      LAYER pwell ;
+        RECT 4.280 -0.055 4.400 0.055 ;
+      LAYER nwell ;
+        RECT 4.400 0.000 5.665 0.055 ;
+      LAYER pwell ;
+        RECT 5.665 -0.085 5.835 0.105 ;
+      LAYER nwell ;
+        RECT 5.835 0.000 6.000 0.105 ;
+      LAYER li1 ;
+        RECT 0.000 -0.085 5.980 5.525 ;
+      LAYER met1 ;
+        RECT 0.425 4.920 5.980 5.680 ;
+        RECT 0.145 3.240 5.980 4.920 ;
+        RECT 0.425 2.200 5.980 3.240 ;
+        RECT 0.145 1.950 5.980 2.200 ;
+        RECT 0.145 1.110 3.720 1.950 ;
+        RECT 0.145 0.520 5.980 1.110 ;
+        RECT 0.425 0.085 5.980 0.520 ;
+        RECT 0.145 -0.240 5.980 0.085 ;
+      LAYER met2 ;
+        RECT 3.320 1.370 3.580 4.070 ;
+  END
+END gpio_logic_high
+END LIBRARY
+

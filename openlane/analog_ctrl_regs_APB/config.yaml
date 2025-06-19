@@ -1,0 +1,43 @@
+DESIGN_NAME: analog_ctrl_regs_APB
+VERILOG_FILES:
+  - dir::/../../verilog/rtl/ahbl_1/apb_1/analog_ctrl_regs/analog_ctrl_regs_APB.v
+  - dir::/../../verilog/rtl/ahbl_1/apb_1/analog_ctrl_regs/analog_ctrl_regs.v
+
+PNR_SDC_FILE: dir::base.sdc
+SIGNOFF_SDC_FILE: dir::signoff.sdc
+CLOCK_PORT: PCLK
+SYNTH_STRATEGY: AREA 1
+MAX_FANOUT_CONSTRAINT: 16
+
+FP_SIZING: absolute
+DIE_AREA: [0, 0, 1605, 105]
+CORE_AREA: [5, 5, 1600, 100]
+FP_PIN_ORDER_CFG: dir::pin_order.cfg
+
+FP_PDN_MULTILAYER: false
+FP_PDN_SKIPTRIM: true
+PDN_OBSTRUCTIONS: 
+  - met4 1090 0 1180 105
+ROUTING_OBSTRUCTIONS: 
+  - met4 1090 0 1180 105
+VDD_NETS:
+  - vccd0
+GND_NETS:
+  - vssd0
+
+DIODE_ON_PORTS: both
+GPL_CELL_PADDING: 3
+PL_WIRE_LENGTH_COEF: 0.1
+PL_TARGET_DENSITY_PCT: 30
+PL_ROUTABILITY_DRIVEN: true
+GRT_ADJUSTMENT: 0.03
+GRT_ALLOW_CONGESTION: true
+RT_MAX_LAYER: met3
+DESIGN_REPAIR_MAX_WIRE_LENGTH: 1200
+
+RUN_HEURISTIC_DIODE_INSERTION: true
+HEURISTIC_ANTENNA_THRESHOLD: 200
+MAGIC_DEF_LABELS: false
+
+# skip yosys synthesis checks as it fails due IRQ output port that's not used in the RTL
+ERROR_ON_SYNTH_CHECKS: false

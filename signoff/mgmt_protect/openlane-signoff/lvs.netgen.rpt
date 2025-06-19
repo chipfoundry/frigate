@@ -1,0 +1,1645 @@
+
+Circuit 1 cell sky130_fd_pr__diode_pw2nd_05v5 and Circuit 2 cell sky130_fd_pr__diode_pw2nd_05v5 are black boxes.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__diode_pw2nd_05v5  |Circuit 2: sky130_fd_pr__diode_pw2nd_05v5  
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__diode_pw2nd_05v5 and sky130_fd_pr__diode_pw2nd_05v5 are equivalent.
+
+Circuit 1 cell sky130_fd_pr__pfet_01v8_hvt and Circuit 2 cell sky130_fd_pr__pfet_01v8_hvt are black boxes.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__pfet_01v8_hvt     |Circuit 2: sky130_fd_pr__pfet_01v8_hvt     
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__pfet_01v8_hvt and sky130_fd_pr__pfet_01v8_hvt are equivalent.
+
+Circuit 1 cell sky130_fd_pr__nfet_01v8 and Circuit 2 cell sky130_fd_pr__nfet_01v8 are black boxes.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__nfet_01v8         |Circuit 2: sky130_fd_pr__nfet_01v8         
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__nfet_01v8 and sky130_fd_pr__nfet_01v8 are equivalent.
+
+Circuit 1 cell sky130_fd_pr__res_generic_po and Circuit 2 cell sky130_fd_pr__res_generic_po are black boxes.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__res_generic_po    |Circuit 2: sky130_fd_pr__res_generic_po    
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__res_generic_po and sky130_fd_pr__res_generic_po are equivalent.
+
+Cell UL_sky130_fd_sc_hd__diode_2 (0) disconnected node: VGND
+Cell UL_sky130_fd_sc_hd__diode_2 (0) disconnected node: VPWR
+Cell UL_sky130_fd_sc_hd__diode_2 (0) disconnected node: VPB
+Cell sky130_fd_sc_hd__diode_2 (1) disconnected node: VGND
+Cell sky130_fd_sc_hd__diode_2 (1) disconnected node: VPB
+Cell sky130_fd_sc_hd__diode_2 (1) disconnected node: VPWR
+Subcircuit summary:
+Circuit 1: UL_sky130_fd_sc_hd__diode_2     |Circuit 2: sky130_fd_sc_hd__diode_2        
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__diode_pw2nd_05v5 (1)         |sky130_fd_pr__diode_pw2nd_05v5 (1)         
+Number of devices: 1                       |Number of devices: 1                       
+Number of nets: 2                          |Number of nets: 2                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: UL_sky130_fd_sc_hd__diode_2     |Circuit 2: sky130_fd_sc_hd__diode_2        
+-------------------------------------------|-------------------------------------------
+VNB                                        |VNB                                        
+DIODE                                      |DIODE                                      
+VGND                                       |VGND                                       
+VPWR                                       |VPWR                                       
+VPB                                        |VPB                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes UL_sky130_fd_sc_hd__diode_2 and sky130_fd_sc_hd__diode_2 are equivalent.
+
+Subcircuit summary:
+Circuit 1: UL_sky130_fd_sc_hd__decap_3     |Circuit 2: sky130_fd_sc_hd__decap_3        
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_01v8_hvt (1)            |sky130_fd_pr__pfet_01v8_hvt (1)            
+sky130_fd_pr__nfet_01v8 (1)                |sky130_fd_pr__nfet_01v8 (1)                
+Number of devices: 2                       |Number of devices: 2                       
+Number of nets: 4                          |Number of nets: 4                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: UL_sky130_fd_sc_hd__decap_3     |Circuit 2: sky130_fd_sc_hd__decap_3        
+-------------------------------------------|-------------------------------------------
+VPB                                        |VPB                                        
+VNB                                        |VNB                                        
+VPWR                                       |VPWR                                       
+VGND                                       |VGND                                       
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes UL_sky130_fd_sc_hd__decap_3 and sky130_fd_sc_hd__decap_3 are equivalent.
+
+Cell UL_sky130_fd_sc_hd__conb_1 (0) disconnected node: VPB
+Cell UL_sky130_fd_sc_hd__conb_1 (0) disconnected node: VNB
+Cell sky130_fd_sc_hd__conb_1 (1) disconnected node: VNB
+Cell sky130_fd_sc_hd__conb_1 (1) disconnected node: VPB
+Subcircuit summary:
+Circuit 1: UL_sky130_fd_sc_hd__conb_1      |Circuit 2: sky130_fd_sc_hd__conb_1         
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__res_generic_po (2)           |sky130_fd_pr__res_generic_po (2)           
+Number of devices: 2                       |Number of devices: 2                       
+Number of nets: 4                          |Number of nets: 4                          
+---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: UL_sky130_fd_sc_hd__conb_1      |Circuit 2: sky130_fd_sc_hd__conb_1         
+-------------------------------------------|-------------------------------------------
+VGND                                       |VGND                                       
+LO                                         |LO                                         
+HI                                         |HI                                         
+VPWR                                       |VPWR                                       
+VPB                                        |VPB                                        
+VNB                                        |VNB                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes UL_sky130_fd_sc_hd__conb_1 and sky130_fd_sc_hd__conb_1 are equivalent.
+
+Subcircuit summary:
+Circuit 1: sky130_fd_sc_hd__decap_3        |Circuit 2: sky130_fd_sc_hd__decap_3        
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_01v8_hvt (1)            |sky130_fd_pr__pfet_01v8_hvt (1)            
+sky130_fd_pr__nfet_01v8 (1)                |sky130_fd_pr__nfet_01v8 (1)                
+Number of devices: 2                       |Number of devices: 2                       
+Number of nets: 4                          |Number of nets: 4                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__decap_3        |Circuit 2: sky130_fd_sc_hd__decap_3        
+-------------------------------------------|-------------------------------------------
+VPB                                        |VPB                                        
+VNB                                        |VNB                                        
+VPWR                                       |VPWR                                       
+VGND                                       |VGND                                       
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__decap_3 and sky130_fd_sc_hd__decap_3 are equivalent.
+
+Cell sky130_fd_sc_hd__diode_2 (0) disconnected node: VGND
+Cell sky130_fd_sc_hd__diode_2 (0) disconnected node: VPWR
+Cell sky130_fd_sc_hd__diode_2 (0) disconnected node: VPB
+Cell sky130_fd_sc_hd__diode_2 (1) disconnected node: VGND
+Cell sky130_fd_sc_hd__diode_2 (1) disconnected node: VPWR
+Cell sky130_fd_sc_hd__diode_2 (1) disconnected node: VPB
+Subcircuit summary:
+Circuit 1: sky130_fd_sc_hd__diode_2        |Circuit 2: sky130_fd_sc_hd__diode_2        
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__diode_pw2nd_05v5 (1)         |sky130_fd_pr__diode_pw2nd_05v5 (1)         
+Number of devices: 1                       |Number of devices: 1                       
+Number of nets: 2                          |Number of nets: 2                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__diode_2        |Circuit 2: sky130_fd_sc_hd__diode_2        
+-------------------------------------------|-------------------------------------------
+VNB                                        |VNB                                        
+DIODE                                      |DIODE                                      
+VGND                                       |VGND                                       
+VPWR                                       |VPWR                                       
+VPB                                        |VPB                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__diode_2 and sky130_fd_sc_hd__diode_2 are equivalent.
+
+Class sky130_fd_sc_hd__nand2_4 (0):  Merged 12 parallel devices.
+Class sky130_fd_sc_hd__nand2_4 (1):  Merged 12 parallel devices.
+Subcircuit summary:
+Circuit 1: sky130_fd_sc_hd__nand2_4        |Circuit 2: sky130_fd_sc_hd__nand2_4        
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__nfet_01v8 (8->2)             |sky130_fd_pr__nfet_01v8 (8->2)             
+sky130_fd_pr__pfet_01v8_hvt (8->2)         |sky130_fd_pr__pfet_01v8_hvt (8->2)         
+Number of devices: 4                       |Number of devices: 4                       
+Number of nets: 8                          |Number of nets: 8                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__nand2_4        |Circuit 2: sky130_fd_sc_hd__nand2_4        
+-------------------------------------------|-------------------------------------------
+VGND                                       |VGND                                       
+Y                                          |Y                                          
+A                                          |A                                          
+VNB                                        |VNB                                        
+VPWR                                       |VPWR                                       
+VPB                                        |VPB                                        
+B                                          |B                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__nand2_4 and sky130_fd_sc_hd__nand2_4 are equivalent.
+
+Class sky130_fd_sc_hd__and2_4 (0):  Merged 6 parallel devices.
+Class sky130_fd_sc_hd__and2_4 (1):  Merged 6 parallel devices.
+Subcircuit summary:
+Circuit 1: sky130_fd_sc_hd__and2_4         |Circuit 2: sky130_fd_sc_hd__and2_4         
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_01v8_hvt (6->3)         |sky130_fd_pr__pfet_01v8_hvt (6->3)         
+sky130_fd_pr__nfet_01v8 (6->3)             |sky130_fd_pr__nfet_01v8 (6->3)             
+Number of devices: 6                       |Number of devices: 6                       
+Number of nets: 9                          |Number of nets: 9                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__and2_4         |Circuit 2: sky130_fd_sc_hd__and2_4         
+-------------------------------------------|-------------------------------------------
+B                                          |B                                          
+A                                          |A                                          
+VGND                                       |VGND                                       
+X                                          |X                                          
+VPWR                                       |VPWR                                       
+VPB                                        |VPB                                        
+VNB                                        |VNB                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__and2_4 and sky130_fd_sc_hd__and2_4 are equivalent.
+
+Subcircuit summary:
+Circuit 1: sky130_fd_sc_hd__nand2_1        |Circuit 2: sky130_fd_sc_hd__nand2_1        
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_01v8_hvt (2)            |sky130_fd_pr__pfet_01v8_hvt (2)            
+sky130_fd_pr__nfet_01v8 (2)                |sky130_fd_pr__nfet_01v8 (2)                
+Number of devices: 4                       |Number of devices: 4                       
+Number of nets: 8                          |Number of nets: 8                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__nand2_1        |Circuit 2: sky130_fd_sc_hd__nand2_1        
+-------------------------------------------|-------------------------------------------
+VGND                                       |VGND                                       
+Y                                          |Y                                          
+A                                          |A                                          
+VPWR                                       |VPWR                                       
+VPB                                        |VPB                                        
+B                                          |B                                          
+VNB                                        |VNB                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__nand2_1 and sky130_fd_sc_hd__nand2_1 are equivalent.
+
+Class sky130_fd_sc_hd__inv_2 (0):  Merged 2 parallel devices.
+Class sky130_fd_sc_hd__inv_2 (1):  Merged 2 parallel devices.
+Subcircuit summary:
+Circuit 1: sky130_fd_sc_hd__inv_2          |Circuit 2: sky130_fd_sc_hd__inv_2          
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_01v8_hvt (2->1)         |sky130_fd_pr__pfet_01v8_hvt (2->1)         
+sky130_fd_pr__nfet_01v8 (2->1)             |sky130_fd_pr__nfet_01v8 (2->1)             
+Number of devices: 2                       |Number of devices: 2                       
+Number of nets: 6                          |Number of nets: 6                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__inv_2          |Circuit 2: sky130_fd_sc_hd__inv_2          
+-------------------------------------------|-------------------------------------------
+VGND                                       |VGND                                       
+VNB                                        |VNB                                        
+VPWR                                       |VPWR                                       
+VPB                                        |VPB                                        
+Y                                          |Y                                          
+A                                          |A                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__inv_2 and sky130_fd_sc_hd__inv_2 are equivalent.
+
+Class sky130_fd_sc_hd__buf_12 (0):  Merged 28 parallel devices.
+Class sky130_fd_sc_hd__buf_12 (1):  Merged 28 parallel devices.
+Subcircuit summary:
+Circuit 1: sky130_fd_sc_hd__buf_12         |Circuit 2: sky130_fd_sc_hd__buf_12         
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__nfet_01v8 (16->2)            |sky130_fd_pr__nfet_01v8 (16->2)            
+sky130_fd_pr__pfet_01v8_hvt (16->2)        |sky130_fd_pr__pfet_01v8_hvt (16->2)        
+Number of devices: 4                       |Number of devices: 4                       
+Number of nets: 7                          |Number of nets: 7                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__buf_12         |Circuit 2: sky130_fd_sc_hd__buf_12         
+-------------------------------------------|-------------------------------------------
+X                                          |X                                          
+VPWR                                       |VPWR                                       
+VPB                                        |VPB                                        
+VGND                                       |VGND                                       
+VNB                                        |VNB                                        
+A                                          |A                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__buf_12 and sky130_fd_sc_hd__buf_12 are equivalent.
+
+Class vccd1_tie_high (0):  Merged 25 parallel devices.
+Class vccd1_tie_high (1):  Merged 25 parallel devices.
+Subcircuit summary:
+Circuit 1: vccd1_tie_high                  |Circuit 2: vccd1_tie_high                  
+-------------------------------------------|-------------------------------------------
+UL_sky130_fd_sc_hd__diode_2 (91)           |sky130_fd_sc_hd__diode_2 (91)              
+UL_sky130_fd_sc_hd__decap_3 (26->1)        |sky130_fd_sc_hd__decap_3 (26->1)           
+UL_sky130_fd_sc_hd__conb_1 (91)            |sky130_fd_sc_hd__conb_1 (91)               
+Number of devices: 183                     |Number of devices: 183                     
+Number of nets: 184                        |Number of nets: 184                        
+---------------------------------------------------------------------------------------
+NET mismatches: Class fragments follow (with fanout counts):
+Circuit 1: vccd1_tie_high                  |Circuit 2: vccd1_tie_high                  
+
+---------------------------------------------------------------------------------------
+Net: HI[0]                                 |Net: HI[0]                                 
+  UL_sky130_fd_sc_hd__diode_2/DIODE = 1    |  sky130_fd_sc_hd__conb_1/HI = 1           
+  UL_sky130_fd_sc_hd__conb_1/HI = 1        |  sky130_fd_sc_hd__diode_2/DIODE = 1       
+                                           |                                           
+Net: HI[9]                                 |Net: HI[9]                                 
+  UL_sky130_fd_sc_hd__conb_1/HI = 1        |  sky130_fd_sc_hd__conb_1/HI = 1           
+  UL_sky130_fd_sc_hd__diode_2/DIODE = 1    |  sky130_fd_sc_hd__diode_2/DIODE = 1       
+                                           |                                           
+Net: HI[90]                                |Net: HI[90]                                
+  UL_sky130_fd_sc_hd__conb_1/HI = 1        |  sky130_fd_sc_hd__conb_1/HI = 1           
+  UL_sky130_fd_sc_hd__diode_2/DIODE = 1    |  sky130_fd_sc_hd__diode_2/DIODE = 1       
+                                           |                                           
+Net: HI[8]                                 |Net: HI[8]                                 
+  UL_sky130_fd_sc_hd__conb_1/HI = 1        |  sky130_fd_sc_hd__conb_1/HI = 1           
+  UL_sky130_fd_sc_hd__diode_2/DIODE = 1    |  sky130_fd_sc_hd__diode_2/DIODE = 1       
+                                           |                                           
+Net: HI[89]                                |Net: HI[89]                                
+  UL_sky130_fd_sc_hd__diode_2/DIODE = 1    |  sky130_fd_sc_hd__conb_1/HI = 1           
+  UL_sky130_fd_sc_hd__conb_1/HI = 1        |  sky130_fd_sc_hd__diode_2/DIODE = 1       
+                                           |                                           
+Net: HI[88]                                |Net: HI[88]                                
+  UL_sky130_fd_sc_hd__diode_2/DIODE = 1    |  sky130_fd_sc_hd__conb_1/HI = 1           
+  UL_sky130_fd_sc_hd__conb_1/HI = 1        |  sky130_fd_sc_hd__diode_2/DIODE = 1       
+                                           |                                           
+Net: HI[87]                                |Net: HI[87]                                
+  UL_sky130_fd_sc_hd__conb_1/HI = 1        |  sky130_fd_sc_hd__conb_1/HI = 1           
+  UL_sky130_fd_sc_hd__diode_2/DIODE = 1    |  sky130_fd_sc_hd__diode_2/DIODE = 1       
+                                           |                                           
+Net: HI[86]                                |Net: HI[86]                                
+  UL_sky130_fd_sc_hd__conb_1/HI = 1        |  sky130_fd_sc_hd__conb_1/HI = 1           
+  UL_sky130_fd_sc_hd__diode_2/DIODE = 1    |  sky130_fd_sc_hd__diode_2/DIODE = 1       
+                                           |                                           
+Net: HI[85]                                |Net: HI[85]                                
+  UL_sky130_fd_sc_hd__diode_2/DIODE = 1    |  sky130_fd_sc_hd__conb_1/HI = 1           
+  UL_sky130_fd_sc_hd__conb_1/HI = 1        |  sky130_fd_sc_hd__diode_2/DIODE = 1       
+                                           |                                           
+Net: HI[84]                                |Net: HI[84]                                
+  UL_sky130_fd_sc_hd__conb_1/HI = 1        |  sky130_fd_sc_hd__conb_1/HI = 1           
+  UL_sky130_fd_sc_hd__diode_2/DIODE = 1    |  sky130_fd_sc_hd__diode_2/DIODE = 1       
+                                           |                                           
+Net: HI[83]                                |Net: HI[83]                                
+  UL_sky130_fd_sc_hd__conb_1/HI = 1        |  sky130_fd_sc_hd__conb_1/HI = 1           
+  UL_sky130_fd_sc_hd__diode_2/DIODE = 1    |  sky130_fd_sc_hd__diode_2/DIODE = 1       
+                                           |                                           
+Net: HI[82]                                |Net: HI[82]                                
+  UL_sky130_fd_sc_hd__diode_2/DIODE = 1    |  sky130_fd_sc_hd__conb_1/HI = 1           
+  UL_sky130_fd_sc_hd__conb_1/HI = 1        |  sky130_fd_sc_hd__diode_2/DIODE = 1       
+                                           |                                           
+Net: HI[81]                                |Net: HI[81]                                
+  UL_sky130_fd_sc_hd__conb_1/HI = 1        |  sky130_fd_sc_hd__conb_1/HI = 1           
+  UL_sky130_fd_sc_hd__diode_2/DIODE = 1    |  sky130_fd_sc_hd__diode_2/DIODE = 1       
+                                           |                                           
+Net: HI[80]                                |Net: HI[80]                                
+  UL_sky130_fd_sc_hd__diode_2/DIODE = 1    |  sky130_fd_sc_hd__conb_1/HI = 1           
+  UL_sky130_fd_sc_hd__conb_1/HI = 1        |  sky130_fd_sc_hd__diode_2/DIODE = 1       
+                                           |                                           
+Net: HI[7]                                 |Net: HI[7]                                 
+  UL_sky130_fd_sc_hd__conb_1/HI = 1        |  sky130_fd_sc_hd__conb_1/HI = 1           
+  UL_sky130_fd_sc_hd__diode_2/DIODE = 1    |  sky130_fd_sc_hd__diode_2/DIODE = 1       
+                                           |                                           
+Net: HI[79]                                |Net: HI[79]                                
+  UL_sky130_fd_sc_hd__diode_2/DIODE = 1    |  sky130_fd_sc_hd__conb_1/HI = 1           
+  UL_sky130_fd_sc_hd__conb_1/HI = 1        |  sky130_fd_sc_hd__diode_2/DIODE = 1       
+                                           |                                           
+Net: HI[78]                                |Net: HI[78]                                
+  UL_sky130_fd_sc_hd__diode_2/DIODE = 1    |  sky130_fd_sc_hd__conb_1/HI = 1           
+  UL_sky130_fd_sc_hd__conb_1/HI = 1        |  sky130_fd_sc_hd__diode_2/DIODE = 1       
+                                           |                                           
+Net: HI[77]                                |Net: HI[77]                                
+  UL_sky130_fd_sc_hd__conb_1/HI = 1        |  sky130_fd_sc_hd__conb_1/HI = 1           
+  UL_sky130_fd_sc_hd__diode_2/DIODE = 1    |  sky130_fd_sc_hd__diode_2/DIODE = 1       
+                                           |                                           
+Net: HI[76]                                |Net: HI[76]                                
+  UL_sky130_fd_sc_hd__diode_2/DIODE = 1    |  sky130_fd_sc_hd__conb_1/HI = 1           
+  UL_sky130_fd_sc_hd__conb_1/HI = 1        |  sky130_fd_sc_hd__diode_2/DIODE = 1       
+                                           |                                           
+Net: HI[75]                                |Net: HI[75]                                
+  UL_sky130_fd_sc_hd__diode_2/DIODE = 1    |  sky130_fd_sc_hd__conb_1/HI = 1           
+  UL_sky130_fd_sc_hd__conb_1/HI = 1        |  sky130_fd_sc_hd__diode_2/DIODE = 1       
+                                           |                                           
+Net: HI[74]                                |Net: HI[74]                                
+  UL_sky130_fd_sc_hd__conb_1/HI = 1        |  sky130_fd_sc_hd__conb_1/HI = 1           
+  UL_sky130_fd_sc_hd__diode_2/DIODE = 1    |  sky130_fd_sc_hd__diode_2/DIODE = 1       
+                                           |                                           
+Net: HI[73]                                |Net: HI[73]                                
+  UL_sky130_fd_sc_hd__conb_1/HI = 1        |  sky130_fd_sc_hd__conb_1/HI = 1           
+  UL_sky130_fd_sc_hd__diode_2/DIODE = 1    |  sky130_fd_sc_hd__diode_2/DIODE = 1       
+                                           |                                           
+Net: HI[72]                                |Net: HI[72]                                
+  UL_sky130_fd_sc_hd__diode_2/DIODE = 1    |  sky130_fd_sc_hd__conb_1/HI = 1           
+  UL_sky130_fd_sc_hd__conb_1/HI = 1        |  sky130_fd_sc_hd__diode_2/DIODE = 1       
+                                           |                                           
+Net: HI[71]                                |Net: HI[71]                                
+  UL_sky130_fd_sc_hd__diode_2/DIODE = 1    |  sky130_fd_sc_hd__conb_1/HI = 1           
+  UL_sky130_fd_sc_hd__conb_1/HI = 1        |  sky130_fd_sc_hd__diode_2/DIODE = 1       
+                                           |                                           
+Net: HI[70]                                |Net: HI[70]                                
+  UL_sky130_fd_sc_hd__diode_2/DIODE = 1    |  sky130_fd_sc_hd__conb_1/HI = 1           
+  UL_sky130_fd_sc_hd__conb_1/HI = 1        |  sky130_fd_sc_hd__diode_2/DIODE = 1       
+                                           |                                           
+Net: HI[6]                                 |Net: HI[6]                                 
+  UL_sky130_fd_sc_hd__conb_1/HI = 1        |  sky130_fd_sc_hd__conb_1/HI = 1           
+  UL_sky130_fd_sc_hd__diode_2/DIODE = 1    |  sky130_fd_sc_hd__diode_2/DIODE = 1       
+                                           |                                           
+Net: HI[69]                                |Net: HI[69]                                
+  UL_sky130_fd_sc_hd__diode_2/DIODE = 1    |  sky130_fd_sc_hd__conb_1/HI = 1           
+  UL_sky130_fd_sc_hd__conb_1/HI = 1        |  sky130_fd_sc_hd__diode_2/DIODE = 1       
+                                           |                                           
+Net: HI[68]                                |Net: HI[68]                                
+  UL_sky130_fd_sc_hd__diode_2/DIODE = 1    |  sky130_fd_sc_hd__conb_1/HI = 1           
+  UL_sky130_fd_sc_hd__conb_1/HI = 1        |  sky130_fd_sc_hd__diode_2/DIODE = 1       
+                                           |                                           
+Net: HI[67]                                |Net: HI[67]                                
+  UL_sky130_fd_sc_hd__conb_1/HI = 1        |  sky130_fd_sc_hd__conb_1/HI = 1           
+  UL_sky130_fd_sc_hd__diode_2/DIODE = 1    |  sky130_fd_sc_hd__diode_2/DIODE = 1       
+                                           |                                           
+Net: HI[66]                                |Net: HI[66]                                
+  UL_sky130_fd_sc_hd__diode_2/DIODE = 1    |  sky130_fd_sc_hd__conb_1/HI = 1           
+  UL_sky130_fd_sc_hd__conb_1/HI = 1        |  sky130_fd_sc_hd__diode_2/DIODE = 1       
+                                           |                                           
+Net: HI[65]                                |Net: HI[65]                                
+  UL_sky130_fd_sc_hd__diode_2/DIODE = 1    |  sky130_fd_sc_hd__conb_1/HI = 1           
+  UL_sky130_fd_sc_hd__conb_1/HI = 1        |  sky130_fd_sc_hd__diode_2/DIODE = 1       
+                                           |                                           
+Net: HI[64]                                |Net: HI[64]                                
+  UL_sky130_fd_sc_hd__conb_1/HI = 1        |  sky130_fd_sc_hd__conb_1/HI = 1           
+  UL_sky130_fd_sc_hd__diode_2/DIODE = 1    |  sky130_fd_sc_hd__diode_2/DIODE = 1       
+                                           |                                           
+Net: HI[63]                                |Net: HI[63]                                
+  UL_sky130_fd_sc_hd__conb_1/HI = 1        |  sky130_fd_sc_hd__conb_1/HI = 1           
+  UL_sky130_fd_sc_hd__diode_2/DIODE = 1    |  sky130_fd_sc_hd__diode_2/DIODE = 1       
+                                           |                                           
+Net: HI[62]                                |Net: HI[62]                                
+  UL_sky130_fd_sc_hd__conb_1/HI = 1        |  sky130_fd_sc_hd__conb_1/HI = 1           
+  UL_sky130_fd_sc_hd__diode_2/DIODE = 1    |  sky130_fd_sc_hd__diode_2/DIODE = 1       
+                                           |                                           
+Net: HI[61]                                |Net: HI[61]                                
+  UL_sky130_fd_sc_hd__diode_2/DIODE = 1    |  sky130_fd_sc_hd__conb_1/HI = 1           
+  UL_sky130_fd_sc_hd__conb_1/HI = 1        |  sky130_fd_sc_hd__diode_2/DIODE = 1       
+                                           |                                           
+Net: HI[60]                                |Net: HI[60]                                
+  UL_sky130_fd_sc_hd__diode_2/DIODE = 1    |  sky130_fd_sc_hd__conb_1/HI = 1           
+  UL_sky130_fd_sc_hd__conb_1/HI = 1        |  sky130_fd_sc_hd__diode_2/DIODE = 1       
+                                           |                                           
+Net: HI[5]                                 |Net: HI[5]                                 
+  UL_sky130_fd_sc_hd__conb_1/HI = 1        |  sky130_fd_sc_hd__conb_1/HI = 1           
+  UL_sky130_fd_sc_hd__diode_2/DIODE = 1    |  sky130_fd_sc_hd__diode_2/DIODE = 1       
+                                           |                                           
+Net: HI[59]                                |Net: HI[59]                                
+  UL_sky130_fd_sc_hd__diode_2/DIODE = 1    |  sky130_fd_sc_hd__conb_1/HI = 1           
+  UL_sky130_fd_sc_hd__conb_1/HI = 1        |  sky130_fd_sc_hd__diode_2/DIODE = 1       
+                                           |                                           
+Net: HI[58]                                |Net: HI[58]                                
+  UL_sky130_fd_sc_hd__diode_2/DIODE = 1    |  sky130_fd_sc_hd__conb_1/HI = 1           
+  UL_sky130_fd_sc_hd__conb_1/HI = 1        |  sky130_fd_sc_hd__diode_2/DIODE = 1       
+                                           |                                           
+Net: HI[57]                                |Net: HI[57]                                
+  UL_sky130_fd_sc_hd__conb_1/HI = 1        |  sky130_fd_sc_hd__conb_1/HI = 1           
+  UL_sky130_fd_sc_hd__diode_2/DIODE = 1    |  sky130_fd_sc_hd__diode_2/DIODE = 1       
+                                           |                                           
+Net: HI[56]                                |Net: HI[56]                                
+  UL_sky130_fd_sc_hd__diode_2/DIODE = 1    |  sky130_fd_sc_hd__conb_1/HI = 1           
+  UL_sky130_fd_sc_hd__conb_1/HI = 1        |  sky130_fd_sc_hd__diode_2/DIODE = 1       
+                                           |                                           
+Net: HI[55]                                |Net: HI[55]                                
+  UL_sky130_fd_sc_hd__diode_2/DIODE = 1    |  sky130_fd_sc_hd__conb_1/HI = 1           
+  UL_sky130_fd_sc_hd__conb_1/HI = 1        |  sky130_fd_sc_hd__diode_2/DIODE = 1       
+                                           |                                           
+Net: HI[54]                                |Net: HI[54]                                
+  UL_sky130_fd_sc_hd__conb_1/HI = 1        |  sky130_fd_sc_hd__conb_1/HI = 1           
+  UL_sky130_fd_sc_hd__diode_2/DIODE = 1    |  sky130_fd_sc_hd__diode_2/DIODE = 1       
+                                           |                                           
+Net: HI[53]                                |Net: HI[53]                                
+  UL_sky130_fd_sc_hd__diode_2/DIODE = 1    |  sky130_fd_sc_hd__conb_1/HI = 1           
+  UL_sky130_fd_sc_hd__conb_1/HI = 1        |  sky130_fd_sc_hd__diode_2/DIODE = 1       
+                                           |                                           
+Net: HI[52]                                |Net: HI[52]                                
+  UL_sky130_fd_sc_hd__conb_1/HI = 1        |  sky130_fd_sc_hd__conb_1/HI = 1           
+  UL_sky130_fd_sc_hd__diode_2/DIODE = 1    |  sky130_fd_sc_hd__diode_2/DIODE = 1       
+                                           |                                           
+Net: HI[51]                                |Net: HI[51]                                
+  UL_sky130_fd_sc_hd__diode_2/DIODE = 1    |  sky130_fd_sc_hd__conb_1/HI = 1           
+  UL_sky130_fd_sc_hd__conb_1/HI = 1        |  sky130_fd_sc_hd__diode_2/DIODE = 1       
+                                           |                                           
+Net: HI[50]                                |Net: HI[50]                                
+  UL_sky130_fd_sc_hd__diode_2/DIODE = 1    |  sky130_fd_sc_hd__conb_1/HI = 1           
+  UL_sky130_fd_sc_hd__conb_1/HI = 1        |  sky130_fd_sc_hd__diode_2/DIODE = 1       
+                                           |                                           
+Net: HI[4]                                 |Net: HI[4]                                 
+  UL_sky130_fd_sc_hd__conb_1/HI = 1        |  sky130_fd_sc_hd__conb_1/HI = 1           
+  UL_sky130_fd_sc_hd__diode_2/DIODE = 1    |  sky130_fd_sc_hd__diode_2/DIODE = 1       
+                                           |                                           
+Net: HI[49]                                |Net: HI[49]                                
+  UL_sky130_fd_sc_hd__diode_2/DIODE = 1    |  sky130_fd_sc_hd__conb_1/HI = 1           
+  UL_sky130_fd_sc_hd__conb_1/HI = 1        |  sky130_fd_sc_hd__diode_2/DIODE = 1       
+                                           |                                           
+Net: HI[48]                                |Net: HI[48]                                
+  UL_sky130_fd_sc_hd__diode_2/DIODE = 1    |  sky130_fd_sc_hd__conb_1/HI = 1           
+  UL_sky130_fd_sc_hd__conb_1/HI = 1        |  sky130_fd_sc_hd__diode_2/DIODE = 1       
+                                           |                                           
+Net: HI[47]                                |Net: HI[47]                                
+  UL_sky130_fd_sc_hd__conb_1/HI = 1        |  sky130_fd_sc_hd__conb_1/HI = 1           
+  UL_sky130_fd_sc_hd__diode_2/DIODE = 1    |  sky130_fd_sc_hd__diode_2/DIODE = 1       
+                                           |                                           
+Net: HI[46]                                |Net: HI[46]                                
+  UL_sky130_fd_sc_hd__diode_2/DIODE = 1    |  sky130_fd_sc_hd__conb_1/HI = 1           
+  UL_sky130_fd_sc_hd__conb_1/HI = 1        |  sky130_fd_sc_hd__diode_2/DIODE = 1       
+                                           |                                           
+Net: HI[45]                                |Net: HI[45]                                
+  UL_sky130_fd_sc_hd__diode_2/DIODE = 1    |  sky130_fd_sc_hd__conb_1/HI = 1           
+  UL_sky130_fd_sc_hd__conb_1/HI = 1        |  sky130_fd_sc_hd__diode_2/DIODE = 1       
+                                           |                                           
+Net: HI[44]                                |Net: HI[44]                                
+  UL_sky130_fd_sc_hd__diode_2/DIODE = 1    |  sky130_fd_sc_hd__conb_1/HI = 1           
+  UL_sky130_fd_sc_hd__conb_1/HI = 1        |  sky130_fd_sc_hd__diode_2/DIODE = 1       
+                                           |                                           
+Net: HI[43]                                |Net: HI[43]                                
+  UL_sky130_fd_sc_hd__diode_2/DIODE = 1    |  sky130_fd_sc_hd__conb_1/HI = 1           
+  UL_sky130_fd_sc_hd__conb_1/HI = 1        |  sky130_fd_sc_hd__diode_2/DIODE = 1       
+                                           |                                           
+Net: HI[42]                                |Net: HI[42]                                
+  UL_sky130_fd_sc_hd__conb_1/HI = 1        |  sky130_fd_sc_hd__conb_1/HI = 1           
+  UL_sky130_fd_sc_hd__diode_2/DIODE = 1    |  sky130_fd_sc_hd__diode_2/DIODE = 1       
+                                           |                                           
+Net: HI[41]                                |Net: HI[41]                                
+  UL_sky130_fd_sc_hd__diode_2/DIODE = 1    |  sky130_fd_sc_hd__conb_1/HI = 1           
+  UL_sky130_fd_sc_hd__conb_1/HI = 1        |  sky130_fd_sc_hd__diode_2/DIODE = 1       
+                                           |                                           
+Net: HI[40]                                |Net: HI[40]                                
+  UL_sky130_fd_sc_hd__diode_2/DIODE = 1    |  sky130_fd_sc_hd__conb_1/HI = 1           
+  UL_sky130_fd_sc_hd__conb_1/HI = 1        |  sky130_fd_sc_hd__diode_2/DIODE = 1       
+                                           |                                           
+Net: HI[3]                                 |Net: HI[3]                                 
+  UL_sky130_fd_sc_hd__conb_1/HI = 1        |  sky130_fd_sc_hd__conb_1/HI = 1           
+  UL_sky130_fd_sc_hd__diode_2/DIODE = 1    |  sky130_fd_sc_hd__diode_2/DIODE = 1       
+                                           |                                           
+Net: HI[39]                                |Net: HI[39]                                
+  UL_sky130_fd_sc_hd__diode_2/DIODE = 1    |  sky130_fd_sc_hd__conb_1/HI = 1           
+  UL_sky130_fd_sc_hd__conb_1/HI = 1        |  sky130_fd_sc_hd__diode_2/DIODE = 1       
+                                           |                                           
+Net: HI[38]                                |Net: HI[38]                                
+  UL_sky130_fd_sc_hd__diode_2/DIODE = 1    |  sky130_fd_sc_hd__conb_1/HI = 1           
+  UL_sky130_fd_sc_hd__conb_1/HI = 1        |  sky130_fd_sc_hd__diode_2/DIODE = 1       
+                                           |                                           
+Net: HI[37]                                |Net: HI[37]                                
+  UL_sky130_fd_sc_hd__conb_1/HI = 1        |  sky130_fd_sc_hd__conb_1/HI = 1           
+  UL_sky130_fd_sc_hd__diode_2/DIODE = 1    |  sky130_fd_sc_hd__diode_2/DIODE = 1       
+                                           |                                           
+Net: HI[36]                                |Net: HI[36]                                
+  UL_sky130_fd_sc_hd__diode_2/DIODE = 1    |  sky130_fd_sc_hd__conb_1/HI = 1           
+  UL_sky130_fd_sc_hd__conb_1/HI = 1        |  sky130_fd_sc_hd__diode_2/DIODE = 1       
+                                           |                                           
+Net: HI[35]                                |Net: HI[35]                                
+  UL_sky130_fd_sc_hd__diode_2/DIODE = 1    |  sky130_fd_sc_hd__conb_1/HI = 1           
+  UL_sky130_fd_sc_hd__conb_1/HI = 1        |  sky130_fd_sc_hd__diode_2/DIODE = 1       
+                                           |                                           
+Net: HI[34]                                |Net: HI[34]                                
+  UL_sky130_fd_sc_hd__diode_2/DIODE = 1    |  sky130_fd_sc_hd__conb_1/HI = 1           
+  UL_sky130_fd_sc_hd__conb_1/HI = 1        |  sky130_fd_sc_hd__diode_2/DIODE = 1       
+                                           |                                           
+Net: HI[33]                                |Net: HI[33]                                
+  UL_sky130_fd_sc_hd__diode_2/DIODE = 1    |  sky130_fd_sc_hd__conb_1/HI = 1           
+  UL_sky130_fd_sc_hd__conb_1/HI = 1        |  sky130_fd_sc_hd__diode_2/DIODE = 1       
+                                           |                                           
+Net: HI[32]                                |Net: HI[32]                                
+  UL_sky130_fd_sc_hd__conb_1/HI = 1        |  sky130_fd_sc_hd__conb_1/HI = 1           
+  UL_sky130_fd_sc_hd__diode_2/DIODE = 1    |  sky130_fd_sc_hd__diode_2/DIODE = 1       
+                                           |                                           
+Net: HI[31]                                |Net: HI[31]                                
+  UL_sky130_fd_sc_hd__diode_2/DIODE = 1    |  sky130_fd_sc_hd__conb_1/HI = 1           
+  UL_sky130_fd_sc_hd__conb_1/HI = 1        |  sky130_fd_sc_hd__diode_2/DIODE = 1       
+                                           |                                           
+Net: HI[30]                                |Net: HI[30]                                
+  UL_sky130_fd_sc_hd__diode_2/DIODE = 1    |  sky130_fd_sc_hd__conb_1/HI = 1           
+  UL_sky130_fd_sc_hd__conb_1/HI = 1        |  sky130_fd_sc_hd__diode_2/DIODE = 1       
+                                           |                                           
+Net: HI[2]                                 |Net: HI[2]                                 
+  UL_sky130_fd_sc_hd__conb_1/HI = 1        |  sky130_fd_sc_hd__conb_1/HI = 1           
+  UL_sky130_fd_sc_hd__diode_2/DIODE = 1    |  sky130_fd_sc_hd__diode_2/DIODE = 1       
+                                           |                                           
+Net: HI[29]                                |Net: HI[29]                                
+  UL_sky130_fd_sc_hd__diode_2/DIODE = 1    |  sky130_fd_sc_hd__conb_1/HI = 1           
+  UL_sky130_fd_sc_hd__conb_1/HI = 1        |  sky130_fd_sc_hd__diode_2/DIODE = 1       
+                                           |                                           
+Net: HI[28]                                |Net: HI[28]                                
+  UL_sky130_fd_sc_hd__diode_2/DIODE = 1    |  sky130_fd_sc_hd__conb_1/HI = 1           
+  UL_sky130_fd_sc_hd__conb_1/HI = 1        |  sky130_fd_sc_hd__diode_2/DIODE = 1       
+                                           |                                           
+Net: HI[27]                                |Net: HI[27]                                
+  UL_sky130_fd_sc_hd__conb_1/HI = 1        |  sky130_fd_sc_hd__conb_1/HI = 1           
+  UL_sky130_fd_sc_hd__diode_2/DIODE = 1    |  sky130_fd_sc_hd__diode_2/DIODE = 1       
+                                           |                                           
+Net: HI[26]                                |Net: HI[26]                                
+  UL_sky130_fd_sc_hd__diode_2/DIODE = 1    |  sky130_fd_sc_hd__conb_1/HI = 1           
+  UL_sky130_fd_sc_hd__conb_1/HI = 1        |  sky130_fd_sc_hd__diode_2/DIODE = 1       
+                                           |                                           
+Net: HI[25]                                |Net: HI[25]                                
+  UL_sky130_fd_sc_hd__diode_2/DIODE = 1    |  sky130_fd_sc_hd__conb_1/HI = 1           
+  UL_sky130_fd_sc_hd__conb_1/HI = 1        |  sky130_fd_sc_hd__diode_2/DIODE = 1       
+                                           |                                           
+Net: HI[24]                                |Net: HI[24]                                
+  UL_sky130_fd_sc_hd__diode_2/DIODE = 1    |  sky130_fd_sc_hd__conb_1/HI = 1           
+  UL_sky130_fd_sc_hd__conb_1/HI = 1        |  sky130_fd_sc_hd__diode_2/DIODE = 1       
+                                           |                                           
+Net: HI[23]                                |Net: HI[23]                                
+  UL_sky130_fd_sc_hd__diode_2/DIODE = 1    |  sky130_fd_sc_hd__conb_1/HI = 1           
+  UL_sky130_fd_sc_hd__conb_1/HI = 1        |  sky130_fd_sc_hd__diode_2/DIODE = 1       
+                                           |                                           
+Net: HI[22]                                |Net: HI[22]                                
+  UL_sky130_fd_sc_hd__diode_2/DIODE = 1    |  sky130_fd_sc_hd__conb_1/HI = 1           
+  UL_sky130_fd_sc_hd__conb_1/HI = 1        |  sky130_fd_sc_hd__diode_2/DIODE = 1       
+                                           |                                           
+Net: HI[21]                                |Net: HI[21]                                
+  UL_sky130_fd_sc_hd__diode_2/DIODE = 1    |  sky130_fd_sc_hd__conb_1/HI = 1           
+  UL_sky130_fd_sc_hd__conb_1/HI = 1        |  sky130_fd_sc_hd__diode_2/DIODE = 1       
+                                           |                                           
+Net: HI[20]                                |Net: HI[20]                                
+  UL_sky130_fd_sc_hd__diode_2/DIODE = 1    |  sky130_fd_sc_hd__conb_1/HI = 1           
+  UL_sky130_fd_sc_hd__conb_1/HI = 1        |  sky130_fd_sc_hd__diode_2/DIODE = 1       
+                                           |                                           
+Net: HI[1]                                 |Net: HI[1]                                 
+  UL_sky130_fd_sc_hd__conb_1/HI = 1        |  sky130_fd_sc_hd__conb_1/HI = 1           
+  UL_sky130_fd_sc_hd__diode_2/DIODE = 1    |  sky130_fd_sc_hd__diode_2/DIODE = 1       
+                                           |                                           
+Net: HI[19]                                |Net: HI[19]                                
+  UL_sky130_fd_sc_hd__diode_2/DIODE = 1    |  sky130_fd_sc_hd__conb_1/HI = 1           
+  UL_sky130_fd_sc_hd__conb_1/HI = 1        |  sky130_fd_sc_hd__diode_2/DIODE = 1       
+                                           |                                           
+Net: HI[18]                                |Net: HI[18]                                
+  UL_sky130_fd_sc_hd__diode_2/DIODE = 1    |  sky130_fd_sc_hd__conb_1/HI = 1           
+  UL_sky130_fd_sc_hd__conb_1/HI = 1        |  sky130_fd_sc_hd__diode_2/DIODE = 1       
+                                           |                                           
+Net: HI[17]                                |Net: HI[17]                                
+  UL_sky130_fd_sc_hd__conb_1/HI = 1        |  sky130_fd_sc_hd__conb_1/HI = 1           
+  UL_sky130_fd_sc_hd__diode_2/DIODE = 1    |  sky130_fd_sc_hd__diode_2/DIODE = 1       
+                                           |                                           
+Net: HI[16]                                |Net: HI[16]                                
+  UL_sky130_fd_sc_hd__diode_2/DIODE = 1    |  sky130_fd_sc_hd__conb_1/HI = 1           
+  UL_sky130_fd_sc_hd__conb_1/HI = 1        |  sky130_fd_sc_hd__diode_2/DIODE = 1       
+                                           |                                           
+Net: HI[15]                                |Net: HI[15]                                
+  UL_sky130_fd_sc_hd__diode_2/DIODE = 1    |  sky130_fd_sc_hd__conb_1/HI = 1           
+  UL_sky130_fd_sc_hd__conb_1/HI = 1        |  sky130_fd_sc_hd__diode_2/DIODE = 1       
+                                           |                                           
+Net: HI[14]                                |Net: HI[14]                                
+  UL_sky130_fd_sc_hd__conb_1/HI = 1        |  sky130_fd_sc_hd__conb_1/HI = 1           
+  UL_sky130_fd_sc_hd__diode_2/DIODE = 1    |  sky130_fd_sc_hd__diode_2/DIODE = 1       
+                                           |                                           
+Net: HI[13]                                |Net: HI[13]                                
+  UL_sky130_fd_sc_hd__diode_2/DIODE = 1    |  sky130_fd_sc_hd__conb_1/HI = 1           
+  UL_sky130_fd_sc_hd__conb_1/HI = 1        |  sky130_fd_sc_hd__diode_2/DIODE = 1       
+                                           |                                           
+Net: HI[12]                                |Net: HI[12]                                
+  UL_sky130_fd_sc_hd__diode_2/DIODE = 1    |  sky130_fd_sc_hd__conb_1/HI = 1           
+  UL_sky130_fd_sc_hd__conb_1/HI = 1        |  sky130_fd_sc_hd__diode_2/DIODE = 1       
+                                           |                                           
+Net: HI[11]                                |Net: HI[11]                                
+  UL_sky130_fd_sc_hd__conb_1/HI = 1        |  sky130_fd_sc_hd__conb_1/HI = 1           
+  UL_sky130_fd_sc_hd__diode_2/DIODE = 1    |  sky130_fd_sc_hd__diode_2/DIODE = 1       
+                                           |                                           
+Net: HI[10]                                |Net: HI[10]                                
+  UL_sky130_fd_sc_hd__diode_2/DIODE = 1    |  sky130_fd_sc_hd__conb_1/HI = 1           
+  UL_sky130_fd_sc_hd__conb_1/HI = 1        |  sky130_fd_sc_hd__diode_2/DIODE = 1       
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: vccd1                                 |Net: vccd1                                 
+  UL_sky130_fd_sc_hd__diode_2/VPWR = 91    |  sky130_fd_sc_hd__conb_1/VPWR = 91        
+  UL_sky130_fd_sc_hd__diode_2/VPB = 91     |  sky130_fd_sc_hd__conb_1/VPB = 91         
+  UL_sky130_fd_sc_hd__decap_3/VPWR = 1     |  sky130_fd_sc_hd__diode_2/VPWR = 91       
+  UL_sky130_fd_sc_hd__decap_3/VPB = 1      |  sky130_fd_sc_hd__diode_2/VPB = 91        
+  UL_sky130_fd_sc_hd__conb_1/VPWR = 91     |  sky130_fd_sc_hd__decap_3/VPWR = 1        
+  UL_sky130_fd_sc_hd__conb_1/VPB = 91      |  sky130_fd_sc_hd__decap_3/VPB = 1         
+                                           |                                           
+Net: vssd1                                 |Net: vssd1                                 
+  UL_sky130_fd_sc_hd__diode_2/VGND = 91    |  sky130_fd_sc_hd__conb_1/VGND = 91        
+  UL_sky130_fd_sc_hd__diode_2/VNB = 91     |  sky130_fd_sc_hd__conb_1/VNB = 91         
+  UL_sky130_fd_sc_hd__decap_3/VGND = 1     |  sky130_fd_sc_hd__diode_2/VGND = 91       
+  UL_sky130_fd_sc_hd__decap_3/VNB = 1      |  sky130_fd_sc_hd__diode_2/VNB = 91        
+  UL_sky130_fd_sc_hd__conb_1/VGND = 91     |  sky130_fd_sc_hd__decap_3/VGND = 1        
+  UL_sky130_fd_sc_hd__conb_1/VNB = 91      |  sky130_fd_sc_hd__decap_3/VNB = 1         
+---------------------------------------------------------------------------------------
+DEVICE mismatches: Class fragments follow (with node fanout counts):
+Circuit 1: vccd1_tie_high                  |Circuit 2: vccd1_tie_high                  
+
+---------------------------------------------------------------------------------------
+Instance: UL_sky130_fd_sc_hd__diode_2:ANTE |Instance: ANTENNA_vccd1_tie_high_1_HI      
+  VGND = 366                               |  DIODE = 2                                
+  VPWR = 366                               |  VGND = 366                               
+  VPB = 366                                |  VPWR = 366                               
+  VNB = 366                                |  VPB = 366                                
+  DIODE = 2                                |  VNB = 366                                
+                                           |                                           
+Instance: UL_sky130_fd_sc_hd__diode_2:ANTE |Instance: ANTENNA_vccd1_tie_high_91_HI     
+  VGND = 366                               |  DIODE = 2                                
+  VPWR = 366                               |  VGND = 366                               
+  VPB = 366                                |  VPWR = 366                               
+  VNB = 366                                |  VPB = 366                                
+  DIODE = 2                                |  VNB = 366                                
+                                           |                                           
+Instance: UL_sky130_fd_sc_hd__diode_2:ANTE |Instance: ANTENNA_vccd1_tie_high_90_HI     
+  VGND = 366                               |  DIODE = 2                                
+  VPWR = 366                               |  VGND = 366                               
+  VPB = 366                                |  VPWR = 366                               
+  VNB = 366                                |  VPB = 366                                
+  DIODE = 2                                |  VNB = 366                                
+                                           |                                           
+Instance: UL_sky130_fd_sc_hd__diode_2:ANTE |Instance: ANTENNA_vccd1_tie_high_89_HI     
+  VGND = 366                               |  DIODE = 2                                
+  VPWR = 366                               |  VGND = 366                               
+  VPB = 366                                |  VPWR = 366                               
+  VNB = 366                                |  VPB = 366                                
+  DIODE = 2                                |  VNB = 366                                
+                                           |                                           
+Instance: UL_sky130_fd_sc_hd__diode_2:ANTE |Instance: ANTENNA_vccd1_tie_high_88_HI     
+  VGND = 366                               |  DIODE = 2                                
+  VPWR = 366                               |  VGND = 366                               
+  VPB = 366                                |  VPWR = 366                               
+  VNB = 366                                |  VPB = 366                                
+  DIODE = 2                                |  VNB = 366                                
+                                           |                                           
+Instance: UL_sky130_fd_sc_hd__diode_2:ANTE |Instance: ANTENNA_vccd1_tie_high_87_HI     
+  VGND = 366                               |  DIODE = 2                                
+  VPWR = 366                               |  VGND = 366                               
+  VPB = 366                                |  VPWR = 366                               
+  VNB = 366                                |  VPB = 366                                
+  DIODE = 2                                |  VNB = 366                                
+                                           |                                           
+Instance: UL_sky130_fd_sc_hd__diode_2:ANTE |Instance: ANTENNA_vccd1_tie_high_86_HI     
+  VGND = 366                               |  DIODE = 2                                
+  VPWR = 366                               |  VGND = 366                               
+  VPB = 366                                |  VPWR = 366                               
+  VNB = 366                                |  VPB = 366                                
+  DIODE = 2                                |  VNB = 366                                
+                                           |                                           
+Instance: UL_sky130_fd_sc_hd__diode_2:ANTE |Instance: ANTENNA_vccd1_tie_high_85_HI     
+  VGND = 366                               |  DIODE = 2                                
+  VPWR = 366                               |  VGND = 366                               
+  VPB = 366                                |  VPWR = 366                               
+  VNB = 366                                |  VPB = 366                                
+  DIODE = 2                                |  VNB = 366                                
+                                           |                                           
+Instance: UL_sky130_fd_sc_hd__diode_2:ANTE |Instance: ANTENNA_vccd1_tie_high_84_HI     
+  VGND = 366                               |  DIODE = 2                                
+  VPWR = 366                               |  VGND = 366                               
+  VPB = 366                                |  VPWR = 366                               
+  VNB = 366                                |  VPB = 366                                
+  DIODE = 2                                |  VNB = 366                                
+                                           |                                           
+Instance: UL_sky130_fd_sc_hd__diode_2:ANTE |Instance: ANTENNA_vccd1_tie_high_83_HI     
+  VGND = 366                               |  DIODE = 2                                
+  VPWR = 366                               |  VGND = 366                               
+  VPB = 366                                |  VPWR = 366                               
+  VNB = 366                                |  VPB = 366                                
+  DIODE = 2                                |  VNB = 366                                
+                                           |                                           
+Instance: UL_sky130_fd_sc_hd__diode_2:ANTE |Instance: ANTENNA_vccd1_tie_high_82_HI     
+  VGND = 366                               |  DIODE = 2                                
+  VPWR = 366                               |  VGND = 366                               
+  VPB = 366                                |  VPWR = 366                               
+  VNB = 366                                |  VPB = 366                                
+  DIODE = 2                                |  VNB = 366                                
+                                           |                                           
+Instance: UL_sky130_fd_sc_hd__diode_2:ANTE |Instance: ANTENNA_vccd1_tie_high_81_HI     
+  VGND = 366                               |  DIODE = 2                                
+  VPWR = 366                               |  VGND = 366                               
+  VPB = 366                                |  VPWR = 366                               
+  VNB = 366                                |  VPB = 366                                
+  DIODE = 2                                |  VNB = 366                                
+                                           |                                           
+Instance: UL_sky130_fd_sc_hd__diode_2:ANTE |Instance: ANTENNA_vccd1_tie_high_80_HI     
+  VGND = 366                               |  DIODE = 2                                
+  VPWR = 366                               |  VGND = 366                               
+  VPB = 366                                |  VPWR = 366                               
+  VNB = 366                                |  VPB = 366                                
+  DIODE = 2                                |  VNB = 366                                
+                                           |                                           
+Instance: UL_sky130_fd_sc_hd__diode_2:ANTE |Instance: ANTENNA_vccd1_tie_high_79_HI     
+  VGND = 366                               |  DIODE = 2                                
+  VPWR = 366                               |  VGND = 366                               
+  VPB = 366                                |  VPWR = 366                               
+  VNB = 366                                |  VPB = 366                                
+  DIODE = 2                                |  VNB = 366                                
+                                           |                                           
+Instance: UL_sky130_fd_sc_hd__diode_2:ANTE |Instance: ANTENNA_vccd1_tie_high_78_HI     
+  VGND = 366                               |  DIODE = 2                                
+  VPWR = 366                               |  VGND = 366                               
+  VPB = 366                                |  VPWR = 366                               
+  VNB = 366                                |  VPB = 366                                
+  DIODE = 2                                |  VNB = 366                                
+                                           |                                           
+Instance: UL_sky130_fd_sc_hd__diode_2:ANTE |Instance: ANTENNA_vccd1_tie_high_77_HI     
+  VGND = 366                               |  DIODE = 2                                
+  VPWR = 366                               |  VGND = 366                               
+  VPB = 366                                |  VPWR = 366                               
+  VNB = 366                                |  VPB = 366                                
+  DIODE = 2                                |  VNB = 366                                
+                                           |                                           
+Instance: UL_sky130_fd_sc_hd__diode_2:ANTE |Instance: ANTENNA_vccd1_tie_high_76_HI     
+  VGND = 366                               |  DIODE = 2                                
+  VPWR = 366                               |  VGND = 366                               
+  VPB = 366                                |  VPWR = 366                               
+  VNB = 366                                |  VPB = 366                                
+  DIODE = 2                                |  VNB = 366                                
+                                           |                                           
+Instance: UL_sky130_fd_sc_hd__diode_2:ANTE |Instance: ANTENNA_vccd1_tie_high_75_HI     
+  VGND = 366                               |  DIODE = 2                                
+  VPWR = 366                               |  VGND = 366                               
+  VPB = 366                                |  VPWR = 366                               
+  VNB = 366                                |  VPB = 366                                
+  DIODE = 2                                |  VNB = 366                                
+                                           |                                           
+Instance: UL_sky130_fd_sc_hd__diode_2:ANTE |Instance: ANTENNA_vccd1_tie_high_74_HI     
+  VGND = 366                               |  DIODE = 2                                
+  VPWR = 366                               |  VGND = 366                               
+  VPB = 366                                |  VPWR = 366                               
+  VNB = 366                                |  VPB = 366                                
+  DIODE = 2                                |  VNB = 366                                
+                                           |                                           
+Instance: UL_sky130_fd_sc_hd__diode_2:ANTE |Instance: ANTENNA_vccd1_tie_high_73_HI     
+  VGND = 366                               |  DIODE = 2                                
+  VPWR = 366                               |  VGND = 366                               
+  VPB = 366                                |  VPWR = 366                               
+  VNB = 366                                |  VPB = 366                                
+  DIODE = 2                                |  VNB = 366                                
+                                           |                                           
+Instance: UL_sky130_fd_sc_hd__diode_2:ANTE |Instance: ANTENNA_vccd1_tie_high_72_HI     
+  VGND = 366                               |  DIODE = 2                                
+  VPWR = 366                               |  VGND = 366                               
+  VPB = 366                                |  VPWR = 366                               
+  VNB = 366                                |  VPB = 366                                
+  DIODE = 2                                |  VNB = 366                                
+                                           |                                           
+Instance: UL_sky130_fd_sc_hd__diode_2:ANTE |Instance: ANTENNA_vccd1_tie_high_71_HI     
+  VGND = 366                               |  DIODE = 2                                
+  VPWR = 366                               |  VGND = 366                               
+  VPB = 366                                |  VPWR = 366                               
+  VNB = 366                                |  VPB = 366                                
+  DIODE = 2                                |  VNB = 366                                
+                                           |                                           
+Instance: UL_sky130_fd_sc_hd__diode_2:ANTE |Instance: ANTENNA_vccd1_tie_high_70_HI     
+  VGND = 366                               |  DIODE = 2                                
+  VPWR = 366                               |  VGND = 366                               
+  VPB = 366                                |  VPWR = 366                               
+  VNB = 366                                |  VPB = 366                                
+  DIODE = 2                                |  VNB = 366                                
+                                           |                                           
+Instance: UL_sky130_fd_sc_hd__diode_2:ANTE |Instance: ANTENNA_vccd1_tie_high_69_HI     
+  VGND = 366                               |  DIODE = 2                                
+  VPWR = 366                               |  VGND = 366                               
+  VPB = 366                                |  VPWR = 366                               
+  VNB = 366                                |  VPB = 366                                
+  DIODE = 2                                |  VNB = 366                                
+                                           |                                           
+Instance: UL_sky130_fd_sc_hd__diode_2:ANTE |Instance: ANTENNA_vccd1_tie_high_68_HI     
+  VGND = 366                               |  DIODE = 2                                
+  VPWR = 366                               |  VGND = 366                               
+  VPB = 366                                |  VPWR = 366                               
+  VNB = 366                                |  VPB = 366                                
+  DIODE = 2                                |  VNB = 366                                
+                                           |                                           
+Instance: UL_sky130_fd_sc_hd__diode_2:ANTE |Instance: ANTENNA_vccd1_tie_high_67_HI     
+  VGND = 366                               |  DIODE = 2                                
+  VPWR = 366                               |  VGND = 366                               
+  VPB = 366                                |  VPWR = 366                               
+  VNB = 366                                |  VPB = 366                                
+  DIODE = 2                                |  VNB = 366                                
+                                           |                                           
+Instance: UL_sky130_fd_sc_hd__diode_2:ANTE |Instance: ANTENNA_vccd1_tie_high_66_HI     
+  VGND = 366                               |  DIODE = 2                                
+  VPWR = 366                               |  VGND = 366                               
+  VPB = 366                                |  VPWR = 366                               
+  VNB = 366                                |  VPB = 366                                
+  DIODE = 2                                |  VNB = 366                                
+                                           |                                           
+Instance: UL_sky130_fd_sc_hd__diode_2:ANTE |Instance: ANTENNA_vccd1_tie_high_65_HI     
+  VGND = 366                               |  DIODE = 2                                
+  VPWR = 366                               |  VGND = 366                               
+  VPB = 366                                |  VPWR = 366                               
+  VNB = 366                                |  VPB = 366                                
+  DIODE = 2                                |  VNB = 366                                
+                                           |                                           
+Instance: UL_sky130_fd_sc_hd__diode_2:ANTE |Instance: ANTENNA_vccd1_tie_high_64_HI     
+  VGND = 366                               |  DIODE = 2                                
+  VPWR = 366                               |  VGND = 366                               
+  VPB = 366                                |  VPWR = 366                               
+  VNB = 366                                |  VPB = 366                                
+  DIODE = 2                                |  VNB = 366                                
+                                           |                                           
+Instance: UL_sky130_fd_sc_hd__diode_2:ANTE |Instance: ANTENNA_vccd1_tie_high_63_HI     
+  VGND = 366                               |  DIODE = 2                                
+  VPWR = 366                               |  VGND = 366                               
+  VPB = 366                                |  VPWR = 366                               
+  VNB = 366                                |  VPB = 366                                
+  DIODE = 2                                |  VNB = 366                                
+                                           |                                           
+Instance: UL_sky130_fd_sc_hd__diode_2:ANTE |Instance: ANTENNA_vccd1_tie_high_62_HI     
+  VGND = 366                               |  DIODE = 2                                
+  VPWR = 366                               |  VGND = 366                               
+  VPB = 366                                |  VPWR = 366                               
+  VNB = 366                                |  VPB = 366                                
+  DIODE = 2                                |  VNB = 366                                
+                                           |                                           
+Instance: UL_sky130_fd_sc_hd__diode_2:ANTE |Instance: ANTENNA_vccd1_tie_high_61_HI     
+  VGND = 366                               |  DIODE = 2                                
+  VPWR = 366                               |  VGND = 366                               
+  VPB = 366                                |  VPWR = 366                               
+  VNB = 366                                |  VPB = 366                                
+  DIODE = 2                                |  VNB = 366                                
+                                           |                                           
+Instance: UL_sky130_fd_sc_hd__diode_2:ANTE |Instance: ANTENNA_vccd1_tie_high_60_HI     
+  VGND = 366                               |  DIODE = 2                                
+  VPWR = 366                               |  VGND = 366                               
+  VPB = 366                                |  VPWR = 366                               
+  VNB = 366                                |  VPB = 366                                
+  DIODE = 2                                |  VNB = 366                                
+                                           |                                           
+Instance: UL_sky130_fd_sc_hd__diode_2:ANTE |Instance: ANTENNA_vccd1_tie_high_59_HI     
+  VGND = 366                               |  DIODE = 2                                
+  VPWR = 366                               |  VGND = 366                               
+  VPB = 366                                |  VPWR = 366                               
+  VNB = 366                                |  VPB = 366                                
+  DIODE = 2                                |  VNB = 366                                
+                                           |                                           
+Instance: UL_sky130_fd_sc_hd__diode_2:ANTE |Instance: ANTENNA_vccd1_tie_high_58_HI     
+  VGND = 366                               |  DIODE = 2                                
+  VPWR = 366                               |  VGND = 366                               
+  VPB = 366                                |  VPWR = 366                               
+  VNB = 366                                |  VPB = 366                                
+  DIODE = 2                                |  VNB = 366                                
+                                           |                                           
+Instance: UL_sky130_fd_sc_hd__diode_2:ANTE |Instance: ANTENNA_vccd1_tie_high_57_HI     
+  VGND = 366                               |  DIODE = 2                                
+  VPWR = 366                               |  VGND = 366                               
+  VPB = 366                                |  VPWR = 366                               
+  VNB = 366                                |  VPB = 366                                
+  DIODE = 2                                |  VNB = 366                                
+                                           |                                           
+Instance: UL_sky130_fd_sc_hd__diode_2:ANTE |Instance: ANTENNA_vccd1_tie_high_56_HI     
+  VGND = 366                               |  DIODE = 2                                
+  VPWR = 366                               |  VGND = 366                               
+  VPB = 366                                |  VPWR = 366                               
+  VNB = 366                                |  VPB = 366                                
+  DIODE = 2                                |  VNB = 366                                
+                                           |                                           
+Instance: UL_sky130_fd_sc_hd__diode_2:ANTE |Instance: ANTENNA_vccd1_tie_high_55_HI     
+  VGND = 366                               |  DIODE = 2                                
+  VPWR = 366                               |  VGND = 366                               
+  VPB = 366                                |  VPWR = 366                               
+  VNB = 366                                |  VPB = 366                                
+  DIODE = 2                                |  VNB = 366                                
+                                           |                                           
+Instance: UL_sky130_fd_sc_hd__diode_2:ANTE |Instance: ANTENNA_vccd1_tie_high_54_HI     
+  VGND = 366                               |  DIODE = 2                                
+  VPWR = 366                               |  VGND = 366                               
+  VPB = 366                                |  VPWR = 366                               
+  VNB = 366                                |  VPB = 366                                
+  DIODE = 2                                |  VNB = 366                                
+                                           |                                           
+Instance: UL_sky130_fd_sc_hd__diode_2:ANTE |Instance: ANTENNA_vccd1_tie_high_53_HI     
+  VGND = 366                               |  DIODE = 2                                
+  VPWR = 366                               |  VGND = 366                               
+  VPB = 366                                |  VPWR = 366                               
+  VNB = 366                                |  VPB = 366                                
+  DIODE = 2                                |  VNB = 366                                
+                                           |                                           
+Instance: UL_sky130_fd_sc_hd__diode_2:ANTE |Instance: ANTENNA_vccd1_tie_high_52_HI     
+  VGND = 366                               |  DIODE = 2                                
+  VPWR = 366                               |  VGND = 366                               
+  VPB = 366                                |  VPWR = 366                               
+  VNB = 366                                |  VPB = 366                                
+  DIODE = 2                                |  VNB = 366                                
+                                           |                                           
+Instance: UL_sky130_fd_sc_hd__diode_2:ANTE |Instance: ANTENNA_vccd1_tie_high_51_HI     
+  VGND = 366                               |  DIODE = 2                                
+  VPWR = 366                               |  VGND = 366                               
+  VPB = 366                                |  VPWR = 366                               
+  VNB = 366                                |  VPB = 366                                
+  DIODE = 2                                |  VNB = 366                                
+                                           |                                           
+Instance: UL_sky130_fd_sc_hd__diode_2:ANTE |Instance: ANTENNA_vccd1_tie_high_50_HI     
+  VGND = 366                               |  DIODE = 2                                
+  VPWR = 366                               |  VGND = 366                               
+  VPB = 366                                |  VPWR = 366                               
+  VNB = 366                                |  VPB = 366                                
+  DIODE = 2                                |  VNB = 366                                
+                                           |                                           
+Instance: UL_sky130_fd_sc_hd__diode_2:ANTE |Instance: ANTENNA_vccd1_tie_high_49_HI     
+  VGND = 366                               |  DIODE = 2                                
+  VPWR = 366                               |  VGND = 366                               
+  VPB = 366                                |  VPWR = 366                               
+  VNB = 366                                |  VPB = 366                                
+  DIODE = 2                                |  VNB = 366                                
+                                           |                                           
+Instance: UL_sky130_fd_sc_hd__diode_2:ANTE |Instance: ANTENNA_vccd1_tie_high_48_HI     
+  VGND = 366                               |  DIODE = 2                                
+  VPWR = 366                               |  VGND = 366                               
+  VPB = 366                                |  VPWR = 366                               
+  VNB = 366                                |  VPB = 366                                
+  DIODE = 2                                |  VNB = 366                                
+                                           |                                           
+Instance: UL_sky130_fd_sc_hd__diode_2:ANTE |Instance: ANTENNA_vccd1_tie_high_47_HI     
+  VGND = 366                               |  DIODE = 2                                
+  VPWR = 366                               |  VGND = 366                               
+  VPB = 366                                |  VPWR = 366                               
+  VNB = 366                                |  VPB = 366                                
+  DIODE = 2                                |  VNB = 366                                
+                                           |                                           
+Instance: UL_sky130_fd_sc_hd__diode_2:ANTE |Instance: ANTENNA_vccd1_tie_high_46_HI     
+  VGND = 366                               |  DIODE = 2                                
+  VPWR = 366                               |  VGND = 366                               
+  VPB = 366                                |  VPWR = 366                               
+  VNB = 366                                |  VPB = 366                                
+  DIODE = 2                                |  VNB = 366                                
+                                           |                                           
+Instance: UL_sky130_fd_sc_hd__diode_2:ANTE |Instance: ANTENNA_vccd1_tie_high_45_HI     
+  VGND = 366                               |  DIODE = 2                                
+  VPWR = 366                               |  VGND = 366                               
+  VPB = 366                                |  VPWR = 366                               
+  VNB = 366                                |  VPB = 366                                
+  DIODE = 2                                |  VNB = 366                                
+                                           |                                           
+Instance: UL_sky130_fd_sc_hd__diode_2:ANTE |Instance: ANTENNA_vccd1_tie_high_44_HI     
+  VGND = 366                               |  DIODE = 2                                
+  VPWR = 366                               |  VGND = 366                               
+  VPB = 366                                |  VPWR = 366                               
+  VNB = 366                                |  VPB = 366                                
+  DIODE = 2                                |  VNB = 366                                
+                                           |                                           
+Instance: UL_sky130_fd_sc_hd__diode_2:ANTE |Instance: ANTENNA_vccd1_tie_high_43_HI     
+  VGND = 366                               |  DIODE = 2                                
+  VPWR = 366                               |  VGND = 366                               
+  VPB = 366                                |  VPWR = 366                               
+  VNB = 366                                |  VPB = 366                                
+  DIODE = 2                                |  VNB = 366                                
+                                           |                                           
+Instance: UL_sky130_fd_sc_hd__diode_2:ANTE |Instance: ANTENNA_vccd1_tie_high_42_HI     
+  VGND = 366                               |  DIODE = 2                                
+  VPWR = 366                               |  VGND = 366                               
+  VPB = 366                                |  VPWR = 366                               
+  VNB = 366                                |  VPB = 366                                
+  DIODE = 2                                |  VNB = 366                                
+                                           |                                           
+Instance: UL_sky130_fd_sc_hd__diode_2:ANTE |Instance: ANTENNA_vccd1_tie_high_41_HI     
+  VGND = 366                               |  DIODE = 2                                
+  VPWR = 366                               |  VGND = 366                               
+  VPB = 366                                |  VPWR = 366                               
+  VNB = 366                                |  VPB = 366                                
+  DIODE = 2                                |  VNB = 366                                
+                                           |                                           
+Instance: UL_sky130_fd_sc_hd__diode_2:ANTE |Instance: ANTENNA_vccd1_tie_high_40_HI     
+  VGND = 366                               |  DIODE = 2                                
+  VPWR = 366                               |  VGND = 366                               
+  VPB = 366                                |  VPWR = 366                               
+  VNB = 366                                |  VPB = 366                                
+  DIODE = 2                                |  VNB = 366                                
+                                           |                                           
+Instance: UL_sky130_fd_sc_hd__diode_2:ANTE |Instance: ANTENNA_vccd1_tie_high_39_HI     
+  VGND = 366                               |  DIODE = 2                                
+  VPWR = 366                               |  VGND = 366                               
+  VPB = 366                                |  VPWR = 366                               
+  VNB = 366                                |  VPB = 366                                
+  DIODE = 2                                |  VNB = 366                                
+                                           |                                           
+Instance: UL_sky130_fd_sc_hd__diode_2:ANTE |Instance: ANTENNA_vccd1_tie_high_38_HI     
+  VGND = 366                               |  DIODE = 2                                
+  VPWR = 366                               |  VGND = 366                               
+  VPB = 366                                |  VPWR = 366                               
+  VNB = 366                                |  VPB = 366                                
+  DIODE = 2                                |  VNB = 366                                
+                                           |                                           
+Instance: UL_sky130_fd_sc_hd__diode_2:ANTE |Instance: ANTENNA_vccd1_tie_high_37_HI     
+  VGND = 366                               |  DIODE = 2                                
+  VPWR = 366                               |  VGND = 366                               
+  VPB = 366                                |  VPWR = 366                               
+  VNB = 366                                |  VPB = 366                                
+  DIODE = 2                                |  VNB = 366                                
+                                           |                                           
+Instance: UL_sky130_fd_sc_hd__diode_2:ANTE |Instance: ANTENNA_vccd1_tie_high_36_HI     
+  VGND = 366                               |  DIODE = 2                                
+  VPWR = 366                               |  VGND = 366                               
+  VPB = 366                                |  VPWR = 366                               
+  VNB = 366                                |  VPB = 366                                
+  DIODE = 2                                |  VNB = 366                                
+                                           |                                           
+Instance: UL_sky130_fd_sc_hd__diode_2:ANTE |Instance: ANTENNA_vccd1_tie_high_35_HI     
+  VGND = 366                               |  DIODE = 2                                
+  VPWR = 366                               |  VGND = 366                               
+  VPB = 366                                |  VPWR = 366                               
+  VNB = 366                                |  VPB = 366                                
+  DIODE = 2                                |  VNB = 366                                
+                                           |                                           
+Instance: UL_sky130_fd_sc_hd__diode_2:ANTE |Instance: ANTENNA_vccd1_tie_high_34_HI     
+  VGND = 366                               |  DIODE = 2                                
+  VPWR = 366                               |  VGND = 366                               
+  VPB = 366                                |  VPWR = 366                               
+  VNB = 366                                |  VPB = 366                                
+  DIODE = 2                                |  VNB = 366                                
+                                           |                                           
+Instance: UL_sky130_fd_sc_hd__diode_2:ANTE |Instance: ANTENNA_vccd1_tie_high_33_HI     
+  VGND = 366                               |  DIODE = 2                                
+  VPWR = 366                               |  VGND = 366                               
+  VPB = 366                                |  VPWR = 366                               
+  VNB = 366                                |  VPB = 366                                
+  DIODE = 2                                |  VNB = 366                                
+                                           |                                           
+Instance: UL_sky130_fd_sc_hd__diode_2:ANTE |Instance: ANTENNA_vccd1_tie_high_32_HI     
+  VGND = 366                               |  DIODE = 2                                
+  VPWR = 366                               |  VGND = 366                               
+  VPB = 366                                |  VPWR = 366                               
+  VNB = 366                                |  VPB = 366                                
+  DIODE = 2                                |  VNB = 366                                
+                                           |                                           
+Instance: UL_sky130_fd_sc_hd__diode_2:ANTE |Instance: ANTENNA_vccd1_tie_high_31_HI     
+  VGND = 366                               |  DIODE = 2                                
+  VPWR = 366                               |  VGND = 366                               
+  VPB = 366                                |  VPWR = 366                               
+  VNB = 366                                |  VPB = 366                                
+  DIODE = 2                                |  VNB = 366                                
+                                           |                                           
+Instance: UL_sky130_fd_sc_hd__diode_2:ANTE |Instance: ANTENNA_vccd1_tie_high_30_HI     
+  VGND = 366                               |  DIODE = 2                                
+  VPWR = 366                               |  VGND = 366                               
+  VPB = 366                                |  VPWR = 366                               
+  VNB = 366                                |  VPB = 366                                
+  DIODE = 2                                |  VNB = 366                                
+                                           |                                           
+Instance: UL_sky130_fd_sc_hd__diode_2:ANTE |Instance: ANTENNA_vccd1_tie_high_29_HI     
+  VGND = 366                               |  DIODE = 2                                
+  VPWR = 366                               |  VGND = 366                               
+  VPB = 366                                |  VPWR = 366                               
+  VNB = 366                                |  VPB = 366                                
+  DIODE = 2                                |  VNB = 366                                
+                                           |                                           
+Instance: UL_sky130_fd_sc_hd__diode_2:ANTE |Instance: ANTENNA_vccd1_tie_high_28_HI     
+  VGND = 366                               |  DIODE = 2                                
+  VPWR = 366                               |  VGND = 366                               
+  VPB = 366                                |  VPWR = 366                               
+  VNB = 366                                |  VPB = 366                                
+  DIODE = 2                                |  VNB = 366                                
+                                           |                                           
+Instance: UL_sky130_fd_sc_hd__diode_2:ANTE |Instance: ANTENNA_vccd1_tie_high_27_HI     
+  VGND = 366                               |  DIODE = 2                                
+  VPWR = 366                               |  VGND = 366                               
+  VPB = 366                                |  VPWR = 366                               
+  VNB = 366                                |  VPB = 366                                
+  DIODE = 2                                |  VNB = 366                                
+                                           |                                           
+Instance: UL_sky130_fd_sc_hd__diode_2:ANTE |Instance: ANTENNA_vccd1_tie_high_26_HI     
+  VGND = 366                               |  DIODE = 2                                
+  VPWR = 366                               |  VGND = 366                               
+  VPB = 366                                |  VPWR = 366                               
+  VNB = 366                                |  VPB = 366                                
+  DIODE = 2                                |  VNB = 366                                
+                                           |                                           
+Instance: UL_sky130_fd_sc_hd__diode_2:ANTE |Instance: ANTENNA_vccd1_tie_high_25_HI     
+  VGND = 366                               |  DIODE = 2                                
+  VPWR = 366                               |  VGND = 366                               
+  VPB = 366                                |  VPWR = 366                               
+  VNB = 366                                |  VPB = 366                                
+  DIODE = 2                                |  VNB = 366                                
+                                           |                                           
+Instance: UL_sky130_fd_sc_hd__diode_2:ANTE |Instance: ANTENNA_vccd1_tie_high_24_HI     
+  VGND = 366                               |  DIODE = 2                                
+  VPWR = 366                               |  VGND = 366                               
+  VPB = 366                                |  VPWR = 366                               
+  VNB = 366                                |  VPB = 366                                
+  DIODE = 2                                |  VNB = 366                                
+                                           |                                           
+Instance: UL_sky130_fd_sc_hd__diode_2:ANTE |Instance: ANTENNA_vccd1_tie_high_23_HI     
+  VGND = 366                               |  DIODE = 2                                
+  VPWR = 366                               |  VGND = 366                               
+  VPB = 366                                |  VPWR = 366                               
+  VNB = 366                                |  VPB = 366                                
+  DIODE = 2                                |  VNB = 366                                
+                                           |                                           
+Instance: UL_sky130_fd_sc_hd__diode_2:ANTE |Instance: ANTENNA_vccd1_tie_high_22_HI     
+  VGND = 366                               |  DIODE = 2                                
+  VPWR = 366                               |  VGND = 366                               
+  VPB = 366                                |  VPWR = 366                               
+  VNB = 366                                |  VPB = 366                                
+  DIODE = 2                                |  VNB = 366                                
+                                           |                                           
+Instance: UL_sky130_fd_sc_hd__diode_2:ANTE |Instance: ANTENNA_vccd1_tie_high_21_HI     
+  VGND = 366                               |  DIODE = 2                                
+  VPWR = 366                               |  VGND = 366                               
+  VPB = 366                                |  VPWR = 366                               
+  VNB = 366                                |  VPB = 366                                
+  DIODE = 2                                |  VNB = 366                                
+                                           |                                           
+Instance: UL_sky130_fd_sc_hd__diode_2:ANTE |Instance: ANTENNA_vccd1_tie_high_20_HI     
+  VGND = 366                               |  DIODE = 2                                
+  VPWR = 366                               |  VGND = 366                               
+  VPB = 366                                |  VPWR = 366                               
+  VNB = 366                                |  VPB = 366                                
+  DIODE = 2                                |  VNB = 366                                
+                                           |                                           
+Instance: UL_sky130_fd_sc_hd__diode_2:ANTE |Instance: ANTENNA_vccd1_tie_high_19_HI     
+  VGND = 366                               |  DIODE = 2                                
+  VPWR = 366                               |  VGND = 366                               
+  VPB = 366                                |  VPWR = 366                               
+  VNB = 366                                |  VPB = 366                                
+  DIODE = 2                                |  VNB = 366                                
+                                           |                                           
+Instance: UL_sky130_fd_sc_hd__diode_2:ANTE |Instance: ANTENNA_vccd1_tie_high_18_HI     
+  VGND = 366                               |  DIODE = 2                                
+  VPWR = 366                               |  VGND = 366                               
+  VPB = 366                                |  VPWR = 366                               
+  VNB = 366                                |  VPB = 366                                
+  DIODE = 2                                |  VNB = 366                                
+                                           |                                           
+Instance: UL_sky130_fd_sc_hd__diode_2:ANTE |Instance: ANTENNA_vccd1_tie_high_17_HI     
+  VGND = 366                               |  DIODE = 2                                
+  VPWR = 366                               |  VGND = 366                               
+  VPB = 366                                |  VPWR = 366                               
+  VNB = 366                                |  VPB = 366                                
+  DIODE = 2                                |  VNB = 366                                
+                                           |                                           
+Instance: UL_sky130_fd_sc_hd__diode_2:ANTE |Instance: ANTENNA_vccd1_tie_high_16_HI     
+  VGND = 366                               |  DIODE = 2                                
+  VPWR = 366                               |  VGND = 366                               
+  VPB = 366                                |  VPWR = 366                               
+  VNB = 366                                |  VPB = 366                                
+  DIODE = 2                                |  VNB = 366                                
+                                           |                                           
+Instance: UL_sky130_fd_sc_hd__diode_2:ANTE |Instance: ANTENNA_vccd1_tie_high_15_HI     
+  VGND = 366                               |  DIODE = 2                                
+  VPWR = 366                               |  VGND = 366                               
+  VPB = 366                                |  VPWR = 366                               
+  VNB = 366                                |  VPB = 366                                
+  DIODE = 2                                |  VNB = 366                                
+                                           |                                           
+Instance: UL_sky130_fd_sc_hd__diode_2:ANTE |Instance: ANTENNA_vccd1_tie_high_14_HI     
+  VGND = 366                               |  DIODE = 2                                
+  VPWR = 366                               |  VGND = 366                               
+  VPB = 366                                |  VPWR = 366                               
+  VNB = 366                                |  VPB = 366                                
+  DIODE = 2                                |  VNB = 366                                
+                                           |                                           
+Instance: UL_sky130_fd_sc_hd__diode_2:ANTE |Instance: ANTENNA_vccd1_tie_high_13_HI     
+  VGND = 366                               |  DIODE = 2                                
+  VPWR = 366                               |  VGND = 366                               
+  VPB = 366                                |  VPWR = 366                               
+  VNB = 366                                |  VPB = 366                                
+  DIODE = 2                                |  VNB = 366                                
+                                           |                                           
+Instance: UL_sky130_fd_sc_hd__diode_2:ANTE |Instance: ANTENNA_vccd1_tie_high_12_HI     
+  VGND = 366                               |  DIODE = 2                                
+  VPWR = 366                               |  VGND = 366                               
+  VPB = 366                                |  VPWR = 366                               
+  VNB = 366                                |  VPB = 366                                
+  DIODE = 2                                |  VNB = 366                                
+                                           |                                           
+Instance: UL_sky130_fd_sc_hd__diode_2:ANTE |Instance: ANTENNA_vccd1_tie_high_11_HI     
+  VGND = 366                               |  DIODE = 2                                
+  VPWR = 366                               |  VGND = 366                               
+  VPB = 366                                |  VPWR = 366                               
+  VNB = 366                                |  VPB = 366                                
+  DIODE = 2                                |  VNB = 366                                
+                                           |                                           
+Instance: UL_sky130_fd_sc_hd__diode_2:ANTE |Instance: ANTENNA_vccd1_tie_high_10_HI     
+  VGND = 366                               |  DIODE = 2                                
+  VPWR = 366                               |  VGND = 366                               
+  VPB = 366                                |  VPWR = 366                               
+  VNB = 366                                |  VPB = 366                                
+  DIODE = 2                                |  VNB = 366                                
+                                           |                                           
+Instance: UL_sky130_fd_sc_hd__diode_2:ANTE |Instance: ANTENNA_vccd1_tie_high_9_HI      
+  VGND = 366                               |  DIODE = 2                                
+  VPWR = 366                               |  VGND = 366                               
+  VPB = 366                                |  VPWR = 366                               
+  VNB = 366                                |  VPB = 366                                
+  DIODE = 2                                |  VNB = 366                                
+                                           |                                           
+Instance: UL_sky130_fd_sc_hd__diode_2:ANTE |Instance: ANTENNA_vccd1_tie_high_8_HI      
+  VGND = 366                               |  DIODE = 2                                
+  VPWR = 366                               |  VGND = 366                               
+  VPB = 366                                |  VPWR = 366                               
+  VNB = 366                                |  VPB = 366                                
+  DIODE = 2                                |  VNB = 366                                
+                                           |                                           
+Instance: UL_sky130_fd_sc_hd__diode_2:ANTE |Instance: ANTENNA_vccd1_tie_high_7_HI      
+  VGND = 366                               |  DIODE = 2                                
+  VPWR = 366                               |  VGND = 366                               
+  VPB = 366                                |  VPWR = 366                               
+  VNB = 366                                |  VPB = 366                                
+  DIODE = 2                                |  VNB = 366                                
+                                           |                                           
+Instance: UL_sky130_fd_sc_hd__diode_2:ANTE |Instance: ANTENNA_vccd1_tie_high_6_HI      
+  VGND = 366                               |  DIODE = 2                                
+  VPWR = 366                               |  VGND = 366                               
+  VPB = 366                                |  VPWR = 366                               
+  VNB = 366                                |  VPB = 366                                
+  DIODE = 2                                |  VNB = 366                                
+                                           |                                           
+Instance: UL_sky130_fd_sc_hd__diode_2:ANTE |Instance: ANTENNA_vccd1_tie_high_5_HI      
+  VGND = 366                               |  DIODE = 2                                
+  VPWR = 366                               |  VGND = 366                               
+  VPB = 366                                |  VPWR = 366                               
+  VNB = 366                                |  VPB = 366                                
+  DIODE = 2                                |  VNB = 366                                
+                                           |                                           
+Instance: UL_sky130_fd_sc_hd__diode_2:ANTE |Instance: ANTENNA_vccd1_tie_high_4_HI      
+  VGND = 366                               |  DIODE = 2                                
+  VPWR = 366                               |  VGND = 366                               
+  VPB = 366                                |  VPWR = 366                               
+  VNB = 366                                |  VPB = 366                                
+  DIODE = 2                                |  VNB = 366                                
+                                           |                                           
+Instance: UL_sky130_fd_sc_hd__diode_2:ANTE |Instance: ANTENNA_vccd1_tie_high_3_HI      
+  VGND = 366                               |  DIODE = 2                                
+  VPWR = 366                               |  VGND = 366                               
+  VPB = 366                                |  VPWR = 366                               
+  VNB = 366                                |  VPB = 366                                
+  DIODE = 2                                |  VNB = 366                                
+                                           |                                           
+Instance: UL_sky130_fd_sc_hd__diode_2:ANTE |Instance: ANTENNA_vccd1_tie_high_2_HI      
+  VGND = 366                               |  DIODE = 2                                
+  VPWR = 366                               |  VGND = 366                               
+  VPB = 366                                |  VPWR = 366                               
+  VNB = 366                                |  VPB = 366                                
+  DIODE = 2                                |  VNB = 366                                
+---------------------------------------------------------------------------------------
+Netlists do not match.
+  Flattening non-matched subcircuits vccd1_tie_high vccd1_tie_high
+
+Flattening instances of UL_sky130_fd_sc_hd__decap_3 in cell mgmt_protect (0) makes a better match
+Flattening instances of sky130_fd_sc_hd__diode_2 in cell mgmt_protect (0) makes a better match
+Flattening instances of sky130_fd_sc_hd__diode_2 in cell mgmt_protect (1) makes a better match
+Flattening instances of UL_sky130_fd_sc_hd__diode_2 in cell mgmt_protect (0) makes a better match
+Flattening instances of sky130_fd_sc_hd__decap_3 in cell mgmt_protect (0) makes a better match
+Flattening instances of sky130_fd_sc_hd__decap_3 in cell mgmt_protect (1) makes a better match
+Making another compare attempt.
+
+Class mgmt_protect (0):  Merged 3290 parallel devices.
+Class mgmt_protect (1):  Merged 3290 parallel devices.
+Subcircuit summary:
+Circuit 1: mgmt_protect                    |Circuit 2: mgmt_protect                    
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_01v8_hvt (1647->2)      |sky130_fd_pr__pfet_01v8_hvt (1647->2)      
+sky130_fd_pr__nfet_01v8 (1647->2)          |sky130_fd_pr__nfet_01v8 (1647->2)          
+sky130_fd_pr__diode_pw2nd_05v5 (354)       |sky130_fd_pr__diode_pw2nd_05v5 (354)       
+sky130_fd_sc_hd__nand2_4 (16)              |sky130_fd_sc_hd__nand2_4 (16)              
+sky130_fd_sc_hd__and2_4 (91)               |sky130_fd_sc_hd__and2_4 (91)               
+sky130_fd_sc_hd__nand2_1 (33)              |sky130_fd_sc_hd__nand2_1 (33)              
+sky130_fd_sc_hd__inv_2 (49)                |sky130_fd_sc_hd__inv_2 (49)                
+sky130_fd_sc_hd__buf_12 (33)               |sky130_fd_sc_hd__buf_12 (33)               
+UL_sky130_fd_sc_hd__conb_1 (91)            |sky130_fd_sc_hd__conb_1 (91)               
+Number of devices: 671                     |Number of devices: 671                     
+Number of nets: 548                        |Number of nets: 548                        
+---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: mgmt_protect                    |Circuit 2: mgmt_protect                    
+-------------------------------------------|-------------------------------------------
+vssd1                                      |vssd1                                      
+vccd1                                      |vccd1                                      
+user_irq_core[10]                          |user_irq_core[10]                          
+user_irq_core[13]                          |user_irq_core[13]                          
+user_irq_core[15]                          |user_irq_core[15]                          
+user_irq_core[12]                          |user_irq_core[12]                          
+user_irq_core[1]                           |user_irq_core[1]                           
+user_irq_core[14]                          |user_irq_core[14]                          
+user_irq_core[2]                           |user_irq_core[2]                           
+user_irq_core[11]                          |user_irq_core[11]                          
+user_irq_core[3]                           |user_irq_core[3]                           
+user_irq_core[0]                           |user_irq_core[0]                           
+user_irq_core[4]                           |user_irq_core[4]                           
+user_irq_core[5]                           |user_irq_core[5]                           
+user_irq_core[6]                           |user_irq_core[6]                           
+user_irq_core[7]                           |user_irq_core[7]                           
+user_irq_core[8]                           |user_irq_core[8]                           
+user_irq_core[9]                           |user_irq_core[9]                           
+mprj_AHB_Ena                               |mprj_AHB_Ena                               
+mprj_HWDATA_user[19]                       |mprj_HWDATA_user[19]                       
+mprj_HADDR_user[20]                        |mprj_HADDR_user[20]                        
+mprj_HADDR_user[17]                        |mprj_HADDR_user[17]                        
+mprj_HADDR_user[14]                        |mprj_HADDR_user[14]                        
+mprj_HADDR_user[1]                         |mprj_HADDR_user[1]                         
+mprj_HADDR_user[23]                        |mprj_HADDR_user[23]                        
+mprj_HSIZE_user[1]                         |mprj_HSIZE_user[1]                         
+mprj_HWDATA_user[2]                        |mprj_HWDATA_user[2]                        
+mprj_HWDATA_user[21]                       |mprj_HWDATA_user[21]                       
+mprj_HWDATA_user[18]                       |mprj_HWDATA_user[18]                       
+mprj_HWDATA_user[5]                        |mprj_HWDATA_user[5]                        
+mprj_HWDATA_user[4]                        |mprj_HWDATA_user[4]                        
+mprj_HWDATA_user[23]                       |mprj_HWDATA_user[23]                       
+mprj_HWDATA_user[7]                        |mprj_HWDATA_user[7]                        
+mprj_HWDATA_user[24]                       |mprj_HWDATA_user[24]                       
+mprj_HWDATA_user[8]                        |mprj_HWDATA_user[8]                        
+mprj_HWDATA_user[26]                       |mprj_HWDATA_user[26]                       
+mprj_HADDR_user[22]                        |mprj_HADDR_user[22]                        
+mprj_HADDR_user[6]                         |mprj_HADDR_user[6]                         
+mprj_HADDR_user[19]                        |mprj_HADDR_user[19]                        
+mprj_HWDATA_user[10]                       |mprj_HWDATA_user[10]                       
+mprj_HWDATA_user[27]                       |mprj_HWDATA_user[27]                       
+mprj_HADDR_user[24]                        |mprj_HADDR_user[24]                        
+mprj_HADDR_user[16]                        |mprj_HADDR_user[16]                        
+mprj_HADDR_user[3]                         |mprj_HADDR_user[3]                         
+mprj_HWDATA_user[11]                       |mprj_HWDATA_user[11]                       
+mprj_HADDR_user[8]                         |mprj_HADDR_user[8]                         
+mprj_HADDR_user[25]                        |mprj_HADDR_user[25]                        
+mprj_HADDR_user[0]                         |mprj_HADDR_user[0]                         
+mprj_HADDR_user[5]                         |mprj_HADDR_user[5]                         
+user_HCLK                                  |user_HCLK                                  
+mprj_HWDATA_user[29]                       |mprj_HWDATA_user[29]                       
+mprj_HSIZE_user[0]                         |mprj_HSIZE_user[0]                         
+mprj_HADDR_user[9]                         |mprj_HADDR_user[9]                         
+user_HRESETn                               |user_HRESETn                               
+mprj_HADDR_user[27]                        |mprj_HADDR_user[27]                        
+mprj_HWDATA_user[31]                       |mprj_HWDATA_user[31]                       
+mprj_HADDR_user[11]                        |mprj_HADDR_user[11]                        
+mprj_HWDATA_user[28]                       |mprj_HWDATA_user[28]                       
+mprj_HADDR_user[28]                        |mprj_HADDR_user[28]                        
+mprj_HWDATA_user[20]                       |mprj_HWDATA_user[20]                       
+mprj_HWDATA_user[25]                       |mprj_HWDATA_user[25]                       
+mprj_HADDR_user[12]                        |mprj_HADDR_user[12]                        
+mprj_HWDATA_user[17]                       |mprj_HWDATA_user[17]                       
+mprj_HWDATA_user[22]                       |mprj_HWDATA_user[22]                       
+mprj_HWDATA_user[9]                        |mprj_HWDATA_user[9]                        
+mprj_HADDR_user[30]                        |mprj_HADDR_user[30]                        
+mprj_HWDATA_user[6]                        |mprj_HWDATA_user[6]                        
+mprj_HWDATA_user[3]                        |mprj_HWDATA_user[3]                        
+mprj_HADDR_user[31]                        |mprj_HADDR_user[31]                        
+mprj_HWDATA_user[1]                        |mprj_HWDATA_user[1]                        
+mprj_HWDATA_user[0]                        |mprj_HWDATA_user[0]                        
+mprj_HADDR_user[29]                        |mprj_HADDR_user[29]                        
+mprj_HADDR_user[21]                        |mprj_HADDR_user[21]                        
+mprj_HADDR_user[26]                        |mprj_HADDR_user[26]                        
+mprj_HWDATA_user[12]                       |mprj_HWDATA_user[12]                       
+mprj_HADDR_user[13]                        |mprj_HADDR_user[13]                        
+mprj_HADDR_user[18]                        |mprj_HADDR_user[18]                        
+mprj_HWDATA_user[13]                       |mprj_HWDATA_user[13]                       
+mprj_HADDR_user[10]                        |mprj_HADDR_user[10]                        
+mprj_HADDR_user[15]                        |mprj_HADDR_user[15]                        
+mprj_HADDR_user[2]                         |mprj_HADDR_user[2]                         
+mprj_HADDR_user[7]                         |mprj_HADDR_user[7]                         
+mprj_HWDATA_user[14]                       |mprj_HWDATA_user[14]                       
+mprj_HSEL_user                             |mprj_HSEL_user                             
+mprj_HSIZE_user[2]                         |mprj_HSIZE_user[2]                         
+mprj_HADDR_user[4]                         |mprj_HADDR_user[4]                         
+mprj_HWDATA_user[15]                       |mprj_HWDATA_user[15]                       
+mprj_HREADY_user                           |mprj_HREADY_user                           
+mprj_HTRANS_user[0]                        |mprj_HTRANS_user[0]                        
+mprj_HWDATA_user[16]                       |mprj_HWDATA_user[16]                       
+mprj_HWRITE_user                           |mprj_HWRITE_user                           
+mprj_HTRANS_user[1]                        |mprj_HTRANS_user[1]                        
+mprj_HWDATA_user[30]                       |mprj_HWDATA_user[30]                       
+user_irq_ena[5]                            |user_irq_ena[5]                            
+user_irq_ena[2]                            |user_irq_ena[2]                            
+user_irq_ena[11]                           |user_irq_ena[11]                           
+user_irq_ena[14]                           |user_irq_ena[14]                           
+user_irq_ena[8]                            |user_irq_ena[8]                            
+user_irq_ena[7]                            |user_irq_ena[7]                            
+user_irq_ena[13]                           |user_irq_ena[13]                           
+user_irq_ena[4]                            |user_irq_ena[4]                            
+user_irq_ena[10]                           |user_irq_ena[10]                           
+user_irq_ena[1]                            |user_irq_ena[1]                            
+user_irq_ena[15]                           |user_irq_ena[15]                           
+user_irq_ena[6]                            |user_irq_ena[6]                            
+user_irq_ena[12]                           |user_irq_ena[12]                           
+user_irq_ena[3]                            |user_irq_ena[3]                            
+user_irq_ena[9]                            |user_irq_ena[9]                            
+user_irq_ena[0]                            |user_irq_ena[0]                            
+mprj_HADDR_core[19]                        |mprj_HADDR_core[19]                        
+mprj_HADDR_core[16]                        |mprj_HADDR_core[16]                        
+mprj_HADDR_core[3]                         |mprj_HADDR_core[3]                         
+mprj_HADDR_core[0]                         |mprj_HADDR_core[0]                         
+mprj_HSIZE_core[0]                         |mprj_HSIZE_core[0]                         
+mprj_HADDR_core[22]                        |mprj_HADDR_core[22]                        
+mprj_HWDATA_core[20]                       |mprj_HWDATA_core[20]                       
+mprj_HWDATA_core[17]                       |mprj_HWDATA_core[17]                       
+mprj_HWDATA_core[3]                        |mprj_HWDATA_core[3]                        
+mprj_HWDATA_core[4]                        |mprj_HWDATA_core[4]                        
+mprj_HWDATA_core[22]                       |mprj_HWDATA_core[22]                       
+mprj_HWDATA_core[6]                        |mprj_HWDATA_core[6]                        
+mprj_HWDATA_core[7]                        |mprj_HWDATA_core[7]                        
+mprj_HADDR_core[21]                        |mprj_HADDR_core[21]                        
+mprj_HADDR_core[18]                        |mprj_HADDR_core[18]                        
+mprj_HWDATA_core[25]                       |mprj_HWDATA_core[25]                       
+mprj_HADDR_core[5]                         |mprj_HADDR_core[5]                         
+mprj_HADDR_core[15]                        |mprj_HADDR_core[15]                        
+mprj_HWDATA_core[9]                        |mprj_HWDATA_core[9]                        
+mprj_HADDR_core[2]                         |mprj_HADDR_core[2]                         
+mprj_HSIZE_core[2]                         |mprj_HSIZE_core[2]                         
+mprj_HADDR_core[4]                         |mprj_HADDR_core[4]                         
+mprj_HADDR_core[7]                         |mprj_HADDR_core[7]                         
+mprj_HADDR_core[24]                        |mprj_HADDR_core[24]                        
+mprj_HWDATA_core[28]                       |mprj_HWDATA_core[28]                       
+mprj_HADDR_core[8]                         |mprj_HADDR_core[8]                         
+frigate_HCLK                               |frigate_HCLK                               
+mprj_HADDR_core[26]                        |mprj_HADDR_core[26]                        
+mprj_HWDATA_core[27]                       |mprj_HWDATA_core[27]                       
+mprj_HWDATA_core[19]                       |mprj_HWDATA_core[19]                       
+mprj_HWDATA_core[30]                       |mprj_HWDATA_core[30]                       
+mprj_HADDR_core[10]                        |mprj_HADDR_core[10]                        
+mprj_HWDATA_core[24]                       |mprj_HWDATA_core[24]                       
+mprj_HADDR_core[27]                        |mprj_HADDR_core[27]                        
+mprj_HWDATA_core[11]                       |mprj_HWDATA_core[11]                       
+mprj_HWDATA_core[31]                       |mprj_HWDATA_core[31]                       
+mprj_HADDR_core[11]                        |mprj_HADDR_core[11]                        
+mprj_HWDATA_core[8]                        |mprj_HWDATA_core[8]                        
+mprj_HWDATA_core[5]                        |mprj_HWDATA_core[5]                        
+mprj_HADDR_core[29]                        |mprj_HADDR_core[29]                        
+mprj_HWDATA_core[2]                        |mprj_HWDATA_core[2]                        
+mprj_HADDR_core[13]                        |mprj_HADDR_core[13]                        
+mprj_HADDR_core[30]                        |mprj_HADDR_core[30]                        
+mprj_HADDR_core[31]                        |mprj_HADDR_core[31]                        
+mprj_HWDATA_core[0]                        |mprj_HWDATA_core[0]                        
+mprj_HADDR_core[23]                        |mprj_HADDR_core[23]                        
+mprj_HADDR_core[28]                        |mprj_HADDR_core[28]                        
+mprj_HWDATA_core[1]                        |mprj_HWDATA_core[1]                        
+mprj_HADDR_core[20]                        |mprj_HADDR_core[20]                        
+mprj_HADDR_core[25]                        |mprj_HADDR_core[25]                        
+mprj_HADDR_core[12]                        |mprj_HADDR_core[12]                        
+mprj_HADDR_core[17]                        |mprj_HADDR_core[17]                        
+mprj_HADDR_core[9]                         |mprj_HADDR_core[9]                         
+mprj_HADDR_core[14]                        |mprj_HADDR_core[14]                        
+mprj_HADDR_core[1]                         |mprj_HADDR_core[1]                         
+mprj_HADDR_core[6]                         |mprj_HADDR_core[6]                         
+mprj_HWDATA_core[12]                       |mprj_HWDATA_core[12]                       
+frigate_HRESETn                            |frigate_HRESETn                            
+mprj_HSIZE_core[1]                         |mprj_HSIZE_core[1]                         
+mprj_HWDATA_core[13]                       |mprj_HWDATA_core[13]                       
+mprj_HWDATA_core[14]                       |mprj_HWDATA_core[14]                       
+mprj_HSEL_core                             |mprj_HSEL_core                             
+mprj_HWDATA_core[29]                       |mprj_HWDATA_core[29]                       
+mprj_HWDATA_core[21]                       |mprj_HWDATA_core[21]                       
+mprj_HREADY_core                           |mprj_HREADY_core                           
+mprj_HTRANS_core[0]                        |mprj_HTRANS_core[0]                        
+mprj_HWDATA_core[26]                       |mprj_HWDATA_core[26]                       
+mprj_HWDATA_core[18]                       |mprj_HWDATA_core[18]                       
+mprj_HWDATA_core[23]                       |mprj_HWDATA_core[23]                       
+mprj_HWDATA_core[16]                       |mprj_HWDATA_core[16]                       
+mprj_HWRITE_core                           |mprj_HWRITE_core                           
+mprj_HTRANS_core[1]                        |mprj_HTRANS_core[1]                        
+mprj_HWDATA_core[10]                       |mprj_HWDATA_core[10]                       
+mprj_HWDATA_core[15]                       |mprj_HWDATA_core[15]                       
+user_irq[2]                                |user_irq[2]                                
+user_irq[10]                               |user_irq[10]                               
+user_irq[8]                                |user_irq[8]                                
+user_irq[6]                                |user_irq[6]                                
+user_irq[14]                               |user_irq[14]                               
+user_irq[3]                                |user_irq[3]                                
+user_irq[5]                                |user_irq[5]                                
+user_irq[4]                                |user_irq[4]                                
+user_irq[7]                                |user_irq[7]                                
+user_irq[15]                               |user_irq[15]                               
+user_irq[1]                                |user_irq[1]                                
+user_irq[12]                               |user_irq[12]                               
+user_irq[11]                               |user_irq[11]                               
+user_irq[9]                                |user_irq[9]                                
+user_irq[13]                               |user_irq[13]                               
+user_irq[0]                                |user_irq[0]                                
+mprj_HRDATA_user[14]                       |mprj_HRDATA_user[14]                       
+mprj_HRDATA_user[23]                       |mprj_HRDATA_user[23]                       
+mprj_HRDATA_user[4]                        |mprj_HRDATA_user[4]                        
+mprj_HRDATA_user[1]                        |mprj_HRDATA_user[1]                        
+mprj_HRDATA_user[18]                       |mprj_HRDATA_user[18]                       
+mprj_HRDATA_user[27]                       |mprj_HRDATA_user[27]                       
+mprj_HRDATA_user[11]                       |mprj_HRDATA_user[11]                       
+mprj_HRDATA_user[29]                       |mprj_HRDATA_user[29]                       
+mprj_HRDATA_user[3]                        |mprj_HRDATA_user[3]                        
+mprj_HRDATA_user[8]                        |mprj_HRDATA_user[8]                        
+mprj_HRDATA_user[20]                       |mprj_HRDATA_user[20]                       
+mprj_HRDATA_user[21]                       |mprj_HRDATA_user[21]                       
+mprj_HRDATA_user[30]                       |mprj_HRDATA_user[30]                       
+mprj_HREADYOUT_user                        |mprj_HREADYOUT_user                        
+mprj_HRDATA_user[15]                       |mprj_HRDATA_user[15]                       
+mprj_HRDATA_user[5]                        |mprj_HRDATA_user[5]                        
+mprj_HRDATA_user[7]                        |mprj_HRDATA_user[7]                        
+mprj_HRDATA_user[17]                       |mprj_HRDATA_user[17]                       
+mprj_HRDATA_user[24]                       |mprj_HRDATA_user[24]                       
+mprj_HRDATA_user[19]                       |mprj_HRDATA_user[19]                       
+mprj_HRDATA_user[16]                       |mprj_HRDATA_user[16]                       
+mprj_HRDATA_user[25]                       |mprj_HRDATA_user[25]                       
+mprj_HRDATA_user[26]                       |mprj_HRDATA_user[26]                       
+mprj_HRDATA_user[0]                        |mprj_HRDATA_user[0]                        
+mprj_HRDATA_user[9]                        |mprj_HRDATA_user[9]                        
+mprj_HRDATA_user[13]                       |mprj_HRDATA_user[13]                       
+mprj_HRDATA_user[22]                       |mprj_HRDATA_user[22]                       
+mprj_HRDATA_user[31]                       |mprj_HRDATA_user[31]                       
+mprj_HRDATA_user[28]                       |mprj_HRDATA_user[28]                       
+mprj_HRDATA_user[2]                        |mprj_HRDATA_user[2]                        
+mprj_HRDATA_user[6]                        |mprj_HRDATA_user[6]                        
+mprj_HRDATA_user[10]                       |mprj_HRDATA_user[10]                       
+mprj_HRDATA_user[12]                       |mprj_HRDATA_user[12]                       
+mprj_HRDATA_core[11]                       |mprj_HRDATA_core[11]                       
+mprj_HRDATA_core[13]                       |mprj_HRDATA_core[13]                       
+mprj_HRDATA_core[10]                       |mprj_HRDATA_core[10]                       
+mprj_HRDATA_core[12]                       |mprj_HRDATA_core[12]                       
+mprj_HRDATA_core[14]                       |mprj_HRDATA_core[14]                       
+mprj_HRDATA_core[26]                       |mprj_HRDATA_core[26]                       
+mprj_HRDATA_core[6]                        |mprj_HRDATA_core[6]                        
+mprj_HRDATA_core[24]                       |mprj_HRDATA_core[24]                       
+mprj_HRDATA_core[5]                        |mprj_HRDATA_core[5]                        
+mprj_HRDATA_core[7]                        |mprj_HRDATA_core[7]                        
+mprj_HRDATA_core[23]                       |mprj_HRDATA_core[23]                       
+mprj_HRDATA_core[25]                       |mprj_HRDATA_core[25]                       
+mprj_HRDATA_core[22]                       |mprj_HRDATA_core[22]                       
+mprj_HRDATA_core[3]                        |mprj_HRDATA_core[3]                        
+mprj_HRDATA_core[31]                       |mprj_HRDATA_core[31]                       
+mprj_HRDATA_core[21]                       |mprj_HRDATA_core[21]                       
+mprj_HRDATA_core[30]                       |mprj_HRDATA_core[30]                       
+mprj_HRDATA_core[20]                       |mprj_HRDATA_core[20]                       
+mprj_HRDATA_core[2]                        |mprj_HRDATA_core[2]                        
+mprj_HRDATA_core[1]                        |mprj_HRDATA_core[1]                        
+mprj_HREADYOUT_core                        |mprj_HREADYOUT_core                        
+mprj_HRDATA_core[17]                       |mprj_HRDATA_core[17]                       
+mprj_HRDATA_core[29]                       |mprj_HRDATA_core[29]                       
+mprj_HRDATA_core[4]                        |mprj_HRDATA_core[4]                        
+mprj_HRDATA_core[28]                       |mprj_HRDATA_core[28]                       
+mprj_HRDATA_core[18]                       |mprj_HRDATA_core[18]                       
+mprj_HRDATA_core[16]                       |mprj_HRDATA_core[16]                       
+mprj_HRDATA_core[9]                        |mprj_HRDATA_core[9]                        
+mprj_HRDATA_core[8]                        |mprj_HRDATA_core[8]                        
+mprj_HRDATA_core[27]                       |mprj_HRDATA_core[27]                       
+mprj_HRDATA_core[15]                       |mprj_HRDATA_core[15]                       
+mprj_HRDATA_core[0]                        |mprj_HRDATA_core[0]                        
+mprj_HRDATA_core[19]                       |mprj_HRDATA_core[19]                       
+vssd0                                      |vssd0                                      
+vccd0                                      |vccd0                                      
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes mgmt_protect and mgmt_protect are equivalent.
+
+Final result: Circuits match uniquely.
+.
