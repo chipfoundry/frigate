@@ -15,13 +15,13 @@
 # SPDX-License-Identifier: Apache-2.0
 MAKEFLAGS+=--warn-undefined-variables
 export MGMT_ROOT?=$(PWD)/dependencies/caravel_mgmt_soc
-export MGMT_REPO_URL?=https://github.com/efabless/caravel_mgmt_soc_litex.git
+export MGMT_REPO_URL?=https://github.com/chipfoundry/caravel_mgmt_soc_litex.git
 export MGMT_BRANCH?=Add_newfill
 export PANAMAX_ROOT?=$(PWD)/dependencies/panamax
-export PANAMAX_REPO_URL?=https://github.com/efabless/panamax.git
+export PANAMAX_REPO_URL?=git@github.com:chipfoundry/panamax.git
 export PANAMAX_BRANCH?=main
 export ANALOG_ROOT?=$(PWD)/dependencies/frigate_analog
-export ANALOG_REPO_URL?=https://github.com/efabless/frigate_analog.git
+export ANALOG_REPO_URL?=git@github.com:chipfoundry/frigate_analog.git
 export ANALOG_BRANCH?=add_adc_behav
 export PDK_ROOT?=$(PWD)/dependencies/pdks
 PRECHECK_ROOT?=${HOME}/mpw_precheck
@@ -94,7 +94,7 @@ install-ips:
 	$(PYTHON_BIN) -m venv ./venv
 	./venv/bin/$(PYTHON_BIN) -m pip install --upgrade pip
 	./venv/bin/$(PYTHON_BIN) -m pip install wheel
-	./venv/bin/$(PYTHON_BIN) -m pip install ipmgr
+	./venv/bin/$(PYTHON_BIN) -m pip install cf-ipm
 	./venv/bin/$(PYTHON_BIN) -m pip install click
 	./venv/bin/ipm install-dep --ipm-root ~/.ipm
 	@echo "rewrite design_info for cocotb"
