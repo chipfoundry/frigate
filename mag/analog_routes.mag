@@ -1,0 +1,131 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1580440681
+<< checkpaint >>
+rect -1960 -1958 637560 957836
+use analog_routes_bottom  analog_routes_bottom_0
+timestamp 1580440681
+transform 1 0 290280 0 1 -698
+box 0 0 302118 22580
+use analog_routes_left  analog_routes_left_0
+timestamp 1580440681
+transform 1 0 -700 0 1 307893
+box 0 0 38119 501877
+use analog_routes_right  analog_routes_right_0
+timestamp 1580440681
+transform 1 0 592140 0 1 9537
+box 0 0 44160 800234
+use analog_routes_top  analog_routes_top_0
+timestamp 1580440681
+transform 1 0 327131 0 1 924970
+box 0 0 1800 30969
+use analog_routes_user  analog_routes_user_0
+timestamp 1580440681
+transform 1 0 376519 0 1 789770
+box 0 -20000 17024 20000
+use analog_to_gpio_route  analog_to_gpio_route_0
+timestamp 1580440681
+transform 1 0 604794 0 1 821970
+box 0 0 31376 2322
+use analog_to_gpio_route  analog_to_gpio_route_1
+timestamp 1580440681
+transform -1 0 30869 0 1 837990
+box 0 0 31376 2322
+use analog_to_gpio_route  analog_to_gpio_route_2
+timestamp 1580440681
+transform -1 0 30869 0 1 858990
+box 0 0 31376 2322
+use analog_to_gpio_route  analog_to_gpio_route_3
+timestamp 1580440681
+transform -1 0 30869 0 1 879990
+box 0 0 31376 2322
+use analog_to_gpio_route  analog_to_gpio_route_4
+timestamp 1580440681
+transform -1 0 30869 0 1 900990
+box 0 0 31376 2322
+use analog_to_gpio_route  analog_to_gpio_route_5
+timestamp 1580440681
+transform 1 0 604794 0 1 884968
+box 0 0 31376 2322
+use analog_to_gpio_route  analog_to_gpio_route_6
+timestamp 1580440681
+transform 1 0 604794 0 1 863970
+box 0 0 31376 2322
+use analog_to_gpio_route  analog_to_gpio_route_7
+timestamp 1580440681
+transform 1 0 604794 0 1 842970
+box 0 0 31376 2322
+use analog_to_gpio_route_top  analog_to_gpio_route_top_0
+timestamp 1580440681
+transform 1 0 110731 0 1 924970
+box 0 0 1401 31117
+use analog_to_gpio_route_top  analog_to_gpio_route_top_1
+timestamp 1580440681
+transform 1 0 38731 0 1 924970
+box 0 0 1401 31117
+use analog_to_gpio_route_top  analog_to_gpio_route_top_2
+timestamp 1580440681
+transform 1 0 62731 0 1 924970
+box 0 0 1401 31117
+use analog_to_gpio_route_top  analog_to_gpio_route_top_3
+timestamp 1580440681
+transform 1 0 86731 0 1 924970
+box 0 0 1401 31117
+use analog_to_gpio_route_top  analog_to_gpio_route_top_4
+timestamp 1580440681
+transform 1 0 204731 0 1 924970
+box 0 0 1401 31117
+use analog_to_gpio_route_top  analog_to_gpio_route_top_5
+timestamp 1580440681
+transform 1 0 180731 0 1 924970
+box 0 0 1401 31117
+use analog_to_gpio_route_top  analog_to_gpio_route_top_6
+timestamp 1580440681
+transform 1 0 252731 0 1 924970
+box 0 0 1401 31117
+use analog_to_gpio_route_top  analog_to_gpio_route_top_7
+timestamp 1580440681
+transform 1 0 228731 0 1 924970
+box 0 0 1401 31117
+use analog_to_gpio_route_top  analog_to_gpio_route_top_8
+timestamp 1580440681
+transform 1 0 318731 0 1 924970
+box 0 0 1401 31117
+use analog_to_gpio_route_top  analog_to_gpio_route_top_9
+timestamp 1580440681
+transform 1 0 295731 0 1 924970
+box 0 0 1401 31117
+use analog_to_gpio_route_top  analog_to_gpio_route_top_10
+timestamp 1580440681
+transform 1 0 415731 0 1 924970
+box 0 0 1401 31117
+use analog_to_gpio_route_top  analog_to_gpio_route_top_11
+timestamp 1580440681
+transform 1 0 391731 0 1 924970
+box 0 0 1401 31117
+use analog_to_gpio_route_top  analog_to_gpio_route_top_12
+timestamp 1580440681
+transform 1 0 463731 0 1 924970
+box 0 0 1401 31117
+use analog_to_gpio_route_top  analog_to_gpio_route_top_13
+timestamp 1580440681
+transform 1 0 439731 0 1 924970
+box 0 0 1401 31117
+use analog_to_gpio_route_top  analog_to_gpio_route_top_14
+timestamp 1580440681
+transform 1 0 533731 0 1 924970
+box 0 0 1401 31117
+use analog_to_gpio_route_top  analog_to_gpio_route_top_16
+timestamp 1580440681
+transform 1 0 557731 0 1 924970
+box 0 0 1401 31117
+use analog_to_gpio_route_top  analog_to_gpio_route_top_17
+timestamp 1580440681
+transform 1 0 581731 0 1 924970
+box 0 0 1401 31117
+use analog_to_gpio_top_right  analog_to_gpio_top_right_0
+timestamp 1580440681
+transform 1 0 599619 0 1 924970
+box -6 0 7162 31606
+<< end >>
