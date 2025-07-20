@@ -1,0 +1,347 @@
+# Basic configs
+DESIGN_NAME: frigate_core
+CLOCK_PERIOD: 15
+CLOCK_PORT: gpio8_0_in
+CLOCK_NET: clk
+DRT_THREADS: 16
+CLOCK_UNCERTAINTY_CONSTRAINT: 0.100
+# PNR_SDC_FILE: dir::base.sdc
+# SIGNOFF_SDC_FILE: dir::signoff.sdc
+VERILOG_POWER_DEFINE: USE_POWER_PINS
+MAX_TRANSITION_CONSTRAINT: 1.5
+MAX_FANOUT_CONSTRAINT: 18
+TIME_DERATING_CONSTRAINT: 8.3
+
+# Synthesis
+VERILOG_FILES: 
+  - dir::synthesis_run/1-yosys-synthesis/frigate_core.nl.v
+VERILOG_INCLUDE_DIRS: dir::/../../verilog/rtl/hazard3/includes
+SYNTH_ELABORATE_ONLY: true
+VERILOG_DEFINES: 
+  - PnR
+SYNTH_EXTRA_MAPPING_FILE: dir::yosys_mapping.v
+
+# Floorplan
+FP_OBSTRUCTIONS:
+  - [2660, 0, 3178, 55]
+  - [221, 4734, 3007, 4777]
+  - [0, 2198, 213, 2281]
+  - [0, 3281, 213, 3580]
+  - [2938, 2185, 3182, 2268]
+  - [2938, 3265, 3182, 3570]
+  - [0, 184, 70, 584]
+  - [0, 815, 70, 1221]
+  - [0, 1602, 70, 4777]
+  - [3096, 4728, 3108, 4766]
+  - [3108, 159, 3178, 568]
+  - [3108, 779, 3178, 1189]
+  - [3108, 1578, 3178, 4777]
+
+FP_SIZING: absolute
+DIE_AREA: [0, 0, 3178, 4777.500]
+CORE_AREA: [10, 10, 3171, 4767.500]
+# FP_PDN_CFG: dir::pdn_cfg.tcl
+FP_DEF_TEMPLATE: dir::fixed_dont_change/frigate_core.def
+FP_IO_VEXTEND: 4.8
+FP_IO_HEXTEND: 4.8
+FP_IO_VLENGTH: 2.4
+FP_IO_HLENGTH: 2.4
+FP_IO_VTHICKNESS_MULT: 4
+FP_IO_HTHICKNESS_MULT: 4
+FP_PDN_CORE_RING: true
+FP_PDN_CORE_RING_VWIDTH: 10
+FP_PDN_CORE_RING_HWIDTH: 10
+FP_PDN_CORE_RING_VOFFSET: -4
+FP_PDN_CORE_RING_HOFFSET: -4
+FP_PDN_CORE_RING_VSPACING: 2.4
+FP_PDN_CORE_RING_HSPACING: 2.4
+FP_PDN_VWIDTH: 3.1
+FP_PDN_HWIDTH: 3.1
+FP_PDN_HSPACING: 5
+FP_PDN_VSPACING: 2
+FP_PDN_VPITCH: 140
+FP_PDN_HPITCH: 80
+FP_PDN_VOFFSET: 179
+FP_PDN_HOFFSET: 200
+ERROR_ON_PDN_VIOLATIONS: false
+
+# PDN
+FP_PDN_SKIPTRIM: true
+PDN_MACRO_CONNECTIONS:
+  - soc.*housekeeping vccd0 vssd0 VPWR VGND
+  - RAM_.*genblk1.*SRAM vccd0 vssd0 vpwra vgnd
+  - RAM_.*genblk1.*SRAM vccd0 vssd0 vpb vnb
+  - RAM_.*genblk1.*SRAM vccd0 vssd0 vpwrp vgnd
+  - RAM_.*genblk1.*SRAM vccd0 vssd0 vpwrm vgnd
+  - soc.ahb0_sys_clk_sys_instance_to_wrap vccd0 vssd0 VPWR VGND
+  - soc.ahb0_sys_clk_sys_dll vccd0 vssd0 VPWR VGND
+  - mgmt_buffers vccd0 vssd0 vccd0 vssd0
+  - mgmt_buffers vccd1 vssd1 vccd1 vssd1
+  - product_id_value vccd0 vssd0 VPWR VGND
+  - project_id_value vccd0 vssd0 VPWR VGND
+  - user_project vccd1 vssd1 vccd1 vssd1
+  - user_project vccd2 vssd2 vccd2 vssd2
+  - timing_frontend vccd0 vssd0 vccd0 vssd0
+  - timing_frontend vccd1 vssd1 vccd1 vssd1
+  - soc.*analog_regs vccd0 vssd0 vccd0 vssd0
+  - gpio_control.*\\] vccd0 vssd0 vccd vssd
+  - gpio_control.*\\] vccd1 vssd1 vccd1 vssd1
+  - soc.*usb_cdc_ahbl vccd0 vssd0 VPWR VGND
+  - soc.*flash_ctrl vccd0 vssd0 VPWR VGND
+  - soc.apb0_sys_ctu_can_wrapper_ctu_can vccd0 vssd0 VPWR VGND
+
+VDD_NETS: 
+  - vccd0
+  - vccd1
+  - vccd2
+GND_NETS: 
+  - vssd0
+  - vssd1
+  - vssd2
+
+PDN_OBSTRUCTIONS:
+  - met1 2660 0 3178 55
+  - met2 2660 0 3178 55
+  - met3 2660 0 3178 55
+  - met4 2660 0 3178 55
+  - met5 2660 0 3178 55
+  - met4 190 1526 2958 3871
+  - met5 190 1526 2958 3871
+  - met3 0 590 53 668
+  - met3 3139 4528 3178 4608
+
+# Placement
+PL_SOFT_OBSTRUCTIONS:
+  - [0, 1548, 3278, 4777]
+  - [2092, 0, 2660, 30]
+  - [2500, 30, 2810, 85]
+  - [69, 0, 765, 30]
+  - [935, 128, 1452, 190]
+PL_TARGET_DENSITY_PCT: 51
+PL_WIRE_LENGTH_COEF: 0.25
+PL_MIN_PHI_COEFFICIENT: null
+PL_MAX_PHI_COEFFICIENT: 1.02
+GPL_CELL_PADDING: 2
+PL_TIME_DRIVEN: true
+PL_ROUTABILITY_DRIVEN: true
+
+# CTS
+CTS_CLK_MAX_WIRE_LENGTH: 900
+CTS_SINK_CLUSTERING_SIZE: 32
+CTS_SINK_CLUSTERING_MAX_DIAMETER: 140
+
+# Repair
+DESIGN_REPAIR_MAX_WIRE_LENGTH: 1500
+GRT_DESIGN_REPAIR_MAX_WIRE_LENGTH: 1200
+GRT_RESIZER_HOLD_SLACK_MARGIN: 0.100
+GRT_RESIZER_ALLOW_SETUP_VIOS: false
+RSZ_DONT_TOUCH_RX: porb_h|_enable_h|resetb_xres_h_n|dlygen|dly_clkbuf
+DESIGN_REPAIR_BUFFER_INPUT_PORTS: false
+DESIGN_REPAIR_BUFFER_OUTPUT_PORTS: false
+
+GRT_RESIZER_RUN_GRT: false
+GRT_DESIGN_REPAIR_RUN_GRT: false
+
+DEFAULT_CORNER: max_ss_100C_1v60
+SIGNAL_WIRE_RC_LAYERS: ["met1", "met2", "met3", "met4"]
+CLOCK_WIRE_RC_LAYERS: ["met1", "met2", "met3", "met4"]
+
+RT_CLOCK_MIN_LAYER: null
+RT_CLOCK_MAX_LAYER: null
+SYNTH_TIE_UNDEFINED: null
+EXTRA_EXCLUDED_CELLS:
+  - sky130_fd_sc_hd__a2111o_1
+  - sky130_fd_sc_hd__a2111oi_1
+  - sky130_fd_sc_hd__a211o_1
+  - sky130_fd_sc_hd__a211oi_1
+  - sky130_fd_sc_hd__a21bo_1
+  - sky130_fd_sc_hd__a21boi_1
+  - sky130_fd_sc_hd__a21o_1
+  - sky130_fd_sc_hd__a21oi_1
+  - sky130_fd_sc_hd__a221o_1
+  - sky130_fd_sc_hd__a221oi_1
+  - sky130_fd_sc_hd__a222oi_1
+  - sky130_fd_sc_hd__a22o_1
+  - sky130_fd_sc_hd__a22oi_1
+  - sky130_fd_sc_hd__a2bb2o_1
+  - sky130_fd_sc_hd__a2bb2oi_1
+  - sky130_fd_sc_hd__a311o_1
+  - sky130_fd_sc_hd__a311oi_1
+  - sky130_fd_sc_hd__a31o_1
+  - sky130_fd_sc_hd__a31oi_1
+  - sky130_fd_sc_hd__a32o_1
+  - sky130_fd_sc_hd__a32oi_1
+  - sky130_fd_sc_hd__a41o_1
+  - sky130_fd_sc_hd__a41oi_1
+  - sky130_fd_sc_hd__and2_1
+  - sky130_fd_sc_hd__and2b_1
+  - sky130_fd_sc_hd__and3_1
+  - sky130_fd_sc_hd__and3b_1
+  - sky130_fd_sc_hd__and4_1
+  - sky130_fd_sc_hd__and4b_1
+  - sky130_fd_sc_hd__and4bb_1
+  - sky130_fd_sc_hd__buf_1
+  - sky130_fd_sc_hd__clkbuf_1
+  - sky130_fd_sc_hd__clkinv_1
+  - sky130_fd_sc_hd__fa_1
+  - sky130_fd_sc_hd__ha_1
+  - sky130_fd_sc_hd__inv_1
+  - sky130_fd_sc_hd__maj3_1
+  - sky130_fd_sc_hd__mux2_1
+  - sky130_fd_sc_hd__mux2i_1
+  - sky130_fd_sc_hd__mux4_1
+  - sky130_fd_sc_hd__nand2_1
+  - sky130_fd_sc_hd__nand2b_1
+  - sky130_fd_sc_hd__nand3_1
+  - sky130_fd_sc_hd__nand3b_1
+  - sky130_fd_sc_hd__nand4_1
+  - sky130_fd_sc_hd__nand4b_1
+  - sky130_fd_sc_hd__nand4bb_1
+  - sky130_fd_sc_hd__nor2_1
+  - sky130_fd_sc_hd__nor2b_1
+  - sky130_fd_sc_hd__nor3_1
+  - sky130_fd_sc_hd__nor3b_1
+  - sky130_fd_sc_hd__nor4_1
+  - sky130_fd_sc_hd__nor4b_1
+  - sky130_fd_sc_hd__nor4bb_1
+  - sky130_fd_sc_hd__o2111a_1
+  - sky130_fd_sc_hd__o2111ai_1
+  - sky130_fd_sc_hd__o211a_1
+  - sky130_fd_sc_hd__o211ai_1
+  - sky130_fd_sc_hd__o21a_1
+  - sky130_fd_sc_hd__o21ai_1
+  - sky130_fd_sc_hd__o21ba_1
+  - sky130_fd_sc_hd__o21bai_1
+  - sky130_fd_sc_hd__o221a_1
+  - sky130_fd_sc_hd__o221ai_1
+  - sky130_fd_sc_hd__o22a_1
+  - sky130_fd_sc_hd__o22ai_1
+  - sky130_fd_sc_hd__o2bb2a_1
+  - sky130_fd_sc_hd__o2bb2ai_1
+  - sky130_fd_sc_hd__o311a_1
+  - sky130_fd_sc_hd__o311ai_1
+  - sky130_fd_sc_hd__o31a_1
+  - sky130_fd_sc_hd__o31ai_1
+  - sky130_fd_sc_hd__o32a_1
+  - sky130_fd_sc_hd__o32ai_1
+  - sky130_fd_sc_hd__o41a_1
+  - sky130_fd_sc_hd__o41ai_1
+  - sky130_fd_sc_hd__or2_1
+  - sky130_fd_sc_hd__or2b_1
+  - sky130_fd_sc_hd__or3_1
+  - sky130_fd_sc_hd__or3b_1
+  - sky130_fd_sc_hd__or4_1
+  - sky130_fd_sc_hd__or4b_1
+  - sky130_fd_sc_hd__or4bb_1
+  - sky130_fd_sc_hd__xnor2_1
+  - sky130_fd_sc_hd__xnor3_1
+  - sky130_fd_sc_hd__xor2_1
+  - sky130_fd_sc_hd__xor3_1
+
+# Diode insertion
+HEURISTIC_ANTENNA_THRESHOLD: 350
+GRT_ANTENNA_ITERS: 10
+
+# Routing
+GRT_ALLOW_CONGESTION: true
+GRT_ADJUSTMENT: 0.03
+DRT_OPT_ITERS: 15
+ROUTING_OBSTRUCTIONS:
+  - met1 152.595 4048.85 3027.485 4625.44
+  - met2 152.595 4048.85 3027.485 4625.44
+  - met3 152.595 4048.85 3027.485 4625.44
+  - met4 152.595 4048.85 3027.485 4625.44
+  - met5 152.595 4048.85 3027.485 4625.44
+  - met1 2660 0 3150 52
+  - met2 2660 0 3150 52
+  - met3 2660 0 3150 52
+  - met4 2660 0 3150 52
+  - met5 2660 0 3150 52
+  - met4 190 1526 2958 3871
+  - met5 190 1526 2958 3871
+
+  - met1 3109.925 4777.5 3174.935 4774.15
+  - met1 2399.925 4777.5 2464.935 4774.15
+  - met2 2453.7   4777.5 2379.49  4777
+  - met1 814.935  4777.5 749.925  4774.15
+  - met1 104.935  4777.5 39.925   4774.15
+  - met2 93.7     4777.5 19.49    4777
+
+  - met1 0 4625.935 3.85 4560.925
+  - met1 0 3585.935 3.85 3520.925
+  - met2 0 3574.7   0.6  3500.49
+  - met1 0 2287.935 3.85 2222.925
+  - met1 0 677.935  3.85 612.925
+  - met2 0 666.7    0.6  592.4
+
+  - met1 19.065   0 88.345   3.5
+  - met1 924.065  0 993.345  3.5
+  - met1 1604.065 0 1673.345 3.5
+  - met1 2544.065 0 2613.345 3.5
+
+  - met1 3178 577.065  3174.15 642.075
+  - met1 3178 2177.065 3174.15 2243.075
+  - met2 3178 2188.3   3177.4  2262.51
+  - met1 3178 3480.065 3174.15 3545.075
+  - met1 3178 4520.065 3174.15 4585.075
+  - met2 3178 4531.3   3177.4  4605.51
+
+  - met2 3178     2185.48  3175.535 2185.83
+  - met2 3175.535 2185.48  3175.885 2330.385
+  - met2 3178     2330.385 3175.535 2330
+
+# Magic
+MAGIC_DEF_LABELS: false
+MAGIC_ZEROIZE_ORIGIN: false
+MAGIC_CAPTURE_ERRORS: false
+
+# Flow Steps
+meta:
+  version: 2
+  flow:
+    - Yosys.Synthesis
+    - OpenROAD.CheckSDCFiles
+    - OpenROAD.Floorplan
+    - Odb.ManualMacroPlacement
+    - OpenROAD.TapEndcapInsertion
+    - OpenROAD.IOPlacement
+    - Odb.ApplyDEFTemplate
+    - Odb.AddPDNObstructions
+    - OpenROAD.GeneratePDN
+    - Magic.StreamOut
+    - Odb.RemovePDNObstructions
+    - OpenROAD.GlobalPlacement
+    - OpenROAD.DetailedPlacement
+    - OpenROAD.RepairDesignPostGPL
+    - OpenROAD.GlobalPlacement
+    - Odb.ManualGlobalPlacement
+    - OpenROAD.DetailedPlacement
+    - OpenROAD.RepairDesignPostGPL
+    - OpenROAD.CTS
+    - OpenROAD.STAMidPNR
+    - OpenROAD.ResizerTimingPostCTS
+    - OpenROAD.ResizerTimingPostCTS
+    - Odb.AddRoutingObstructions
+    - OpenROAD.RepairDesignPostGRT
+    - OpenROAD.ResizerTimingPostGRT
+    - OpenROAD.STAMidPNR
+    - OpenROAD.RepairDesignPostGRT
+    - OpenROAD.ResizerTimingPostGRT
+    - OpenROAD.STAMidPNR
+    - OpenROAD.RepairDesignPostGRT
+    - Odb.HeuristicDiodeInsertion
+    - OpenROAD.RepairAntennas
+    - OpenROAD.ResizerTimingPostGRT
+    - OpenROAD.GlobalRouting
+    - OpenROAD.STAMidPNR
+    - OpenROAD.DetailedRouting
+    - Checker.TrDRC
+    - Odb.ReportDisconnectedPins
+    - Odb.ReportWireLength
+    - OpenROAD.CheckAntennas
+    - OpenROAD.FillInsertion
+    - OpenROAD.RCX
+    - OpenROAD.STAPostPNR
+    - Magic.StreamOut
+    - Magic.DRC
+    - Misc.ReportManufacturability

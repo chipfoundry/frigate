@@ -1,0 +1,620 @@
+MACROS: 
+  EF_SRAM_1024x32: 
+    gds: dir::../../ip/EF_SRAM_1024x32/gds/EF_SRAM_1024x32.gds
+    lef: dir::../../ip/EF_SRAM_1024x32/lef/EF_SRAM_1024x32.lef
+    instances: 
+      RAM_0_genblk1_0__SRAM: 
+        location: [70, 30]
+        orientation: W
+      RAM_0_genblk1_1__SRAM: 
+        location: [422, 30]
+        orientation: FW
+      RAM_1_genblk1_0__SRAM: 
+        location: [2093, 30]
+        orientation: W
+      RAM_1_genblk1_1__SRAM: 
+        location: [2500, 85]
+        orientation: FW
+    nl: dir::../../ip/EF_SRAM_1024x32/hdl/EF_SRAM_1024x32.v
+    lib: 
+      "*ss*": dir::../../ip/EF_SRAM_1024x32/lib/EF_SRAM_1024x32_ss_160V_100C.lib
+      "*tt*": dir::../../ip/EF_SRAM_1024x32/lib/EF_SRAM_1024x32_tt_180V_25C.lib
+      "*ff*": dir::../../ip/EF_SRAM_1024x32/lib/EF_SRAM_1024x32_ff_195V_n40C.lib
+ 
+  user_project_wrapper: 
+    gds: dir::../../gds/user_project_wrapper_empty.gds
+    lef: dir::../../lef/user_project_wrapper_empty.lef
+    instances: 
+      user_project: 
+        location: [213.91, 1548.85]
+        orientation: N
+    nl: dir::../../verilog/gl/user_project_wrapper_empty.v
+
+  dll: 
+    gds: dir::../../gds/dll.gds.gz
+    lef: dir::../../lef/dll.lef
+    instances: 
+      soc_ahb0_sys_clk_sys_dll: 
+        location: [817, 45]
+        orientation: N
+    nl: dir::../../verilog/gl/dll.v
+    spef: 
+      min_*: dir::/../../spef/multicorner/dll.min.spef
+      nom_*: dir::/../../spef/multicorner/dll.nom.spef
+      max_*: dir::/../../spef/multicorner/dll.max.spef
+    lib: 
+      "*": dir::/../../lib/dll.lib
+
+  housekeeping: 
+    gds: dir::../../gds/housekeeping.gds.gz
+    lef: dir::../../lef/housekeeping.lef
+    instances: 
+      soc_apb2_sys_housekeeping: 
+        location: [2708, 550]
+        orientation: N
+    nl: dir::../../verilog/gl/housekeeping.v
+    spef: 
+      min_*: dir::/../../spef/multicorner/housekeeping.min.spef
+      nom_*: dir::/../../spef/multicorner/housekeeping.nom.spef
+      max_*: dir::/../../spef/multicorner/housekeeping.max.spef
+    lib:
+      "*": dir::/../../lib/housekeeping.lib
+
+  mgmt_protect: 
+    gds: dir::../../gds/mgmt_protect.gds.gz
+    lef: dir::../../lef/mgmt_protect.lef
+    instances: 
+      mgmt_buffers: 
+        location: [1250, 1430]
+        orientation: N
+    nl: dir::../../verilog/gl/mgmt_protect.v
+    spef: 
+      min_*: dir::/../../spef/multicorner/mgmt_protect.min.spef
+      nom_*: dir::/../../spef/multicorner/mgmt_protect.nom.spef
+      max_*: dir::/../../spef/multicorner/mgmt_protect.max.spef
+    lib:
+      "*": dir::/../../lib/mgmt_protect.lib
+
+  gpio_defaults_block_16bit: 
+    gds: dir::/../../gds/gpio_defaults_block_16bit.gds.gz
+    lef: dir::/../../lef/gpio_defaults_block_16bit.lef
+    nl: dir::/../../verilog/rtl/gpio_defaults_block_16bit.v
+    instances: 
+      gpio_defaults_block_0: 
+        location: [3143, 247.6]
+        orientation: N
+      gpio_defaults_block_1: 
+        location: [3143, 352.6]
+        orientation: N
+      gpio_defaults_block_2: 
+        location: [3143, 457.6]
+        orientation: N
+      gpio_defaults_block_3: 
+        location: [3143, 562.6]
+        orientation: N
+      gpio_defaults_block_4: 
+        location: [3143, 867.6]
+        orientation: N
+      gpio_defaults_block_5: 
+        location: [3143, 972.6]
+        orientation: N
+      gpio_defaults_block_6: 
+        location: [3143, 1077.6]
+        orientation: N
+      gpio_defaults_block_7: 
+        location: [3143, 1182.6]
+        orientation: N
+      gpio_defaults_block_8: 
+        location: [3143, 1667.67]
+        orientation: N
+      gpio_defaults_block_9: 
+        location: [3143, 1832.67]
+        orientation: N
+      gpio_defaults_block_10: 
+        location: [3143, 1997.67]
+        orientation: N
+      gpio_defaults_block_11: 
+        location: [3143, 2162.67]
+        orientation: N
+      gpio_defaults_block_12: 
+        location: [3143, 2650.67]
+        orientation: N
+      gpio_defaults_block_13: 
+        location: [3143, 2815.67]
+        orientation: N
+      gpio_defaults_block_14: 
+        location: [3143, 2980.67]
+        orientation: N
+      gpio_defaults_block_15: 
+        location: [3143, 3145.67]
+        orientation: N
+      gpio_defaults_block_16: 
+        location: [3143, 3670.6]
+        orientation: N
+      gpio_defaults_block_17: 
+        location: [3143, 3775.6]
+        orientation: N
+      gpio_defaults_block_18: 
+        location: [3143, 3880.6]
+        orientation: N
+      gpio_defaults_block_19: 
+        location: [3143, 3985.6]
+        orientation: N
+      gpio_defaults_block_20: 
+        location: [3143, 4190.6]
+        orientation: N
+      gpio_defaults_block_21: 
+        location: [3143, 4295.6]
+        orientation: N
+      gpio_defaults_block_22: 
+        location: [3143, 4400.6]
+        orientation: N
+      gpio_defaults_block_23: 
+        location: [3143, 4505.6]
+        orientation: N
+      gpio_defaults_block_24: 
+        location: [3058.34, 4743.5]
+        orientation: N
+      gpio_defaults_block_25: 
+        location: [2938.34, 4743.5]
+        orientation: N
+      gpio_defaults_block_26: 
+        location: [2818.34, 4743.5]
+        orientation: N
+      gpio_defaults_block_27: 
+        location: [2698.34, 4743.5]
+        orientation: N
+      gpio_defaults_block_28: 
+        location: [2348.34, 4743.5]
+        orientation: N
+      gpio_defaults_block_29: 
+        location: [2228.34, 4743.5]
+        orientation: N
+      gpio_defaults_block_30: 
+        location: [2108.34, 4743.5]
+        orientation: N
+      gpio_defaults_block_31: 
+        location: [1988.34, 4743.5]
+        orientation: N
+      gpio_defaults_block_32: 
+        location: [1293.34, 4743.5]
+        orientation: N
+      gpio_defaults_block_33: 
+        location: [1173.34, 4743.5]
+        orientation: N
+      gpio_defaults_block_34: 
+        location: [1053.34, 4743.5]
+        orientation: N
+      gpio_defaults_block_35: 
+        location: [936.34, 4743.5]
+        orientation: N
+      gpio_defaults_block_36: 
+        location: [583.34, 4743.5]
+        orientation: N
+      gpio_defaults_block_37: 
+        location: [463.34, 4743.5]
+        orientation: N
+      gpio_defaults_block_38: 
+        location: [343.34, 4743.5]
+        orientation: N
+      gpio_defaults_block_39: 
+        location: [223.34, 4743.5]
+        orientation: N
+      gpio_defaults_block_40: 
+        location: [5, 4526.61]
+        orientation: FN
+      gpio_defaults_block_41: 
+        location: [5, 4421.61]
+        orientation: FN
+      gpio_defaults_block_42: 
+        location: [5, 4316.61]
+        orientation: FN
+      gpio_defaults_block_43: 
+        location: [5, 4211.61]
+        orientation: FN
+      gpio_defaults_block_44: 
+        location: [5, 4006.61]
+        orientation: FN
+      gpio_defaults_block_45: 
+        location: [5, 3901.61]
+        orientation: FN
+      gpio_defaults_block_46: 
+        location: [5, 3796.61]
+        orientation: FN
+      gpio_defaults_block_47: 
+        location: [5, 3691.61]
+        orientation: FN
+      gpio_defaults_block_48: 
+        location: [5, 3171.61]
+        orientation: FN
+      gpio_defaults_block_49: 
+        location: [5, 3006.61]
+        orientation: FN
+      gpio_defaults_block_50: 
+        location: [5, 2841.61]
+        orientation: FN
+      gpio_defaults_block_51: 
+        location: [5, 2676.61]
+        orientation: FN
+      gpio_defaults_block_52: 
+        location: [5, 2188.61]
+        orientation: FN
+      gpio_defaults_block_53: 
+        location: [5, 2023.61]
+        orientation: FN
+      gpio_defaults_block_54: 
+        location: [5, 1858.61]
+        orientation: FN
+      gpio_defaults_block_55: 
+        location: [5, 1693.61]
+        orientation: FN
+      gpio_defaults_block_56: 
+        location: [5, 1213.61]
+        orientation: FN
+      gpio_defaults_block_57: 
+        location: [5, 1108.61]
+        orientation: FN
+      gpio_defaults_block_58: 
+        location: [5, 1003.61]
+        orientation: FN
+      gpio_defaults_block_59: 
+        location: [5, 903.61]
+        orientation: FN
+      gpio_defaults_block_60: 
+        location: [5, 578.61]
+        orientation: FN
+      gpio_defaults_block_61: 
+        location: [5, 473.61]
+        orientation: FN
+      gpio_defaults_block_62: 
+        location: [5, 368.61]
+        orientation: FN
+      gpio_defaults_block_63: 
+        location: [5, 263.61]
+        orientation: FN
+      gpio_defaults_block_64: 
+        location: [3090, 128.54]
+        orientation: N
+      gpio_defaults_block_65: 
+        location: [2890, 128.54]
+        orientation: N
+
+  gpio_control_block: 
+    gds: dir::/../../gds/gpio_control_block.gds.gz
+    lef: dir::/../../lef/gpio_control_block.lef
+    nl: dir::/../../verilog/gl/gpio_control_block.v
+    lib: 
+      "*": dir::/../../lib/gpio_control_block.lib
+    spef: 
+        min_*: dir::/../../spef/multicorner/gpio_control_block.min.spef
+        nom_*: dir::/../../spef/multicorner/gpio_control_block.nom.spef
+        max_*: dir::/../../spef/multicorner/gpio_control_block.max.spef
+    instances: 
+      gpio_control_7_0[0]: 
+        location: [3117.64, 168.6]
+        orientation: N
+      gpio_control_7_0[1]: 
+        location: [3117.64, 273.6]
+        orientation: N
+      gpio_control_7_0[2]: 
+        location: [3117.64, 378.6]
+        orientation: N
+      gpio_control_7_0[3]: 
+        location: [3117.64, 483.6]
+        orientation: N
+      gpio_control_7_0[4]: 
+        location: [3117.64, 788.6]
+        orientation: N
+      gpio_control_7_0[5]: 
+        location: [3117.64, 893.6]
+        orientation: N
+      gpio_control_7_0[6]: 
+        location: [3117.65, 998.6]
+        orientation: N
+      gpio_control_7_0[7]: 
+        location: [3117.64, 1103.6]
+        orientation: N
+      gpio_control_32_8[8]: 
+        location: [3117.64, 1587.67]
+        orientation: N
+      gpio_control_32_8[9]: 
+        location: [3117.64, 1753.67]
+        orientation: N
+      gpio_control_32_8[10]: 
+        location: [3117.64, 1918.67]
+        orientation: N
+      gpio_control_32_8[11]: 
+        location: [3117.64, 2083.67]
+        orientation: N
+      gpio_control_32_8[12]: 
+        location: [3117.64, 2571.67]
+        orientation: N
+      gpio_control_32_8[13]: 
+        location: [3117.64, 2736.67]
+        orientation: N
+      gpio_control_32_8[14]: 
+        location: [3117.64, 2901.67]
+        orientation: N
+      gpio_control_32_8[15]: 
+        location: [3117.64, 3066.67]
+        orientation: N
+      gpio_control_32_8[16]: 
+        location: [3117.64, 3591.6]
+        orientation: N
+      gpio_control_32_8[17]: 
+        location: [3117.64, 3696.6]
+        orientation: N
+      gpio_control_32_8[18]: 
+        location: [3117.64, 3801.6]
+        orientation: N
+      gpio_control_32_8[19]: 
+        location: [3117.64, 3906.6]
+        orientation: N
+      gpio_control_32_8[20]: 
+        location: [3117.64, 4111.6]
+        orientation: N
+      gpio_control_32_8[21]: 
+        location: [3117.64, 4216.6]
+        orientation: N
+      gpio_control_32_8[22]: 
+        location: [3117.64, 4321.6]
+        orientation: N
+      gpio_control_32_8[23]: 
+        location: [3117.64, 4426.6]
+        orientation: N
+      gpio_control_32_8[24]: 
+        location: [3006.34, 4685.41]
+        orientation: N
+      gpio_control_32_8[25]: 
+        location: [2886.34, 4685.41]
+        orientation: N
+      gpio_control_32_8[26]: 
+        location: [2766.44, 4685.41]
+        orientation: N
+      gpio_control_32_8[27]: 
+        location: [2646.38, 4685.41]
+        orientation: N
+      gpio_control_32_8[28]: 
+        location: [2296.32, 4685.41]
+        orientation: N
+      gpio_control_32_8[29]: 
+        location: [2176.34, 4685.41]
+        orientation: N
+      gpio_control_32_8[30]: 
+        location: [2056.2, 4685.41]
+        orientation: N
+      gpio_control_32_8[31]: 
+        location: [1936.34, 4685.41]
+        orientation: N
+      gpio_control_32_8[32]: 
+        location: [1241.31, 4685.41]
+        orientation: N
+      gpio_control_65_33[33]: 
+        location: [1121.48, 4685.41]
+        orientation: N
+      gpio_control_65_33[34]: 
+        location: [1001.42, 4685.41]
+        orientation: N
+      gpio_control_65_33[35]: 
+        location: [881.36, 4685.41]
+        orientation: N
+      gpio_control_65_33[36]: 
+        location: [531.30, 4685.41]
+        orientation: N
+      gpio_control_65_33[37]: 
+        location: [411.24, 4685.41]
+        orientation: N
+      gpio_control_65_33[38]: 
+        location: [291.41, 4685.41]
+        orientation: N
+      gpio_control_65_33[39]: 
+        location: [171.34, 4685.41]
+        orientation: N
+      gpio_control_65_33[40]: 
+        location: [10.26, 4447.61]
+        orientation: FN
+      gpio_control_65_33[41]: 
+        location: [10.26, 4342.61]
+        orientation: FN
+      gpio_control_65_33[42]: 
+        location: [10.26, 4237.61]
+        orientation: FN
+      gpio_control_65_33[43]: 
+        location: [10.26, 4132.61]
+        orientation: FN
+      gpio_control_65_33[44]: 
+        location: [10.26, 3927.61]
+        orientation: FN
+      gpio_control_65_33[45]: 
+        location: [10.26, 3822.61]
+        orientation: FN
+      gpio_control_65_33[46]: 
+        location: [10.26, 3717.61]
+        orientation: FN
+      gpio_control_65_33[47]: 
+        location: [10.26, 3612.61]
+        orientation: FN
+      gpio_control_65_33[48]: 
+        location: [10.26, 3092.61]
+        orientation: FN
+      gpio_control_65_33[49]: 
+        location: [10.26, 2927.61]
+        orientation: FN
+      gpio_control_65_33[50]: 
+        location: [10.26, 2762.61]
+        orientation: FN
+      gpio_control_65_33[51]: 
+        location: [10.26, 2597.61]
+        orientation: FN
+      gpio_control_65_33[52]: 
+        location: [10.26, 2109.61]
+        orientation: FN
+      gpio_control_65_33[53]: 
+        location: [10.26, 1944.61]
+        orientation: FN
+      gpio_control_65_33[54]: 
+        location: [10.26, 1779.61]
+        orientation: FN
+      gpio_control_65_33[55]: 
+        location: [10.26, 1614.61]
+        orientation: FN
+      gpio_control_65_33[56]: 
+        location: [10.26, 1134.61]
+        orientation: FN
+      gpio_control_65_33[57]: 
+        location: [10.26, 1029.61]
+        orientation: FN
+      gpio_control_65_33[58]: 
+        location: [10.26, 924.61]
+        orientation: FN
+      gpio_control_65_33[59]: 
+        location: [10.26, 824.61]
+        orientation: FN
+      gpio_control_65_33[60]: 
+        location: [10.26, 499.61]
+        orientation: FN
+      gpio_control_65_33[61]: 
+        location: [10.26, 394.61]
+        orientation: FN
+      gpio_control_65_33[62]: 
+        location: [10.26, 289.61]
+        orientation: FN
+      gpio_control_65_33[63]: 
+        location: [10.26, 184.61]
+        orientation: FN
+      gpio_control_65_33[64]: 
+        location: [3030.02, 104]
+        orientation: N
+      gpio_control_65_33[65]: 
+        location: [2930.2, 104]
+        orientation: N
+   
+  clk_rst: 
+    gds: dir::/../../gds/clk_rst.gds.gz
+    lef: dir::/../../lef/clk_rst.lef
+    instances: 
+      soc_ahb0_sys_clk_sys_instance_to_wrap: 
+          location: [1280, 830]
+          orientation: N
+    nl: dir::/../..//verilog/gl/clk_rst.v
+    spef: 
+        min_*: dir::/../../spef/multicorner/clk_rst.min.spef
+        nom_*: dir::/../../spef/multicorner/clk_rst.nom.spef
+        max_*: dir::/../../spef/multicorner/clk_rst.max.spef
+    lib:
+      "*": dir::/../../lib/clk_rst.lib
+
+  frigate_analog: 
+    gds: dir::/../../dependencies/frigate_analog/gds/frigate_analog.gds.gz
+    lef: dir::/../../dependencies/frigate_analog/lef/frigate_analog.lef
+    instances: 
+      analog_sys: 
+        location: [152.595, 4048.85]
+        orientation: N
+    nl: dir::/../../dependencies/frigate_analog/verilog/frigate_analog.v
+
+  frigate_timing_frontend: 
+    gds: dir::/../../dependencies/frigate_analog/gds/frigate_timing_frontend.gds.gz
+    lef: dir::/../../dependencies/frigate_analog/lef/frigate_timing_frontend.lef
+    instances: 
+      timing_frontend: 
+        location: [1030.445, -0.19]
+        orientation: N
+    nl: dir::/../../dependencies/frigate_analog/verilog/frigate_timing_frontend.v
+
+  analog_routes: 
+    gds: dir::/../../gds/analog_routes.gds.gz
+    lef: dir::/../../lef/analog_routes.lef
+    instances: 
+      analog_routes: 
+        location: [0, 0]
+        orientation: N
+    nl: dir::/../../verilog/gl/analog_routes.v
+
+  # manual_power_connections: 
+  #   gds: dir::/../../gds/manual_power_connections.gds.gz
+  #   lef: dir::/../../lef/manual_power_connections.lef
+  #   instances: 
+  #     manual_power_connections: 
+  #       location: [0, 0]
+  #       orientation: N
+  #   nl: dir::/../../verilog/gl/manual_power_connections.v
+
+  product_id_rom_8bit: 
+    gds: dir::/../../gds/product_id_rom_8bit.gds.gz
+    lef: dir::/../../lef/product_id_rom_8bit.lef
+    instances: 
+      product_id_value: 
+        location: [3000, 290]
+        orientation: N
+    nl: dir::/../../verilog/rtl/product_id_rom_8bit.v
+
+  project_id_rom_32bit: 
+    gds: dir::/../../gds/project_id_rom_32bit.gds.gz
+    lef: dir::/../../lef/project_id_rom_32bit.lef
+    instances: 
+      project_id_value: 
+        location: [2960, 290]
+        orientation: N
+    nl: dir::/../../verilog/rtl/project_id_rom_32bit.v
+
+  analog_ctrl_regs_APB: 
+    gds: dir::/../../gds/analog_ctrl_regs_APB.gds.gz
+    lef: dir::/../../lef/analog_ctrl_regs_APB.lef
+    instances: 
+      soc_apb1_sys_analog_regs: 
+        location: [789.13, 3898.85]
+        orientation: N
+    nl: dir::/../../verilog/gl/analog_ctrl_regs_APB.v
+    spef: 
+      min_*: dir::/../../spef/multicorner/analog_ctrl_regs_APB.min.spef
+      nom_*: dir::/../../spef/multicorner/analog_ctrl_regs_APB.nom.spef
+      max_*: dir::/../../spef/multicorner/analog_ctrl_regs_APB.max.spef
+    lib: 
+      "*": dir::/../../lib/analog_ctrl_regs_APB.lib
+  
+  usb_cdc_wrapper_ahbl: 
+    gds: dir::/../../gds/usb_cdc_wrapper_ahbl.gds.gz
+    lef: dir::/../../lef/usb_cdc_wrapper_ahbl.lef
+    instances: 
+      soc_ahb1_sys_u_usb_cdc_ahbl: 
+        location: [2650, 1000]
+        orientation: N
+    nl: dir::/../../verilog/gl/usb_cdc_wrapper_ahbl.v
+    spef: 
+      min_*: dir::/../../spef/multicorner/usb_cdc_wrapper_ahbl.min.spef
+      nom_*: dir::/../../spef/multicorner/usb_cdc_wrapper_ahbl.nom.spef
+      max_*: dir::/../../spef/multicorner/usb_cdc_wrapper_ahbl.max.spef
+    lib: 
+      "*": dir::/../../lib/usb_cdc_wrapper_ahbl.lib
+      
+  EF_QSPI_XIP_CTRL_AHBL: 
+    gds: dir::/../../gds/EF_QSPI_XIP_CTRL_AHBL.gds.gz
+    lef: dir::/../../lef/EF_QSPI_XIP_CTRL_AHBL.lef
+    instances: 
+      soc_flash_ctrl: 
+        location: [950, 170]
+        orientation: N
+    nl: dir::/../../verilog/gl/EF_QSPI_XIP_CTRL_AHBL.v
+    spef: 
+      min_*: dir::/../../spef/multicorner/EF_QSPI_XIP_CTRL_AHBL.min.spef
+      nom_*: dir::/../../spef/multicorner/EF_QSPI_XIP_CTRL_AHBL.nom.spef
+      max_*: dir::/../../spef/multicorner/EF_QSPI_XIP_CTRL_AHBL.max.spef
+    lib: 
+      "*": dir::/../../lib/EF_QSPI_XIP_CTRL_AHBL.lib
+
+  ctu_can: 
+    gds: dir::/../../gds/ctu_can.gds.gz
+    lef: dir::/../../lef/ctu_can.lef
+    instances: 
+      soc_apb0_sys_ctu_can_wrapper_ctu_can: 
+        location: [150, 750]
+        orientation: N
+    nl: dir::/../../verilog/gl/ctu_can.v
+    spef: 
+      min_*: dir::/../../spef/multicorner/ctu_can.min.spef
+      nom_*: dir::/../../spef/multicorner/ctu_can.nom.spef
+      max_*: dir::/../../spef/multicorner/ctu_can.max.spef
+    lib: 
+      "*": dir::/../../lib/ctu_can.lib
+    
