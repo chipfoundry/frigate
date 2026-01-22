@@ -1,10 +1,10 @@
-# Frigate-OS
+# Frigate
 
-**Frigate-OS** is a comprehensive RISC-V System-on-Chip (SoC) platform designed for the chipIgnite MPW (Multi-Project Wafer) solution from ChipFoundry, featuring advanced machine learning acceleration capabilities. The SoC integrates the Hazard3 RISC-V CPU core with extensive analog/mixed-signal blocks, rich peripheral interfaces, and hardware-accelerated neural network processing.
+**Frigate** is a comprehensive RISC-V System-on-Chip (SoC) platform designed for the chipIgnite MPW (Multi-Project Wafer) solution from ChipFoundry, featuring advanced machine learning acceleration capabilities. The SoC integrates the Hazard3 RISC-V CPU core with extensive analog/mixed-signal blocks, rich peripheral interfaces, and hardware-accelerated neural network processing.
 
 ## Overview
 
-Frigate-OS is part of the [chipIgnite ML program](https://chipfoundry.io/ml), providing a complete SoC solution optimized for edge AI and machine learning applications. The platform combines:
+Frigate is part of the [chipIgnite ML program](https://chipfoundry.io/ml), providing a complete SoC solution optimized for edge AI and machine learning applications. The platform combines:
 
 - **RISC-V CPU**: Hazard3 32-bit processor with debug support
 - **ML Acceleration**: Hardware Conv2D accelerator for neural network inference
