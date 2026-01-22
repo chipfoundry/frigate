@@ -1,0 +1,34 @@
+# IDE directories
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Build artifacts
+*.log
+*.out
+*.o
+*.a
+*.so
+*.dylib
+*.dll
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.bak
+*.backup

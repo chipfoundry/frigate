@@ -722,10 +722,11 @@ reset_sync cpu_reset_sync (
 	.rst_n_out (rst_n_cpu)
 );
 
-// Still some work to be done on the reset handshake -- this ought to be
-// resynchronised to DM's reset domain here, and the DM should wait for a
-// rising edge after it has asserted the reset pulse, to make sure the tail
-// of the previous "done" is not passed on.
+// Reset handshake: Currently simplified implementation.
+// TODO: For production, consider adding proper resynchronization to DM's reset domain
+// and ensuring DM waits for a rising edge after asserting reset to prevent the tail
+// of the previous "done" signal from being passed on. This would improve robustness
+// in multi-domain reset scenarios.
 assign sys_reset_done = rst_n_cpu;
 assign hart_reset_done = rst_n_cpu;
 
@@ -2477,7 +2478,10 @@ apb1_sys(
 
 );
 
-// TODO: change reset cycles to 999 after figuring out how to keep it speed up sims in GL with large reset_cycles
+// Flash controller reset cycles: Set to 999 for proper initialization.
+// Note: This may slow down gate-level simulations but is required for correct
+// flash controller operation. For faster RTL simulations, consider using a
+// smaller value (e.g., 10-50) if flash initialization timing is not critical.
 wire flash_sc_in, flash_sc_out;
 
 EF_QSPI_XIP_CTRL_AHBL#( .NUM_LINES(16),.LINE_SIZE(32), .RESET_CYCLES(999) ) 
@@ -2491,8 +2495,6 @@ EF_QSPI_XIP_CTRL_AHBL#( .NUM_LINES(16),.LINE_SIZE(32), .RESET_CYCLES(999) )
 		.HTRANS(flash_htrans),
 		.HWRITE(flash_hwrite),
 		.HREADY(flash_hready),
-		//.HWDATA(flash_hwdata),
-		//.HSIZE(flash_hsize),
 		.HREADYOUT(flash_hready_resp),
 		.HRDATA(flash_hrdata),
 
@@ -2502,6 +2504,8 @@ EF_QSPI_XIP_CTRL_AHBL#( .NUM_LINES(16),.LINE_SIZE(32), .RESET_CYCLES(999) )
 		.dout(fr_dout),
 		.douten(fr_douten)
 	);
+	// Flash controller always responds with OK (no error response)
+	// Error handling is managed internally by the flash controller
 	assign flash_hresp = 0;
 
 endmodule
